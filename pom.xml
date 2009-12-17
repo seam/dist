@@ -25,6 +25,8 @@
       <hibernate.version>3.3.2.GA</hibernate.version>
       <drools.version>5.0.1</drools.version>
       <jbpm.version>4.2</jbpm.version>
+      <!-- Workaround the lack of 1.0.1B :-( Remove once we fix the weld-api-bom -->
+      <jta.version>1.1</jta.version>
       <seam.bpm.version>3.0.0-SNAPSHOT</seam.bpm.version>
       <seam.captcha.version>3.0.0-SNAPSHOT</seam.captcha.version>
       <seam.drools.version>3.0.0-SNAPSHOT</seam.drools.version>
@@ -164,6 +166,12 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
+         </dependency>
+         
+         <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>jta</artifactId>
+            <version>${jta.version}</version>
          </dependency>
 
       </dependencies>

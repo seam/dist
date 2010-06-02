@@ -15,7 +15,7 @@
    </parent>
 
    <description>
-      The Seam "Bill of Materials" 
+      The Seam "Bill of Materials", specifying the Seam stack for runtime use
    </description>
 
    <url>http://www.seamframework.org</url>

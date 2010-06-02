@@ -4,7 +4,7 @@
    <groupId>org.jboss.seam</groupId>
    <artifactId>seam</artifactId>
    <packaging>pom</packaging>
-   <version>3.0.0.b01</version>
+   <version>3.0.0-SNAPSHOT</version>
    <name>Seam BOM</name>
 
    <parent>
@@ -216,11 +216,11 @@
    </dependencyManagement>
 
    <scm>
-      <connection>scm:svn:http://anonsvn.jboss.org/repos/seam/dist/tags/b01
+      <connection>scm:svn:http://anonsvn.jboss.org/repos/seam/dist/trunk
       </connection>
-      <developerConnection>scm:svn:https://svn.jboss.org/repos/seam/dist/tags/b01
+      <developerConnection>scm:svn:https://svn.jboss.org/repos/seam/dist/trunk
       </developerConnection>
-      <url>http://fisheye.jboss.org/browse/Seam/tags/b01</url>
+      <url>http://fisheye.jboss.org/browse/Seam</url>
    </scm>
 
 </project>

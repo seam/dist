@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
    <modelVersion>4.0.0</modelVersion>
 
    <groupId>org.jboss.seam</groupId>
@@ -45,6 +46,9 @@
 
       <!-- Seam modules -->
       <seam.xml.config.version>3.0.0.Alpha2</seam.xml.config.version>
+      <seam.jms.version>3.0.0.Alpha1</seam.jms.version>
+      <seam.remoting.version>3.0.0-Beta1</seam.remoting.version>
+      <seam.faces.version>3.0.0.Alpha2</seam.faces.version>
    </properties>
 
    <dependencyManagement>
@@ -143,12 +147,6 @@
          </dependency>
 
          <dependency>
-            <groupId>org.jboss.seam.xml</groupId>
-            <artifactId>seam-xml-config</artifactId>
-            <version>${seam.xml.config.version}</version>
-         </dependency>
-
-         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
             <version>${hibernate.version}</version>
@@ -176,6 +174,43 @@
             <groupId>com.ocpsoft</groupId>
             <artifactId>ocpsoft-pretty-time</artifactId>
             <version>${pretty.time.version}</version>
+         </dependency>
+
+         <!-- Seam Modules -->
+         <dependency>
+            <groupId>org.jboss.seam.xml</groupId>
+            <artifactId>seam-xml-config</artifactId>
+            <version>${seam.xml.config.version}</version>
+         </dependency>
+         
+         <dependency>
+            <groupId>org.jboss.seam.remoting</groupId>
+            <artifactId>seam-remoting-core</artifactId>
+            <version>${seam.remoting.version}</version>
+         </dependency>
+         
+         <dependency>
+            <groupId>org.jboss.seam.faces</groupId>
+            <artifactId>seam-faces</artifactId>
+            <version>${seam.faces.version}</version>
+         </dependency>
+         
+         <dependency>
+            <groupId>org.jboss.seam.faces</groupId>
+            <artifactId>seam-faces-api</artifactId>
+            <version>${seam.faces.version}</version>
+         </dependency>
+         
+         <dependency>
+            <groupId>org.jboss.seam.jms</groupId>
+            <artifactId>seam-jms</artifactId>
+            <version>${seam.jms.version}</version>
+         </dependency>
+         
+         <dependency>
+            <groupId>org.jboss.seam.jms</groupId>
+            <artifactId>seam-jms-api</artifactId>
+            <version>${seam.jms.version}</version>
          </dependency>
 
       </dependencies>

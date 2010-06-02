@@ -1,209 +1,193 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.jboss.seam</groupId>
-	<artifactId>seam-bom</artifactId>
-	<packaging>pom</packaging>
-	<version>3.0.0-SNAPSHOT</version>
-	<name>Seam BOM</name>
+   <groupId>org.jboss.seam</groupId>
+   <artifactId>seam-bom</artifactId>
+   <packaging>pom</packaging>
+   <version>3.0.0-SNAPSHOT</version>
+   <name>Seam BOM</name>
 
-	<parent>
-		<groupId>org.jboss.weld</groupId>
-		<artifactId>weld-parent</artifactId>
-		<version>8</version>
-	</parent>
+   <parent>
+      <groupId>org.jboss.weld</groupId>
+      <artifactId>weld-parent</artifactId>
+      <version>11-SNAPSHOT</version>
+   </parent>
 
-	<description>
+   <description>
       The Seam "Bill of Materials" 
    </description>
 
-	<url>http://www.seamframework.org</url>
+   <url>http://www.seamframework.org</url>
 
-	<properties>
-		<weld.api.version>1.0</weld.api.version>
-		<hibernate.version>3.3.2.GA</hibernate.version>
-		<drools.version>5.1.0.M1</drools.version>
-		<jbpm.version>4.2</jbpm.version>
-		<!--
-			Workaround the lack of 1.0.1B :-( Remove once we fix the weld-api-bom
-		-->
-		<jta.version>1.1</jta.version>
-		<seam.bpm.version>3.0.0-SNAPSHOT</seam.bpm.version>
-		<seam.captcha.version>3.0.0-SNAPSHOT</seam.captcha.version>
-		<seam.drools.version>3.0.0-SNAPSHOT</seam.drools.version>
-		<seam.excel.version>3.0.0-SNAPSHOT</seam.excel.version>
-		<seam.faces.version>3.0.0-SNAPSHOT</seam.faces.version>
-		<seam.framework.version>3.0.0-SNAPSHOT</seam.framework.version>
-		<seam.international.version>3.0.0-SNAPSHOT</seam.international.version>
-		<seam.jms.version>3.0.0-SNAPSHOT</seam.jms.version>
-		<seam.mail.version>3.0.0-SNAPSHOT</seam.mail.version>
-		<seam.pdf.version>3.0.0-SNAPSHOT</seam.pdf.version>
-		<seam.persistence.version>3.0.0-SNAPSHOT</seam.persistence.version>
-		<seam.remoting.version>3.0.0-SNAPSHOT</seam.remoting.version>
-		<seam.resteasy.version>3.0.0-SNAPSHOT</seam.resteasy.version>
-		<seam.security.version>3.0.0-SNAPSHOT</seam.security.version>
-	</properties>
+   <properties>
+      <!-- JBoss Java EE BOM -->
+      <jboss.javaee.version>1.0.0.Beta4</jboss.javaee.version>
+      <!-- Weld Extensions -->
+      <weld.extensions.version>1.0.0.Alpha2</weld.extensions.version>
+      <!-- Weld Core -->
+      <!-- TODO Remove this -->
+      <weld.version>1.0.1-Final</weld.version>
+      <!-- JSR-250 API is missing from JBoss Java EE BOM -->
+      <jsr250.api.version>1.0</jsr250.api.version>
+      <!-- EL-API is missing from the JBoss Java EE BOM -->
+      <el.api.version>2.2</el.api.version>
+      <!-- JTA 1.1 is missing from the JBoss Java EE BOM -->
+      <jta.api.version>1.1</jta.api.version>
+      <!-- JMS API is missing from the JBoss Java EE BOM -->
+      <jms.api.version>1.1</jms.api.version>
 
-	<dependencyManagement>
-		<dependencies>
+      <hibernate.version>3.5.1-Final</hibernate.version>
+      <drools.version>5.1.0.M1</drools.version>
+      <jbpm.version>4.2</jbpm.version>
+      <picketlink.idm.version>1.1.2.CR01</picketlink.idm.version>
+      <joda.time.version>1.6</joda.time.version>
+      <pretty.time.version>1.0.6</pretty.time.version>
 
-			<dependency>
-				<groupId>org.jboss.weld</groupId>
-				<artifactId>weld-api-bom</artifactId>
-				<version>${weld.api.version}</version>
-				<scope>import</scope>
-				<type>pom</type>
-			</dependency>
+      <!-- Seam modules -->
+      <seam.xml.config.version>3.0.0.Alpha2</seam.xml.config.version>
+   </properties>
 
-			<dependency>
-				<groupId>org.drools</groupId>
-				<artifactId>drools-core</artifactId>
-				<version>${drools.version}</version>
-			</dependency>
+   <dependencyManagement>
+      <dependencies>
 
-			<dependency>
-				<groupId>org.drools</groupId>
-				<artifactId>drools-compiler</artifactId>
-				<version>${drools.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.jboss.spec</groupId>
+            <artifactId>jboss-javaee-6.0</artifactId>
+            <version>${jboss.javaee.version}</version>
+            <scope>import</scope>
+            <type>pom</type>
+         </dependency>
 
-			<dependency>
-				<groupId>org.drools</groupId>
-				<artifactId>drools-api</artifactId>
-				<version>${drools.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.drools</groupId>
-				<artifactId>drools-templates</artifactId>
-				<version>${drools.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.drools</groupId>
-				<artifactId>drools-decisiontables</artifactId>
-				<version>${drools.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.drools</groupId>
-				<artifactId>drools-workitems</artifactId>
-				<version>${drools.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+            <version>${jsr250.api.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>dom4j</groupId>
-				<artifactId>dom4j</artifactId>
-				<version>1.6.1</version>
-			</dependency>
+         <dependency>
+            <groupId>javax.el</groupId>
+            <artifactId>el-api</artifactId>
+            <version>${el.api.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jbpm.jbpm4</groupId>
-				<artifactId>jbpm-jpdl</artifactId>
-				<version>${jbpm.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>javax.transaction</groupId>
+            <artifactId>jta</artifactId>
+            <version>${jta.api.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-bpm</artifactId>
-				<version>${seam.bpm.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>jms</artifactId>
+            <version>${jms.api.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-captcha</artifactId>
-				<version>${seam.captcha.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.jboss.weld</groupId>
+            <artifactId>weld-extensions</artifactId>
+            <version>${weld.extensions.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-drools</artifactId>
-				<version>${seam.drools.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.jboss.weld</groupId>
+            <artifactId>weld-core</artifactId>
+            <version>${weld.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-excel</artifactId>
-				<version>${seam.excel.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-core</artifactId>
+            <version>${drools.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-faces</artifactId>
-				<version>${seam.faces.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-compiler</artifactId>
+            <version>${drools.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-framework</artifactId>
-				<version>${seam.framework.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-api</artifactId>
+            <version>${drools.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-international</artifactId>
-				<version>${seam.international.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-templates</artifactId>
+            <version>${drools.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-jms</artifactId>
-				<version>${seam.jms.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-decisiontables</artifactId>
+            <version>${drools.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-mail</artifactId>
-				<version>${seam.mail.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-workitems</artifactId>
+            <version>${drools.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-pdf</artifactId>
-				<version>${seam.pdf.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-transformer-xstream</artifactId>
+            <version>${drools.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-persistence</artifactId>
-				<version>${seam.persistence.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>dom4j</groupId>
+            <artifactId>dom4j</artifactId>
+            <version>1.6.1</version>
+         </dependency>
 
-			<dependency>
-				<groupId>#{seam.groupId}</groupId>
-				<artifactId>seam-remoting</artifactId>
-				<version>${seam.remoting.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.jboss.seam.xml</groupId>
+            <artifactId>seam-xml-config</artifactId>
+            <version>${seam.xml.config.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>#{seam.groupId}</groupId>
-				<artifactId>seam-resteasy</artifactId>
-				<version>${seam.resteasy.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.jboss.seam</groupId>
-				<artifactId>seam-security</artifactId>
-				<version>${seam.security.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.picketlink.idm</groupId>
+            <artifactId>picketlink-idm-core</artifactId>
+            <version>${picketlink.idm.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>org.hibernate</groupId>
-				<artifactId>hibernate-core</artifactId>
-				<version>${hibernate.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>org.picketlink.idm</groupId>
+            <artifactId>picketlink-idm-api</artifactId>
+            <version>${picketlink.idm.version}</version>
+         </dependency>
 
-			<dependency>
-				<groupId>javax.transaction</groupId>
-				<artifactId>jta</artifactId>
-				<version>${jta.version}</version>
-			</dependency>
+         <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>${joda.time.version}</version>
+         </dependency>
 
-		</dependencies>
-	</dependencyManagement>
+         <dependency>
+            <groupId>com.ocpsoft</groupId>
+            <artifactId>ocpsoft-pretty-time</artifactId>
+            <version>${pretty.time.version}</version>
+         </dependency>
 
-	<scm>
-		<connection>scm:svn:http://anonsvn.jboss.org/repos/seam/dist/trunk</connection>
-		<developerConnection>scm:svn:https://svn.jboss.org/repos/seam/dist/trunk</developerConnection>
-		<url>http://fisheye.jboss.org/browse/Seam</url>
-	</scm>
+      </dependencies>
+   </dependencyManagement>
+
+   <scm>
+      <connection>scm:svn:http://anonsvn.jboss.org/repos/seam/dist/trunk
+      </connection>
+      <developerConnection>scm:svn:https://svn.jboss.org/repos/seam/dist/trunk
+      </developerConnection>
+      <url>http://fisheye.jboss.org/browse/Seam</url>
+   </scm>
 
 </project>

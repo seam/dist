@@ -6,7 +6,7 @@
    <formats>
       <format>zip</format>
    </formats>
-   
+
    <baseDirectory>${project.build.finalName}-${project.version}</baseDirectory>
 
    <!-- Add distribution files -->
@@ -24,10 +24,32 @@
    <dependencySets>
       <!-- Add necessary binaries -->
       <dependencySet>
-         <outputDirectory>artifacts</outputDirectory>
+         <outputDirectory>artifacts/modules</outputDirectory>
          <useProjectArtifact>false</useProjectArtifact>
          <includes>
-            <include>org.jboss.seam.remoting:seam-remoting-core</include>
+            <include>org.jboss.seam.*</include>
+         </includes>
+         <excludes>
+            <exclude>org.jboss.seam.*:*:*:javadoc</exclude>
+            <exclude>org.jboss.seam.*:*:*:sources</exclude>
+         </excludes>
+         <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
+      </dependencySet>
+      <!-- Add necessary javadoc jars -->
+      <dependencySet>
+         <outputDirectory>artifacts/modules/javadoc</outputDirectory>
+         <useProjectArtifact>false</useProjectArtifact>
+         <includes>
+            <include>org.jboss.seam.*:*:*:javadoc</include>
+         </includes>
+         <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
+      </dependencySet>
+      <!-- Add necessary javadoc jars -->
+      <dependencySet>
+         <outputDirectory>artifacts/modules/sources</outputDirectory>
+         <useProjectArtifact>false</useProjectArtifact>
+         <includes>
+            <include>org.jboss.seam.*:*:*:sources</include>
          </includes>
          <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
       </dependencySet>
@@ -37,7 +59,7 @@
          <useProjectArtifact>false</useProjectArtifact>
          <useTransitiveDependencies>true</useTransitiveDependencies>
          <excludes>
-            <exclude>org.jboss.seam.remoting:*</exclude>
+            <exclude>org.jboss.seam.*</exclude>
          </excludes>
          <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
       </dependencySet>
@@ -47,23 +69,12 @@
          <unpack>true</unpack>
          <useProjectArtifact>false</useProjectArtifact>
          <includes>
+            <include>org.jboss.seam.faces:seam-faces-examples-short-ly</include>
+            <include>org.jboss.seam.xml:seam-xml-config-reference-guide</include>
             <include>org.jboss.seam.remoting:seam-remoting-model-example</include>
             <include>org.jboss.seam.remoting:seam-remoting-helloworld-example</include>
          </includes>
       </dependencySet>
-      <!-- Pull in docbook artifacts -->
-      <dependencySet>
-         <outputDirectory>doc/reference</outputDirectory>
-         <unpack>true</unpack>
-         <useProjectArtifact>false</useProjectArtifact>
-         <includes>
-            <include>org.jboss.seam.remoting:seam-remoting-reference-guide</include>
-         </includes>
-         <unpackOptions>
-            <excludes>
-               <exclude>META-INF/</exclude>
-            </excludes>
-         </unpackOptions>
-      </dependencySet>
    </dependencySets>
+
 </assembly>

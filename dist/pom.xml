@@ -1,0 +1,269 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>org.jboss.seam</groupId>
+   <artifactId>seam-distribution</artifactId>
+   <packaging>pom</packaging>
+   <version>3.0.0-SNAPSHOT</version>
+   <name>Seam Distribution</name>
+
+   <parent>
+      <groupId>org.jboss.seam</groupId>
+      <artifactId>seam</artifactId>
+      <version>3.0.0-SNAPSHOT</version>
+   </parent>
+
+   <description>
+      The Seam distribution
+   </description>
+
+   <url>http://www.seamframework.org</url>
+
+   <dependencies>
+      <!-- Seam Modules -->
+
+      <!-- Seam XML Config -->
+      <dependency>
+         <groupId>org.jboss.seam.xml</groupId>
+         <artifactId>seam-xml-config</artifactId>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.xml</groupId>
+         <artifactId>seam-xml-config</artifactId>
+         <classifier>javadoc</classifier>
+         <version>${seam.xml.config.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.xml</groupId>
+         <artifactId>seam-xml-config</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.xml.config.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.xml</groupId>
+         <artifactId>seam-xml-examples-princess-rescue</artifactId>
+         <!--         <version>${seam.xml.config.version}</version>-->
+         <!-- Need example releases -->
+         <version>3.0.0-SNAPSHOT</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
+
+      <!-- Seam Remoting -->
+      <dependency>
+         <groupId>org.jboss.seam.remoting</groupId>
+         <artifactId>seam-remoting-core</artifactId>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.remoting</groupId>
+         <artifactId>seam-remoting-core</artifactId>
+         <classifier>javadoc</classifier>
+         <version>${seam.remoting.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.remoting</groupId>
+         <artifactId>seam-remoting-core</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.remoting.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.remoting</groupId>
+         <artifactId>seam-remoting-helloworld-example</artifactId>
+         <!--         <version>${seam.remoting.version}</version>-->
+         <!-- Need example releases -->
+         <version>3.0.0-SNAPSHOT</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.remoting</groupId>
+         <artifactId>seam-remoting-model-example</artifactId>
+         <!--         <version>${seam.remoting.version}</version>-->
+         <!-- Need example releases -->
+         <version>3.0.0-SNAPSHOT</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
+
+      <!-- Seam Faces -->
+      <dependency>
+         <groupId>org.jboss.seam.faces</groupId>
+         <artifactId>seam-faces</artifactId>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.faces</groupId>
+         <artifactId>seam-faces</artifactId>
+         <classifier>javadoc</classifier>
+         <version>${seam.faces.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.faces</groupId>
+         <artifactId>seam-faces</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.faces.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.faces</groupId>
+         <artifactId>seam-faces-api</artifactId>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.faces</groupId>
+         <artifactId>seam-faces-api</artifactId>
+         <classifier>javadoc</classifier>
+         <version>${seam.faces.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.faces</groupId>
+         <artifactId>seam-faces-api</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.faces.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.faces</groupId>
+         <artifactId>seam-faces-examples-short-ly</artifactId>
+         <!--         <version>${seam.faces.version}</version>-->
+         <!-- Need example releases -->
+         <version>3.0.0-SNAPSHOT</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
+
+      <!-- Seam JMS -->
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms</artifactId>
+         <version>${seam.jms.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms</artifactId>
+         <classifier>javadoc</classifier>
+         <version>${seam.jms.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.jms.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms-api</artifactId>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms</artifactId>
+         <classifier>javadoc</classifier>
+         <version>${seam.jms.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.jms.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <!-- Seam International -->
+      <dependency>
+         <groupId>org.jboss.seam.international</groupId>
+         <artifactId>seam-international</artifactId>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.international</groupId>
+         <artifactId>seam-international</artifactId>
+         <classifier>javadoc</classifier>
+         <version>${seam.international.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.international</groupId>
+         <artifactId>seam-international</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.international.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.international</groupId>
+         <artifactId>seam-international-api</artifactId>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.international</groupId>
+         <artifactId>seam-international-api</artifactId>
+         <classifier>javadoc</classifier>
+         <version>${seam.international.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.international</groupId>
+         <artifactId>seam-international-api</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.international.version}</version>
+         <optional>true</optional>
+      </dependency>
+
+
+   </dependencies>
+
+   <build>
+      <finalName>seam</finalName>
+      <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+         </plugin>
+      </plugins>
+   </build>
+
+   <scm>
+      <connection>scm:svn:http://anonsvn.jboss.org/repos/seam/dist/trunk
+      </connection>
+      <developerConnection>scm:svn:https://svn.jboss.org/repos/seam/dist/trunk
+      </developerConnection>
+      <url>http://fisheye.jboss.org/browse/Seam</url>
+   </scm>
+
+</project>

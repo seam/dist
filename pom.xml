@@ -212,6 +212,18 @@
             <artifactId>seam-jms-api</artifactId>
             <version>${seam.jms.version}</version>
          </dependency>
+         
+         <dependency>
+            <groupId>org.jboss.seam.international</groupId>
+            <artifactId>seam-international</artifactId>
+            <version>${seam.international.version}</version>
+         </dependency>
+         
+         <dependency>
+            <groupId>org.jboss.seam.international</groupId>
+            <artifactId>seam-international-api</artifactId>
+            <version>${seam.international.version}</version>
+         </dependency>
 
       </dependencies>
    </dependencyManagement>

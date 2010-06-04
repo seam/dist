@@ -83,6 +83,20 @@
             <include>org.jboss.seam.remoting:seam-remoting-helloworld-example</include>
          </includes>
       </dependencySet>
+      <!-- Pull in docbook artifacts -->
+      <dependencySet>
+         <outputDirectory>doc/reference</outputDirectory>
+         <unpack>true</unpack>
+         <useProjectArtifact>false</useProjectArtifact>
+         <includes>
+            <include>org.jboss.seam:seam-reference-guide</include>
+         </includes>
+         <unpackOptions>
+            <excludes>
+               <exclude>META-INF/</exclude>
+            </excludes>
+         </unpackOptions>
+      </dependencySet>
    </dependencySets>
 
 </assembly>

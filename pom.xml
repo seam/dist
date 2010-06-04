@@ -302,6 +302,25 @@
             <plugins>
                <plugin>
                   <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-javadoc-plugin</artifactId>
+                  <executions>
+                     <execution>
+                        <id>uber-javadoc-jar</id>
+                        <phase>package</phase>
+                        <goals>
+                           <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                           <includeDependencySources>true</includeDependencySources>
+                           <dependencySourceIncludes>
+                              <dependencySourceInclude>org.jboss.seam.*</dependencySourceInclude>
+                           </dependencySourceIncludes>
+                        </configuration>
+                     </execution>
+                  </executions>
+               </plugin>
+               <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
                   <artifactId>maven-shade-plugin</artifactId>
                   <dependencies>
                      <dependency>
@@ -318,7 +337,7 @@
                            <goal>shade</goal>
                         </goals>
                         <configuration>
-                           <createSourcesJar />
+                           <createSourcesJar>true</createSourcesJar>
                            <artifactSet>
                               <includes>
                                  <include>org.jboss.seam.*:*</include>

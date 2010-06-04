@@ -86,7 +86,8 @@
                         <configuration>
                            <includeDependencySources>true</includeDependencySources>
                            <dependencySourceIncludes>
-                              <dependencySourceInclude>org.jboss.seam:*</dependencySourceInclude>
+                              <!-- COnfiguration correctly selects javadocs but triggers a classpath bug in Javadoc :-/ -->
+<!--                              <dependencySourceInclude>org.jboss.seam:*</dependencySourceInclude>-->
                               <dependencySourceInclude>org.jboss.seam.*:*</dependencySourceInclude>
                            </dependencySourceIncludes>
                         </configuration>

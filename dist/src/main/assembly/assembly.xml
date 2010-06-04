@@ -44,7 +44,7 @@
          </includes>
          <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
       </dependencySet>
-      <!-- Add necessary javadoc jars -->
+      <!-- Add necessary sources jars -->
       <dependencySet>
          <outputDirectory>artifacts/modules/sources</outputDirectory>
          <useProjectArtifact>false</useProjectArtifact>
@@ -63,6 +63,14 @@
          </excludes>
          <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
       </dependencySet>
+      <dependencySet>
+         <outputDirectory>artifacts</outputDirectory>
+         <useProjectArtifact>false</useProjectArtifact>
+         <includes>
+            <include>org.jboss.seam:seam</include>
+            <include>org.jboss.seam:seam:jar:sources</include>
+         </includes>
+      </dependencySet>
       <!-- Pull in the example projects -->
       <dependencySet>
          <outputDirectory>examples</outputDirectory>
@@ -70,7 +78,7 @@
          <useProjectArtifact>false</useProjectArtifact>
          <includes>
             <include>org.jboss.seam.faces:seam-faces-examples-short-ly</include>
-            <include>org.jboss.seam.xml:seam-xml-config-reference-guide</include>
+            <include>org.jboss.seam.xml:seam-xml-examples-princess-rescue</include>
             <include>org.jboss.seam.remoting:seam-remoting-model-example</include>
             <include>org.jboss.seam.remoting:seam-remoting-helloworld-example</include>
          </includes>

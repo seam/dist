@@ -245,6 +245,22 @@
          <optional>true</optional>
       </dependency>
 
+      <!-- Monolithic Seam -->
+      <dependency>
+         <groupId>org.jboss.seam</groupId>
+         <artifactId>seam</artifactId>
+         <version>${project.version}</version>
+         <optional>true</optional>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam</groupId>
+         <artifactId>seam</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+         <optional>true</optional>
+      </dependency>
+
    </dependencies>
 
    <build>
@@ -253,25 +269,6 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-assembly-plugin</artifactId>
-         </plugin>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-javadoc-plugin</artifactId>
-            <executions>
-               <execution>
-                  <id>javadoc-jar</id>
-                  <phase>package</phase>
-                  <goals>
-                     <goal>jar</goal>
-                  </goals>
-                  <configuration>
-                     <includeDependencySources>true</includeDependencySources>
-                     <dependencySourceIncludes>
-                        <dependencySourceIncludes>org.jboss.seam:*</dependencySourceIncludes>
-                     </dependencySourceIncludes>
-                  </configuration>
-               </execution>
-            </executions>
          </plugin>
       </plugins>
    </build>

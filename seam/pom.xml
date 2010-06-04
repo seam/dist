@@ -26,49 +26,41 @@
       <dependency>
          <groupId>org.jboss.seam.xml</groupId>
          <artifactId>seam-xml-config</artifactId>
-         <optional>true</optional>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
          <artifactId>seam-remoting-core</artifactId>
-         <optional>true</optional>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces</artifactId>
-         <optional>true</optional>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces-api</artifactId>
-         <optional>true</optional>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.jms</groupId>
          <artifactId>seam-jms</artifactId>
-         <optional>true</optional>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.jms</groupId>
          <artifactId>seam-jms-api</artifactId>
-         <optional>true</optional>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.international</groupId>
          <artifactId>seam-international</artifactId>
-         <optional>true</optional>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.international</groupId>
          <artifactId>seam-international-api</artifactId>
-         <optional>true</optional>
       </dependency>
 
    </dependencies>

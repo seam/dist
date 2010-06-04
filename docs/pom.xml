@@ -1,0 +1,117 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+   <modelVersion>4.0.0</modelVersion>
+
+   <groupId>org.jboss.seam</groupId>
+   <artifactId>seam-reference-guide</artifactId>
+   <packaging>jdocbook</packaging>
+   <version>3.0.0-SNAPSHOT</version>
+   <name>Seam Reference Guide</name>
+
+   <parent>
+      <groupId>org.jboss.seam</groupId>
+      <artifactId>seam-bom</artifactId>
+      <version>3.0.0-SNAPSHOT</version>
+      <relativePath>../pom.xml</relativePath>
+   </parent>
+
+   <description>
+      The Seam reference guide
+   </description>
+
+   <url>http://www.seamframework.org</url>
+
+   <dependencies>
+      <dependency>
+         <groupId>org.jboss.seam.faces</groupId>
+         <artifactId>seam-faces-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>zip</type>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.remoting</groupId>
+         <artifactId>seam-remoting-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>zip</type>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.international</groupId>
+         <artifactId>seam-international-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>zip</type>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.xml</groupId>
+         <artifactId>seam-xml-config-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>zip</type>
+      </dependency>
+      
+   </dependencies>
+
+   <build>
+      <plugins>
+         <plugin>
+            <groupId>org.jboss.maven.plugins</groupId>
+            <artifactId>maven-jdocbook-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+               <execution>
+                  <id>module-sources</id>
+                  <goals>
+                     <!--
+                        use copy-dependencies instead if you don't want
+                        to explode the sources
+                     -->
+                     <goal>unpack-dependencies</goal>
+                  </goals>
+                  <configuration>
+                     <outputDirectory>${basedir}/src/main/docbook/en-US/modules</outputDirectory>
+                     <excludeTransitive>true</excludeTransitive>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+         <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <executions>
+               <execution>
+                  <id>attach-zip</id>
+                  <phase>package</phase>
+                  <goals>
+                     <goal>attach-artifact</goal>
+                  </goals>
+                  <configuration>
+                     <artifacts>
+                        <artifact>
+                           <file>${project.build.outputDirectory}/${project.artifactId}-${project.version}.war</file>
+                           <type>war</type>
+                        </artifact>
+                     </artifacts>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>
+      </plugins>
+   </build>
+
+   <scm>
+      <connection>scm:svn:http://anonsvn.jboss.org/repos/seam/dist/trunk
+      </connection>
+      <developerConnection>scm:svn:https://svn.jboss.org/repos/seam/dist/trunk
+      </developerConnection>
+      <url>http://fisheye.jboss.org/browse/Seam</url>
+   </scm>
+
+</project>

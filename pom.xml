@@ -17,6 +17,20 @@
    <description>
       The Seam "Bill of Materials", specifying the Seam stack for runtime use
    </description>
+   
+   <repositories>
+      <repository>
+        <id>oss.sonatype.org/jboss-snapshots</id>
+        <url>http://oss.sonatype.org/content/repositories/jboss-snapshots/</url>
+        <releases>
+           <enabled>false</enabled>
+        </releases>
+        <snapshots>
+          <enabled>true</enabled>
+          <updatePolicy>never</updatePolicy>
+        </snapshots>        
+     </repository>
+   </repositories>
 
    <url>http://www.seamframework.org</url>
 
@@ -346,7 +360,15 @@
                            <transformers>
                               <transformer
                                  implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer" />
-                              <transformer implementation="org.jboss.seam.build.tools.BeansXmlAppendingTransformer" />
+                              <transformer implementation="org.jboss.seam.build.tools.XmlAppendingTransformer">
+                                 <resource>META-INF/beans.xml</resource>
+                              </transformer>
+                              <transformer implementation="org.jboss.seam.build.tools.XmlAppendingTransformer">
+                                 <resource>META-INF/faces-config.xml</resource>
+                              </transformer>
+                              <transformer implementation="org.jboss.seam.build.tools.XmlAppendingTransformer">
+                                 <resource>META-INF/web-fragment.xml</resource>
+                              </transformer>
                            </transformers>
                         </configuration>
                      </execution>

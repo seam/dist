@@ -4,7 +4,7 @@
 
    <groupId>org.jboss.seam</groupId>
    <artifactId>seam-distribution</artifactId>
-   <packaging>pom</packaging>
+   <packaging>jar</packaging>
    <version>3.0.0-SNAPSHOT</version>
    <name>Seam Distribution</name>
 
@@ -158,7 +158,6 @@
       <dependency>
          <groupId>org.jboss.seam.jms</groupId>
          <artifactId>seam-jms</artifactId>
-         <version>${seam.jms.version}</version>
          <optional>true</optional>
       </dependency>
 
@@ -186,7 +185,7 @@
 
       <dependency>
          <groupId>org.jboss.seam.jms</groupId>
-         <artifactId>seam-jms</artifactId>
+         <artifactId>seam-jms-api</artifactId>
          <classifier>javadoc</classifier>
          <version>${seam.jms.version}</version>
          <optional>true</optional>
@@ -194,7 +193,7 @@
 
       <dependency>
          <groupId>org.jboss.seam.jms</groupId>
-         <artifactId>seam-jms</artifactId>
+         <artifactId>seam-jms-api</artifactId>
          <classifier>sources</classifier>
          <version>${seam.jms.version}</version>
          <optional>true</optional>
@@ -245,7 +244,6 @@
          <optional>true</optional>
       </dependency>
 
-
    </dependencies>
 
    <build>
@@ -254,6 +252,25 @@
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-assembly-plugin</artifactId>
+         </plugin>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <executions>
+               <execution>
+                  <id>javadoc-jar</id>
+                  <phase>package</phase>
+                  <goals>
+                     <goal>jar</goal>
+                  </goals>
+                  <configuration>
+                     <includeDependencySources>true</includeDependencySources>
+                     <dependencySourceIncludes>
+                        <dependencySourceIncludes>org.jboss.seam:*</dependencySourceIncludes>
+                     </dependencySourceIncludes>
+                  </configuration>
+               </execution>
+            </executions>
          </plugin>
       </plugins>
    </build>

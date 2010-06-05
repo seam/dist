@@ -24,11 +24,11 @@ doc/
   
 examples/
 
-  Seam Remoting Examples
+  Seam Examples
   
 lib/
 
-  Seam Remoting jar files
+  Seam's dependencies
   
 Licensing
 =========

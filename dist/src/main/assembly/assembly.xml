@@ -60,6 +60,7 @@
          <useTransitiveDependencies>true</useTransitiveDependencies>
          <excludes>
             <exclude>org.jboss.seam.*</exclude>
+            <exclude>org.jboss.seam:*</exclude>
          </excludes>
          <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
       </dependencySet>

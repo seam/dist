@@ -141,11 +141,11 @@
    </profiles>
 
    <scm>
-      <connection>scm:svn:http://anonsvn.jboss.org/repos/seam/dist/trunk
+      <connection>scm:git:git://github.com/seam/dist.git
       </connection>
-      <developerConnection>scm:svn:https://svn.jboss.org/repos/seam/dist/trunk
+      <developerConnection>scm:git:git@github.com:seam/dist.git
       </developerConnection>
-      <url>http://fisheye.jboss.org/browse/Seam</url>
+      <url>http://github.com/seam</url>
    </scm>
 
 </project>

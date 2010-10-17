@@ -288,11 +288,9 @@
    </profiles>
 
    <scm>
-      <connection>scm:git:git://github.com/seam/dist.git
-      </connection>
-      <developerConnection>scm:git:git@github.com:seam/dist.git
-      </developerConnection>
-      <url>http://github.com/seam</url>
+      <connection>scm:git:git://github.com/seam/dist.git</connection>
+      <developerConnection>scm:git:git@github.com:seam/dist.git</developerConnection>
+      <url>http://github.com/seam/dist</url>
    </scm>
 
 </project>

@@ -54,7 +54,7 @@
       <seam.jms.version>3.0.0.Alpha1</seam.jms.version>
       <seam.persistence.version>3.0.0.Alpha1</seam.persistence.version>
       <seam.remoting.version>3.0.0-Beta1</seam.remoting.version>
-      <seam.xml.config.version>3.0.0.Alpha2</seam.xml.config.version>
+      <seam.xml.config.version>3.0.0.Alpha3</seam.xml.config.version>
    </properties>
 
    <dependencyManagement>

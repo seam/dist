@@ -28,10 +28,10 @@
       <!-- JBoss Java EE BOM -->
       <jboss.javaee.version>1.0.0.Beta4</jboss.javaee.version>
       <!-- Weld Extensions -->
-      <weld.extensions.version>1.0.0.Alpha2</weld.extensions.version>
+      <weld.extensions.version>1.0.0.Beta1</weld.extensions.version>
       <!-- Weld Core -->
       <!-- TODO Remove this -->
-      <weld.version>1.0.1-Final</weld.version>
+      <weld.version>1.1.0.Beta1</weld.version>
       <!-- JSR-250 API is missing from JBoss Java EE BOM -->
       <jsr250.api.version>1.0</jsr250.api.version>
       <!-- EL-API is missing from the JBoss Java EE BOM -->
@@ -49,11 +49,12 @@
       <pretty.time.version>1.0.6</pretty.time.version>
 
       <!-- Seam modules -->
-      <seam.xml.config.version>3.0.0.Alpha2</seam.xml.config.version>
-      <seam.jms.version>3.0.0.Alpha1</seam.jms.version>
-      <seam.remoting.version>3.0.0-Beta1</seam.remoting.version>
-      <seam.international.version>3.0.0.Alpha1</seam.international.version>
       <seam.faces.version>3.0.0.Alpha3</seam.faces.version>
+      <seam.international.version>3.0.0.Alpha1</seam.international.version>
+      <seam.jms.version>3.0.0.Alpha1</seam.jms.version>
+      <seam.persistence.version>3.0.0.Alpha1</seam.persistence.version>
+      <seam.remoting.version>3.0.0-Beta1</seam.remoting.version>
+      <seam.xml.config.version>3.0.0.Alpha2</seam.xml.config.version>
    </properties>
 
    <dependencyManagement>
@@ -228,6 +229,18 @@
             <groupId>org.jboss.seam.international</groupId>
             <artifactId>seam-international-api</artifactId>
             <version>${seam.international.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.persistence</groupId>
+            <artifactId>seam-persistence-api</artifactId>
+            <version>${seam.persistence.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.persistence</groupId>
+            <artifactId>seam-persistence-impl</artifactId>
+            <version>${seam.persistence.version}</version>
          </dependency>
 
       </dependencies>

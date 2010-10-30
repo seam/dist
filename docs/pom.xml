@@ -22,13 +22,13 @@
    <url>http://www.seamframework.org</url>
 
    <dependencies>
-      <dependency>
+<!--      <dependency>
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces-reference-guide</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <classifier>sources</classifier>
          <type>zip</type>
-      </dependency>
+      </dependency> -->
       
       <!--dependency>
          <groupId>org.jboss.seam.remoting</groupId>
@@ -38,21 +38,21 @@
          <type>zip</type>
       </dependency-->
       
-      <dependency>
+      <!--<dependency>
          <groupId>org.jboss.seam.international</groupId>
          <artifactId>seam-international-reference-guide</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <classifier>sources</classifier>
          <type>zip</type>
-      </dependency>
+      </dependency>-->
       
-      <dependency>
+      <!--<dependency>
          <groupId>org.jboss.seam.xml</groupId>
          <artifactId>seam-xml-config-reference-guide</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <classifier>sources</classifier>
          <type>zip</type>
-      </dependency>
+      </dependency>-->
       
    </dependencies>
 

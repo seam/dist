@@ -242,8 +242,8 @@
             </property>
          </activation>
          <modules>
-            <module>dist</module>
-            <module>docs</module>
+            <!--<module>dist</module>-->
+            <!--<module>docs</module>-->
          </modules>
       </profile>
       <profile>

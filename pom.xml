@@ -21,7 +21,7 @@
    <url>http://www.seamframework.org</url>
 
    <modules>
-      <module>seam</module>
+      <!--<module>seam</module>-->
    </modules>
 
    <properties>

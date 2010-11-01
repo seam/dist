@@ -4,7 +4,7 @@
    <groupId>org.jboss.seam</groupId>
    <artifactId>seam-bom</artifactId>
    <packaging>pom</packaging>
-   <version>3.0.0.b03</version>
+   <version>3.0.0-SNAPSHOT</version>
    <name>Seam BOM</name>
 
    <parent>

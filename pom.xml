@@ -26,8 +26,6 @@
    <properties>
       <!-- JBoss Java EE BOM -->
       <jboss.javaee.version>1.0.0.Beta4</jboss.javaee.version>
-      <!-- Weld Extensions -->
-      <weld.extensions.version>1.0.0.Beta1</weld.extensions.version>
       <!-- Weld Core -->
       <!-- TODO Remove this -->
       <weld.version>1.1.0.Beta1</weld.version>
@@ -54,6 +52,7 @@
       <seam.persistence.version>3.0.0.Alpha1</seam.persistence.version>
       <seam.remoting.version>3.0.0-Beta1</seam.remoting.version>
       <seam.xml.config.version>3.0.0.Alpha3</seam.xml.config.version>
+      <seam.solder.version>3.0.0.Beta1</seam.solder.version>
    </properties>
 
    <dependencyManagement>
@@ -240,6 +239,24 @@
             <groupId>org.jboss.seam.persistence</groupId>
             <artifactId>seam-persistence-impl</artifactId>
             <version>${seam.persistence.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.solder</groupId>
+            <artifactId>seam-solder</artifactId>
+            <version>${seam.solder.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.solder</groupId>
+            <artifactId>seam-solder-api</artifactId>
+            <version>${seam.solder.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.solder</groupId>
+            <artifactId>seam-solder-impl</artifactId>
+            <version>${seam.solder.version}</version>
          </dependency>
 
       </dependencies>

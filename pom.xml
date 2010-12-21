@@ -24,21 +24,15 @@
    </modules>
 
    <properties>
-      <!-- JBoss Java EE BOM -->
-      <jboss.javaee.version>1.0.0.Beta4</jboss.javaee.version>
-      <!-- Weld Core -->
-      <!-- TODO Remove this -->
-      <weld.version>1.1.0.Beta1</weld.version>
-      <!-- JSR-250 API is missing from JBoss Java EE BOM -->
-      <jsr250.api.version>1.0</jsr250.api.version>
-      <!-- EL-API is missing from the JBoss Java EE BOM -->
-      <el.api.version>2.2</el.api.version>
-      <!-- JTA 1.1 is missing from the JBoss Java EE BOM -->
-      <jta.api.version>1.1</jta.api.version>
-      <!-- JMS API is missing from the JBoss Java EE BOM -->
-      <jms.api.version>1.1</jms.api.version>
+      <!-- Java EE 6 API (JBoss revision) -->
+      <jboss.javaee.version>1.0.0.CR1</jboss.javaee.version>
 
-      <hibernate.version>3.5.1-Final</hibernate.version>
+      <!-- External libraries -->
+      <jboss.logging.version>3.0.0.Beta4</jboss.logging.version>
+      <javassist.version>3.13.0-GA</javassist.version>
+      <dom4j.version>1.6.1</dom4j.version>
+      <hibernate.core.version>3.6.0.Final</hibernate.core.version>
+      <hibernate.search.version>3.3.0.Final</hibernate.search.version>
       <drools.version>5.1.1</drools.version>
       <jbpm.version>4.2</jbpm.version>
       <picketlink.idm.version>1.5.0.Alpha02</picketlink.idm.version>
@@ -46,18 +40,23 @@
       <pretty.time.version>1.0.6</pretty.time.version>
 
       <!-- Seam modules -->
-      <seam.faces.version>3.0.0.Alpha3</seam.faces.version>
+      <seam.catch.version>3.0.0.Alpha2</seam.catch.version>
+      <seam.config.version>3.0.0.Beta1</seam.config.version>
+      <seam.faces.version>3.0.0.Beta1</seam.faces.version>
       <seam.international.version>3.0.0.Alpha1</seam.international.version>
       <seam.jms.version>3.0.0.Alpha1</seam.jms.version>
-      <seam.persistence.version>3.0.0.Alpha1</seam.persistence.version>
-      <seam.remoting.version>3.0.0-Beta1</seam.remoting.version>
-      <seam.xml.config.version>3.0.0.Alpha3</seam.xml.config.version>
+      <seam.persistence.version>3.0.0.Beta1</seam.persistence.version>
+      <seam.remoting.version>3.0.0.Beta1</seam.remoting.version>
+      <seam.rest.version>3.0.0.Alpha1</seam.rest.version>
+      <seam.security.version>3.0.0.Alpha1</seam.security.version>
+      <seam.servlet.version>3.0.0.Alpha2</seam.servlet.version>
       <seam.solder.version>3.0.0.Beta1</seam.solder.version>
    </properties>
 
    <dependencyManagement>
       <dependencies>
 
+         <!-- import Java EE 6 API specs -->
          <dependency>
             <groupId>org.jboss.spec</groupId>
             <artifactId>jboss-javaee-6.0</artifactId>
@@ -66,40 +65,24 @@
             <type>pom</type>
          </dependency>
 
+         <!-- make Java EE 6 API available as stack -->
          <dependency>
-            <groupId>javax.annotation</groupId>
-            <artifactId>jsr250-api</artifactId>
-            <version>${jsr250.api.version}</version>
+            <groupId>org.jboss.spec</groupId>
+            <artifactId>jboss-javaee-6.0</artifactId>
+            <version>${jboss.javaee.version}</version>
+            <type>pom</type>
          </dependency>
 
          <dependency>
-            <groupId>javax.el</groupId>
-            <artifactId>el-api</artifactId>
-            <version>${el.api.version}</version>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>${jboss.logging.version}</version>
          </dependency>
 
          <dependency>
-            <groupId>javax.transaction</groupId>
-            <artifactId>jta</artifactId>
-            <version>${jta.api.version}</version>
-         </dependency>
-
-         <dependency>
-            <groupId>javax.jms</groupId>
-            <artifactId>jms</artifactId>
-            <version>${jms.api.version}</version>
-         </dependency>
-
-         <dependency>
-            <groupId>org.jboss.weld</groupId>
-            <artifactId>weld-extensions</artifactId>
-            <version>${weld.extensions.version}</version>
-         </dependency>
-
-         <dependency>
-            <groupId>org.jboss.weld</groupId>
-            <artifactId>weld-core</artifactId>
-            <version>${weld.version}</version>
+            <groupId>org.javassist</groupId>
+            <artifactId>javassist</artifactId>
+            <version>${javassist.version}</version>
          </dependency>
 
          <dependency>
@@ -147,13 +130,19 @@
          <dependency>
             <groupId>dom4j</groupId>
             <artifactId>dom4j</artifactId>
-            <version>1.6.1</version>
+            <version>${dom4j.version}</version>
          </dependency>
 
          <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>${hibernate.version}</version>
+            <version>${hibernate.core.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-search</artifactId>
+            <version>${hibernate.search.version}</version>
          </dependency>
 
          <dependency>
@@ -182,15 +171,29 @@
 
          <!-- Seam Modules -->
          <dependency>
-            <groupId>org.jboss.seam.xml</groupId>
-            <artifactId>seam-xml-config</artifactId>
-            <version>${seam.xml.config.version}</version>
+            <groupId>org.jboss.seam.catch</groupId>
+            <artifactId>seam-catch</artifactId>
+            <version>${seam.catch.version}</version>
          </dependency>
 
          <dependency>
-            <groupId>org.jboss.seam.remoting</groupId>
-            <artifactId>seam-remoting-core</artifactId>
-            <version>${seam.remoting.version}</version>
+            <groupId>org.jboss.seam.catch</groupId>
+            <artifactId>seam-catch-api</artifactId>
+            <version>${seam.catch.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.catch</groupId>
+            <artifactId>seam-catch-impl</artifactId>
+            <version>${seam.catch.version}</version>
+            <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.config</groupId>
+            <artifactId>seam-config-xml</artifactId>
+            <version>${seam.config.version}</version>
+            <scope>runtime</scope>
          </dependency>
 
          <dependency>
@@ -206,15 +209,10 @@
          </dependency>
 
          <dependency>
-            <groupId>org.jboss.seam.jms</groupId>
-            <artifactId>seam-jms</artifactId>
-            <version>${seam.jms.version}</version>
-         </dependency>
-
-         <dependency>
-            <groupId>org.jboss.seam.jms</groupId>
-            <artifactId>seam-jms-api</artifactId>
-            <version>${seam.jms.version}</version>
+            <groupId>org.jboss.seam.faces</groupId>
+            <artifactId>seam-faces-impl</artifactId>
+            <version>${seam.faces.version}</version>
+            <scope>runtime</scope>
          </dependency>
 
          <dependency>
@@ -230,6 +228,38 @@
          </dependency>
 
          <dependency>
+            <groupId>org.jboss.seam.international</groupId>
+            <artifactId>seam-international-impl</artifactId>
+            <version>${seam.international.version}</version>
+            <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.jms</groupId>
+            <artifactId>seam-jms</artifactId>
+            <version>${seam.jms.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.jms</groupId>
+            <artifactId>seam-jms-api</artifactId>
+            <version>${seam.jms.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.jms</groupId>
+            <artifactId>seam-jms-impl</artifactId>
+            <version>${seam.jms.version}</version>
+            <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.persistence</groupId>
+            <artifactId>seam-persistence</artifactId>
+            <version>${seam.persistence.version}</version>
+         </dependency>
+
+         <dependency>
             <groupId>org.jboss.seam.persistence</groupId>
             <artifactId>seam-persistence-api</artifactId>
             <version>${seam.persistence.version}</version>
@@ -239,6 +269,70 @@
             <groupId>org.jboss.seam.persistence</groupId>
             <artifactId>seam-persistence-impl</artifactId>
             <version>${seam.persistence.version}</version>
+            <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.rest</groupId>
+            <artifactId>seam-rest</artifactId>
+            <version>${seam.rest.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.rest</groupId>
+            <artifactId>seam-rest-api</artifactId>
+            <version>${seam.rest.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.rest</groupId>
+            <artifactId>seam-rest-impl</artifactId>
+            <version>${seam.rest.version}</version>
+            <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.remoting</groupId>
+            <artifactId>seam-remoting-core</artifactId>
+            <version>${seam.remoting.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.security</groupId>
+            <artifactId>seam-security</artifactId>
+            <version>${seam.security.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.security</groupId>
+            <artifactId>seam-security-api</artifactId>
+            <version>${seam.security.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.security</groupId>
+            <artifactId>seam-security-impl</artifactId>
+            <version>${seam.security.version}</version>
+            <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.servlet</groupId>
+            <artifactId>seam-servlet</artifactId>
+            <version>${seam.servlet.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.servlet</groupId>
+            <artifactId>seam-servlet-api</artifactId>
+            <version>${seam.servlet.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.servlet</groupId>
+            <artifactId>seam-servlet-impl</artifactId>
+            <version>${seam.servlet.version}</version>
+            <scope>runtime</scope>
          </dependency>
 
          <dependency>
@@ -257,6 +351,7 @@
             <groupId>org.jboss.seam.solder</groupId>
             <artifactId>seam-solder-impl</artifactId>
             <version>${seam.solder.version}</version>
+            <scope>runtime</scope>
          </dependency>
 
       </dependencies>

@@ -41,7 +41,7 @@
 
       <!-- Seam modules -->
       <seam.catch.version>3.0.0.Alpha2</seam.catch.version>
-      <seam.config.version>3.0.0.Beta1</seam.config.version>
+      <seam.config.version>3.0.0.Beta2</seam.config.version>
       <seam.faces.version>3.0.0.Beta1</seam.faces.version>
       <seam.international.version>3.0.0.Alpha1</seam.international.version>
       <seam.jms.version>3.0.0.Alpha1</seam.jms.version>

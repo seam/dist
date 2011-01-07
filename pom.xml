@@ -25,7 +25,7 @@
 
    <properties>
       <!-- Java EE 6 API (JBoss revision) -->
-      <jboss.javaee.version>1.0.0.CR1</jboss.javaee.version>
+      <jboss.javaee.version>1.0.0.Final</jboss.javaee.version>
 
       <!-- External libraries -->
       <jboss.logging.version>3.0.0.Beta4</jboss.logging.version>
@@ -38,19 +38,21 @@
       <picketlink.idm.version>1.5.0.Alpha02</picketlink.idm.version>
       <joda.time.version>1.6</joda.time.version>
       <pretty.time.version>1.0.6</pretty.time.version>
+      <wicket.version>1.4.14</wicket.version>
 
       <!-- Seam modules -->
-      <seam.catch.version>3.0.0.Alpha2</seam.catch.version>
-      <seam.config.version>3.0.0.Beta1</seam.config.version>
-      <seam.faces.version>3.0.0.Beta1</seam.faces.version>
-      <seam.international.version>3.0.0.Alpha1</seam.international.version>
+      <seam.catch.version>3.0.0.Alpha3</seam.catch.version>
+      <seam.config.version>3.0.0.Beta2</seam.config.version>
+      <seam.faces.version>3.0.0.Beta2</seam.faces.version>
+      <seam.international.version>3.0.0.Alpha3</seam.international.version>
       <seam.jms.version>3.0.0.Alpha1</seam.jms.version>
-      <seam.persistence.version>3.0.0.Beta1</seam.persistence.version>
+      <seam.persistence.version>3.0.0.Beta2</seam.persistence.version>
       <seam.remoting.version>3.0.0.Beta1</seam.remoting.version>
-      <seam.rest.version>3.0.0.Alpha1</seam.rest.version>
-      <seam.security.version>3.0.0.Alpha1</seam.security.version>
-      <seam.servlet.version>3.0.0.Alpha2</seam.servlet.version>
+      <seam.rest.version>3.0.0.Alpha2</seam.rest.version>
+      <seam.security.version>3.0.0.Alpha2</seam.security.version>
+      <seam.servlet.version>3.0.0.Alpha3</seam.servlet.version>
       <seam.solder.version>3.0.0.Beta1</seam.solder.version>
+      <seam.wicket.version>3.0.0.Beta1</seam.wicket.version>
    </properties>
 
    <dependencyManagement>
@@ -167,6 +169,12 @@
             <groupId>com.ocpsoft</groupId>
             <artifactId>ocpsoft-pretty-time</artifactId>
             <version>${pretty.time.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.apache.wicket</groupId>
+            <artifactId>wicket</artifactId>
+            <version>${wicket.version}</version>
          </dependency>
 
          <!-- Seam Modules -->
@@ -352,6 +360,12 @@
             <artifactId>seam-solder-impl</artifactId>
             <version>${seam.solder.version}</version>
             <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.wicket</groupId>
+            <artifactId>seam-wicket-api</artifactId>
+            <version>${seam.wicket.version}</version>
          </dependency>
 
       </dependencies>

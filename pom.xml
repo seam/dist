@@ -47,7 +47,7 @@
       <seam.international.version>3.0.0.Alpha3</seam.international.version>
       <seam.jms.version>3.0.0.Alpha1</seam.jms.version>
       <seam.persistence.version>3.0.0.Beta2</seam.persistence.version>
-      <seam.remoting.version>3.0.0.Beta1</seam.remoting.version>
+      <seam.remoting.version>3.0.0.Beta2</seam.remoting.version>
       <seam.rest.version>3.0.0.Alpha2</seam.rest.version>
       <seam.security.version>3.0.0.Alpha2</seam.security.version>
       <seam.servlet.version>3.0.0.Alpha3</seam.servlet.version>
@@ -301,7 +301,7 @@
 
          <dependency>
             <groupId>org.jboss.seam.remoting</groupId>
-            <artifactId>seam-remoting-core</artifactId>
+            <artifactId>seam-remoting</artifactId>
             <version>${seam.remoting.version}</version>
          </dependency>
 

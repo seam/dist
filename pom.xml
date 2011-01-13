@@ -29,6 +29,7 @@
 
       <!-- External libraries -->
       <jboss.logging.version>3.0.0.Beta4</jboss.logging.version>
+      <jboss.logging.tools.version>3.0.0.Beta4</jboss.logging.tools.version>
       <javassist.version>3.13.0-GA</javassist.version>
       <dom4j.version>1.6.1</dom4j.version>
       <hibernate.core.version>3.6.0.Final</hibernate.core.version>
@@ -72,6 +73,7 @@
             <groupId>org.jboss.spec</groupId>
             <artifactId>jboss-javaee-6.0</artifactId>
             <version>${jboss.javaee.version}</version>
+            <scope>provided</scope>
             <type>pom</type>
          </dependency>
 
@@ -82,6 +84,12 @@
          </dependency>
 
          <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging-tools</artifactId>
+            <version>${jboss.logging.tools.version}</version>
+         </dependency>
+
+         <dependency>
             <groupId>org.javassist</groupId>
             <artifactId>javassist</artifactId>
             <version>${javassist.version}</version>
@@ -89,7 +97,7 @@
 
          <dependency>
             <groupId>org.drools</groupId>
-            <artifactId>drools-core</artifactId>
+            <artifactId>drools-api</artifactId>
             <version>${drools.version}</version>
          </dependency>
 
@@ -101,13 +109,7 @@
 
          <dependency>
             <groupId>org.drools</groupId>
-            <artifactId>drools-api</artifactId>
-            <version>${drools.version}</version>
-         </dependency>
-
-         <dependency>
-            <groupId>org.drools</groupId>
-            <artifactId>drools-templates</artifactId>
+            <artifactId>drools-core</artifactId>
             <version>${drools.version}</version>
          </dependency>
 
@@ -119,13 +121,25 @@
 
          <dependency>
             <groupId>org.drools</groupId>
-            <artifactId>drools-workitems</artifactId>
+            <artifactId>drools-pipeline</artifactId>
+            <version>${drools.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-templates</artifactId>
             <version>${drools.version}</version>
          </dependency>
 
          <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-transformer-xstream</artifactId>
+            <version>${drools.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-workitems</artifactId>
             <version>${drools.version}</version>
          </dependency>
 

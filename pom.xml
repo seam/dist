@@ -41,6 +41,7 @@
       <picketlink.idm.version>1.5.0.Alpha02</picketlink.idm.version>
       <joda.time.version>1.6</joda.time.version>
       <prettytime.version>1.0.6</prettytime.version>
+      <velocity.version>1.6.4</velocity.version>
       <wicket.version>1.4.15</wicket.version>
 
       <!-- Seam modules -->
@@ -185,6 +186,12 @@
             <groupId>com.ocpsoft</groupId>
             <artifactId>ocpsoft-pretty-time</artifactId>
             <version>${prettytime.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.apache.velocity</groupId>
+            <artifactId>velocity</artifactId>
+            <version>${velocity.version}</version>
          </dependency>
 
          <dependency>

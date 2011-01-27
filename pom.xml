@@ -40,7 +40,7 @@
       <pretty.time.version>1.0.6</pretty.time.version>
 
       <!-- Seam modules -->
-      <seam.catch.version>3.0.0.Alpha2</seam.catch.version>
+      <seam.catch.version>3.0.0.Beta1</seam.catch.version>
       <seam.config.version>3.0.0.Beta2</seam.config.version>
       <seam.faces.version>3.0.0.Beta1</seam.faces.version>
       <seam.international.version>3.0.0.Alpha1</seam.international.version>
@@ -48,9 +48,9 @@
       <seam.persistence.version>3.0.0.Beta2</seam.persistence.version>
       <seam.remoting.version>3.0.0.Beta2</seam.remoting.version>
       <seam.rest.version>3.0.0.Alpha1</seam.rest.version>
-      <seam.security.version>3.0.0.Alpha1</seam.security.version>
-      <seam.servlet.version>3.0.0.Alpha2</seam.servlet.version>
-      <seam.solder.version>3.0.0.Beta1</seam.solder.version>
+      <seam.security.version>3.0.0.Alpha2</seam.security.version>
+      <seam.servlet.version>3.0.0.Beta1</seam.servlet.version>
+      <seam.solder.version>3.0.0.Beta2</seam.solder.version>
    </properties>
 
    <dependencyManagement>

@@ -49,7 +49,7 @@
       <seam.faces.version>3.0.0.Beta2</seam.faces.version>
       <seam.international.version>3.0.0.Alpha3</seam.international.version>
       <seam.jms.version>3.0.0.Alpha2</seam.jms.version>
-      <seam.persistence.version>3.0.0.Beta2</seam.persistence.version>
+      <seam.persistence.version>3.0.0.Beta3</seam.persistence.version>
       <seam.remoting.version>3.0.0.Beta2</seam.remoting.version>
       <seam.servlet.version>3.0.0.Beta1</seam.servlet.version>
       <seam.rest.version>3.0.0.Alpha2</seam.rest.version>

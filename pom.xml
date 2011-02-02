@@ -53,7 +53,7 @@
       <seam.remoting.version>3.0.0.Beta2</seam.remoting.version>
       <seam.servlet.version>3.0.0.Beta1</seam.servlet.version>
       <seam.rest.version>3.0.0.Alpha2</seam.rest.version>
-      <seam.security.version>3.0.0.Alpha2</seam.security.version>
+      <seam.security.version>3.0.0.Beta2</seam.security.version>
       <seam.solder.version>3.0.0.Beta2</seam.solder.version>
       <seam.wicket.version>3.0.0.Beta1</seam.wicket.version>
    </properties>
@@ -172,6 +172,12 @@
          <dependency>
             <groupId>org.picketlink.idm</groupId>
             <artifactId>picketlink-idm-api</artifactId>
+            <version>${picketlink.idm.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.picketlink.idm</groupId>
+            <artifactId>picketlink-idm-spi</artifactId>
             <version>${picketlink.idm.version}</version>
          </dependency>
 

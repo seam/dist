@@ -29,8 +29,6 @@
       <jboss.javaee.version>1.0.0.Final</jboss.javaee.version>
 
       <!-- External libraries -->
-      <jboss.logging.version>3.0.0.Beta4</jboss.logging.version>
-      <jboss.logging.tools.version>3.0.0.Beta4</jboss.logging.tools.version>
       <javassist.version>3.13.0-GA</javassist.version>
       <dom4j.version>1.6.1</dom4j.version>
       <hibernate.core.version>3.6.0.Final</hibernate.core.version>
@@ -77,18 +75,6 @@
             <version>${jboss.javaee.version}</version>
             <scope>provided</scope>
             <type>pom</type>
-         </dependency>
-
-         <dependency>
-            <groupId>org.jboss.logging</groupId>
-            <artifactId>jboss-logging</artifactId>
-            <version>${jboss.logging.version}</version>
-         </dependency>
-
-         <dependency>
-            <groupId>org.jboss.logging</groupId>
-            <artifactId>jboss-logging-tools</artifactId>
-            <version>${jboss.logging.tools.version}</version>
          </dependency>
 
          <dependency>

@@ -16,43 +16,43 @@
    </parent>
 
    <description>
-      The Seam reference guide
+      The Seam Reference guide
    </description>
 
    <url>http://www.seamframework.org</url>
 
    <dependencies>
-<!--      <dependency>
+      <!--dependency>
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces-reference-guide</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <classifier>sources</classifier>
          <type>zip</type>
-      </dependency> -->
+      </dependency--> 
       
-      <!--dependency>
+      <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
          <artifactId>seam-remoting-reference-guide</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <classifier>sources</classifier>
-         <type>zip</type>
-      </dependency-->
+         <type>jar</type>
+      </dependency>
       
-      <!--<dependency>
+      <!--dependency>
          <groupId>org.jboss.seam.international</groupId>
          <artifactId>seam-international-reference-guide</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <classifier>sources</classifier>
-         <type>zip</type>
-      </dependency>-->
+         <type>war</type>
+      </dependency>
       
-      <!--<dependency>
-         <groupId>org.jboss.seam.xml</groupId>
-         <artifactId>seam-xml-config-reference-guide</artifactId>
+      <dependency>
+         <groupId>org.jboss.seam.config</groupId>
+         <artifactId>seam-config-reference-guide</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <classifier>sources</classifier>
-         <type>zip</type>
-      </dependency>-->
+         <type>war</type>
+      </dependency-->
       
    </dependencies>
 
@@ -78,6 +78,8 @@
                   <configuration>
                      <outputDirectory>${basedir}/src/main/docbook/en-US/modules</outputDirectory>
                      <excludeTransitive>true</excludeTransitive>
+                     <useSubDirectoryPerArtifact>true</useSubDirectoryPerArtifact>
+                     <stripVersion>true</stripVersion>
                   </configuration>
                </execution>
             </executions>

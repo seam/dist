@@ -9,7 +9,7 @@
 
    <xi:include href="intro.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-   <part>
+   <!--part>
       <title>Seam Faces</title>
       <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
          href="modules/seam-faces-reference-guide/preface.xml" />
@@ -40,23 +40,26 @@
       <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
          href="modules/seam-international-reference-guide/messages.xml" />
 
-   </part>
+   </part-->
 
    <part>
       <title>Seam Remoting</title>
       <xi:include
-         href="modules/seam-remoting-reference-guide/remoting-general.xml"
+         href="modules/seam-remoting-reference-guide-sources-jar/remoting-general.xml"
          xmlns:xi="http://www.w3.org/2001/XInclude" />
       <xi:include
-         href="modules/seam-remoting-reference-guide/remoting-model.xml"
+         href="modules/seam-remoting-reference-guide-sources-jar/remoting-model.xml"
          xmlns:xi="http://www.w3.org/2001/XInclude" />
+      <xi:include
+         href="modules/seam-remoting-reference-guide-sources-jar/remoting-validation.xml"
+         xmlns:xi="http://www.w3.org/2001/XInclude" />         
    </part>
 
-   <part>
-      <title>Seam XML Configuration</title>
+   <!--part>
+      <title>Seam Configuration</title>
       <xi:include href="modules/seam-xml-config-reference-guide/xml-general.xml"
          xmlns:xi="http://www.w3.org/2001/XInclude" />
 
-   </part>
+   </part-->
 
 </book>

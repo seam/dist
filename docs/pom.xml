@@ -22,13 +22,39 @@
    <url>http://www.seamframework.org</url>
 
    <dependencies>
-      <!--dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.config</groupId>
+         <artifactId>seam-config-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>
+      
+      
+      <dependency>
+         <groupId>org.jboss.seam.persistence</groupId>
+         <artifactId>seam-persistence-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>      
+
+      <dependency>
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces-reference-guide</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <classifier>sources</classifier>
-         <type>zip</type>
-      </dependency--> 
+         <type>jar</type>
+      </dependency> 
+      
+      <dependency>
+         <groupId>org.jboss.seam.catch</groupId>
+         <artifactId>seam-catch-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>       
       
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
@@ -38,21 +64,45 @@
          <type>jar</type>
       </dependency>
       
-      <!--dependency>
+      <dependency>
          <groupId>org.jboss.seam.international</groupId>
          <artifactId>seam-international-reference-guide</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <classifier>sources</classifier>
-         <type>war</type>
+         <type>jar</type>
       </dependency>
-      
+
       <dependency>
-         <groupId>org.jboss.seam.config</groupId>
-         <artifactId>seam-config-reference-guide</artifactId>
+         <groupId>org.jboss.seam.rest</groupId>
+         <artifactId>seam-rest-reference-guide</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <classifier>sources</classifier>
-         <type>war</type>
-      </dependency-->
+         <type>jar</type>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.solder</groupId>
+         <artifactId>seam-solder-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.servlet</groupId>
+         <artifactId>seam-servlet-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.wicket</groupId>
+         <artifactId>seam-wicket-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>
       
    </dependencies>
 

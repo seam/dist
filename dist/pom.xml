@@ -24,32 +24,32 @@
    <dependencies>
       <!-- Seam Modules -->
 
-      <!-- Seam XML Config -->
+      <!-- Seam Config -->
       <dependency>
-         <groupId>org.jboss.seam.xml</groupId>
-         <artifactId>seam-xml-config</artifactId>
+         <groupId>org.jboss.seam.config</groupId>
+         <artifactId>seam-config-xml</artifactId>
          <optional>true</optional>
       </dependency>
 
       <dependency>
-         <groupId>org.jboss.seam.xml</groupId>
-         <artifactId>seam-xml-config</artifactId>
+         <groupId>org.jboss.seam.config</groupId>
+         <artifactId>seam-config-xml</artifactId>
          <classifier>javadoc</classifier>
-         <version>${seam.xml.config.version}</version>
+         <version>${seam.config.version}</version>
          <optional>true</optional>
       </dependency>
 
       <dependency>
-         <groupId>org.jboss.seam.xml</groupId>
-         <artifactId>seam-xml-config</artifactId>
+         <groupId>org.jboss.seam.config</groupId>
+         <artifactId>seam-config-xml</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.xml.config.version}</version>
+         <version>${seam.config.version}</version>
          <optional>true</optional>
       </dependency>
 
       <dependency>
-         <groupId>org.jboss.seam.xml</groupId>
-         <artifactId>seam-xml-examples-princess-rescue</artifactId>
+         <groupId>org.jboss.seam.config</groupId>
+         <artifactId>seam-config-examples-princess-rescue</artifactId>
          <!--         <version>${seam.xml.config.version}</version>-->
          <!-- Need example releases -->
          <version>3.0.0-SNAPSHOT</version>
@@ -60,13 +60,13 @@
       <!-- Seam Remoting -->
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
-         <artifactId>seam-remoting-core</artifactId>
+         <artifactId>seam-remoting</artifactId>
          <optional>true</optional>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
-         <artifactId>seam-remoting-core</artifactId>
+         <artifactId>seam-remoting</artifactId>
          <classifier>javadoc</classifier>
          <version>${seam.remoting.version}</version>
          <optional>true</optional>
@@ -74,7 +74,7 @@
 
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
-         <artifactId>seam-remoting-core</artifactId>
+         <artifactId>seam-remoting</artifactId>
          <classifier>sources</classifier>
          <version>${seam.remoting.version}</version>
          <optional>true</optional>

@@ -16,7 +16,6 @@
          <outputDirectory>.</outputDirectory>
          <includes>
             <include>readme.txt</include>
-            <include>lgpl.txt</include>
          </includes>
       </fileSet>
    </fileSets>

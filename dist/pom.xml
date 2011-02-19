@@ -22,10 +22,54 @@
    <url>http://www.seamframework.org</url>
 
    <dependencies>
+      <!-- Dependencies required to build aggregated JavaDoc (because maven-javadoc-plugin only adds compile-scoped 
+           dependencies to the javadoc classpath... don't ask me why) -->
+           
+      <dependency>
+         <groupId>javax.enterprise</groupId>
+         <artifactId>cdi-api</artifactId>
+      </dependency>   
+      
+      <dependency>
+         <groupId>javax.validation</groupId>
+         <artifactId>validation-api</artifactId>
+      </dependency>   
+      
+      <dependency>
+         <groupId>dom4j</groupId>
+         <artifactId>dom4j</artifactId>   
+      </dependency>   
+      
+      <dependency>
+         <groupId>org.slf4j</groupId>
+         <artifactId>slf4j-api</artifactId>
+         <version>1.6.1</version>
+      </dependency>      
+      
+      <!-- Required until the Servlet 3.0 API can be resolved in Central -->
+      <dependency>
+         <groupId>org.jboss.spec.javax.servlet</groupId>
+         <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+      </dependency>      
+
+      <!-- Remove for Seam Remoting beta 3-->
+      <dependency>
+         <groupId>javax.jms</groupId>
+         <artifactId>jms</artifactId>
+         <version>1.1</version>
+      </dependency>      
+      
+      <!-- Remove once remoting uses ales' new conversation module -->
+      <dependency>
+         <groupId>org.jboss.weld</groupId>
+         <artifactId>weld-core</artifactId>
+         <version>1.1.0.CR3</version>         
+      </dependency>      
+   
       <!-- Seam Modules -->
 
       <!-- Seam Config -->
-      <dependency>
+      <!--dependency>
          <groupId>org.jboss.seam.config</groupId>
          <artifactId>seam-config-xml</artifactId>
          <optional>true</optional>
@@ -53,13 +97,13 @@
          <version>${seam.config.version}</version>
          <type>zip</type>
          <optional>true</optional>
-      </dependency>
+      </dependency-->
 
       <!-- Seam Remoting -->
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
          <artifactId>seam-remoting</artifactId>
-         <optional>true</optional>
+         <!--optional>true</optional-->
       </dependency>
 
       <dependency>
@@ -75,10 +119,10 @@
          <artifactId>seam-remoting</artifactId>
          <classifier>sources</classifier>
          <version>${seam.remoting.version}</version>
-         <optional>true</optional>
+         <!--optional>true</optional-->
       </dependency>
 
-      <dependency>
+      <!--dependency>
          <groupId>org.jboss.seam.remoting</groupId>
          <artifactId>seam-remoting-helloworld-example</artifactId>
          <version>${seam.remoting.version}</version>
@@ -92,10 +136,10 @@
          <version>${seam.remoting.version}</version>
          <type>zip</type>
          <optional>true</optional>
-      </dependency>
+      </dependency-->
 
       <!-- Seam Faces -->
-      <dependency>
+      <!--dependency>
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces</artifactId>
          <optional>true</optional>
@@ -145,7 +189,7 @@
          <version>${seam.faces.version}</version>
          <type>zip</type>
          <optional>true</optional>
-      </dependency>
+      </dependency-->
 
       <!-- Seam JMS -->
       <!--dependency>
@@ -193,7 +237,7 @@
       </dependency-->
 
       <!-- Seam International -->
-      <dependency>
+      <!--dependency>
          <groupId>org.jboss.seam.international</groupId>
          <artifactId>seam-international</artifactId>
          <optional>true</optional>
@@ -235,7 +279,7 @@
          <classifier>sources</classifier>
          <version>${seam.international.version}</version>
          <optional>true</optional>
-      </dependency>
+      </dependency-->
 
       <!-- Monolithic Seam -->
       <!--dependency>
@@ -265,10 +309,99 @@
 
    <build>
       <finalName>seam</finalName>
+      
       <plugins>
-         <plugin>
+         <!--plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-assembly-plugin</artifactId>
+         </plugin-->
+
+         <plugin>         
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <executions>
+               <execution>
+                  <id>module-sources</id>
+                  <goals>
+                     <goal>unpack-dependencies</goal>
+                  </goals>
+                  <configuration>
+                     <classifier>sources</classifier>
+                     <outputDirectory>${project.build.directory}/sources</outputDirectory>
+                     <excludeTransitive>true</excludeTransitive>
+                     
+                     <includeArtifactIds>seam-remoting</includeArtifactIds>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin>         
+         
+         <plugin>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <version>2.7</version>
+            
+            <executions>
+               <execution>
+                  <id>javadoc-jar</id>
+                  <phase>package</phase>
+                  <goals>
+                     <goal>jar</goal>
+                  </goals>
+                  <configuration>
+                     <sourcepath>${project.build.directory}/sources</sourcepath>
+                  </configuration>
+               </execution>
+            </executions>
+            
+            <!--executions>
+               <execution>
+                  <id>javadoc-jar</id>
+                  <phase>package</phase>
+                  <goals>
+                     <goal>jar</goal>
+                  </goals>
+            
+                  <configuration>
+                     <includeDependencySources>true</includeDependencySources-->
+                     <!--includeTransitiveDependencySources>false</includeTransitiveDependencySources-->
+                     <!--detectOfflineLinks>false</detectOfflineLinks-->
+                     <!--dependencySourceIncludes>
+                        <dependencySourceInclude>org.jboss.seam.remoting:seam-remoting</dependencySourceInclude>
+                     </dependencySourceIncludes-->
+
+                     <!--dependencySourceExcludes>
+                        <dependencySourceExclude>javax.enterprise:*</dependencySourceExclude>
+                     </dependencySourceExcludes>
+                  </configuration>
+               </execution>
+            </executions-->
+            
+            
+            <!--executions-->
+               <!--execution>
+                  <id>javadoc-jar</id>
+                  <phase>prepare-package</phase>
+                  <goals>
+                     <goal>javadoc</goal>
+                  </goals>
+                  <configuration>
+                     <includeDependencySources>true</includeDependencySources>
+                     <detectOfflineLinks>false</detectOfflineLinks>
+                     <dependencySourceIncludes>
+                        <dependencySourceInclude>org.jboss.seam.remoting:seam-remoting</dependencySourceInclude>
+                     </dependencySourceIncludes>
+                  </configuration>
+               </execution-->
+               
+               <!--execution>
+                  <id>distro-javadocs</id>
+                  <goals>
+                     <goal>jar</goal>
+                  </goals>
+               </execution-->
+               
+               
+            <!--/executions-->
          </plugin>
       </plugins>
    </build>

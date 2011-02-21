@@ -259,7 +259,19 @@
 
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
+         <artifactId>seam-security-external</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.security.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.security</groupId>
+         <artifactId>seam-security-external</artifactId>
          <classifier>sources</classifier>
          <version>${seam.security.version}</version>
       </dependency>
@@ -322,11 +334,6 @@
       <finalName>seam</finalName>
       
       <plugins>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-assembly-plugin</artifactId>
-         </plugin>
-
          <plugin>         
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
@@ -364,6 +371,33 @@
                </execution>
             </executions>
          </plugin>
+         
+         <!--plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <executions>
+               <execution>
+                  <id>attach-zip</id>
+                  <phase>package</phase>
+                  <goals>
+                     <goal>attach-artifact</goal>
+                  </goals>
+                  <configuration>
+                     <artifacts>
+                        <artifact>
+                           <file>${project.build.outputDirectory}/${project.artifactId}-javadoc.jar</file>
+                           <type>jar</type>
+                        </artifact>
+                     </artifacts>
+                  </configuration>
+               </execution>
+            </executions>
+         </plugin-->         
+         
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-assembly-plugin</artifactId>
+         </plugin>         
       </plugins>
    </build>
 

@@ -18,15 +18,35 @@
             <include>readme.txt</include>
          </includes>
       </fileSet>
+      
+      <fileSet>
+         <directory>${project.build.directory}/apidocs</directory>
+         <outputDirectory>doc/api</outputDirectory>      
+         <excludes>
+            <exclude>argfile</exclude>
+            <exclude>options</exclude>
+         </excludes>
+      </fileSet>
    </fileSets>
 
    <dependencySets>
       <!-- Add necessary binaries -->
       <dependencySet>
-         <outputDirectory>artifacts/modules</outputDirectory>
+         <outputDirectory>artifacts</outputDirectory>
          <useProjectArtifact>false</useProjectArtifact>
          <includes>
-            <include>org.jboss.seam.*</include>
+            <include>org.jboss.seam.catch:seam-catch</include>
+            <include>org.jboss.seam.config:seam-config-xml</include>            
+            <include>org.jboss.seam.faces:seam-faces</include>
+            <include>org.jboss.seam.international:seam-international</include>
+            <include>org.jboss.seam.persistence:seam-persistence</include>
+            <include>org.jboss.seam.remoting:seam-remoting</include>
+            <include>org.jboss.seam.rest:seam-rest</include>
+            <include>org.jboss.seam.security:seam-security</include>
+            <include>org.jboss.seam.security:seam-security-external</include>
+            <include>org.jboss.seam.servlet:seam-servlet</include>
+            <include>org.jboss.seam.solder:seam-solder</include>
+            <include>org.jboss.seam.wicket:seam-wicket-api</include>
          </includes>
          <excludes>
             <exclude>org.jboss.seam.*:*:*:javadoc</exclude>
@@ -34,24 +54,33 @@
          </excludes>
          <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
       </dependencySet>
-      <!-- Add necessary javadoc jars -->
-      <dependencySet>
-         <outputDirectory>artifacts/modules/javadoc</outputDirectory>
-         <useProjectArtifact>false</useProjectArtifact>
-         <includes>
-            <include>org.jboss.seam.*:*:*:javadoc</include>
-         </includes>
-         <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
-      </dependencySet>
+      
       <!-- Add necessary sources jars -->
       <dependencySet>
-         <outputDirectory>artifacts/modules/sources</outputDirectory>
+         <outputDirectory>source</outputDirectory>
          <useProjectArtifact>false</useProjectArtifact>
+         <unpack>true</unpack>
+         <unpackOptions>
+            <excludes>
+               <exclude>META-INF/**</exclude>
+            </excludes>
+         </unpackOptions>
          <includes>
-            <include>org.jboss.seam.*:*:*:sources</include>
+            <include>org.jboss.seam.catch:seam-catch:*:*:sources</include>
+            <include>org.jboss.seam.config:seam-config-xml:*:*:sources</include>            
+            <include>org.jboss.seam.faces:seam-faces:*:*:sources</include>
+            <include>org.jboss.seam.international:seam-international:*:*:sources</include>
+            <include>org.jboss.seam.persistence:seam-persistence:*:*:sources</include>
+            <include>org.jboss.seam.remoting:seam-remoting:*:*:sources</include>
+            <include>org.jboss.seam.rest:seam-rest:*:*:sources</include>
+            <include>org.jboss.seam.security:seam-security:*:*:sources</include>
+            <include>org.jboss.seam.security:seam-security-external:*:*:sources</include>
+            <include>org.jboss.seam.servlet:seam-servlet:*:*:sources</include>
+            <include>org.jboss.seam.solder:seam-solder:*:*:sources</include>
+            <include>org.jboss.seam.wicket:seam-wicket-api:*:*:sources</include>            
          </includes>
-         <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
       </dependencySet>
+      
       <!-- Add necessary dependencies -->
       <dependencySet>
          <outputDirectory>lib</outputDirectory>
@@ -63,26 +92,29 @@
          </excludes>
          <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
       </dependencySet>
-      <dependencySet>
+      
+      <!--dependencySet>
          <outputDirectory>artifacts</outputDirectory>
          <useProjectArtifact>false</useProjectArtifact>
          <includes>
             <include>org.jboss.seam:seam</include>
             <include>org.jboss.seam:seam:jar:sources</include>
          </includes>
-      </dependencySet>
+      </dependencySet-->
+
       <!-- Pull in the example projects -->
       <dependencySet>
          <outputDirectory>examples</outputDirectory>
          <unpack>true</unpack>
          <useProjectArtifact>false</useProjectArtifact>
          <includes>
-            <include>org.jboss.seam.faces:seam-faces-examples-short-ly</include>
-            <include>org.jboss.seam.xml:seam-xml-examples-princess-rescue</include>
+            <!--include>org.jboss.seam.faces:seam-faces-examples-short-ly</include>
+            <include>org.jboss.seam.config:seam-config-examples-princess-rescue</include-->
             <include>org.jboss.seam.remoting:seam-remoting-model-example</include>
             <include>org.jboss.seam.remoting:seam-remoting-helloworld-example</include>
          </includes>
       </dependencySet>
+
       <!-- Pull in docbook artifacts -->
       <dependencySet>
          <outputDirectory>doc/reference</outputDirectory>
@@ -96,7 +128,9 @@
                <exclude>META-INF/</exclude>
             </excludes>
          </unpackOptions>
-      </dependencySet>
+      </dependencySet> 
+      
    </dependencySets>
+     
 
 </assembly>

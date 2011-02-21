@@ -353,6 +353,13 @@
          </dependency>
 
          <dependency>
+            <groupId>org.jboss.seam.security</groupId>
+            <artifactId>seam-security-external</artifactId>
+            <version>${seam.security.version}</version>
+            <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
             <groupId>org.jboss.seam.servlet</groupId>
             <artifactId>seam-servlet</artifactId>
             <version>${seam.servlet.version}</version>

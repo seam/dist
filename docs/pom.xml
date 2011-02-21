@@ -125,7 +125,7 @@
                      -->
                      <goal>unpack-dependencies</goal>
                   </goals>
-                  <configuration>
+                  <configuration>                  
                      <outputDirectory>${basedir}/src/main/docbook/en-US/modules</outputDirectory>
                      <excludeTransitive>true</excludeTransitive>
                      <useSubDirectoryPerArtifact>true</useSubDirectoryPerArtifact>

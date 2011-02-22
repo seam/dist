@@ -1,0 +1,7 @@
+Seam Examples
+=============
+
+The examples contained in these directories require Maven to build.
+
+
+

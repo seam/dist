@@ -45,6 +45,7 @@
       <!-- Seam modules -->
       <seam.catch.version>3.0.0.CR1</seam.catch.version>
       <seam.config.version>3.0.0.CR1</seam.config.version>
+      <seam.conversation.version>3.0.0.Beta1</seam.conversation.version>
       <seam.faces.version>3.0.0.CR1</seam.faces.version>
       <seam.international.version>3.0.0.CR1</seam.international.version>
       <seam.jms.version>3.0.0.Beta1</seam.jms.version>
@@ -231,6 +232,12 @@
             <artifactId>seam-config-xml</artifactId>
             <version>${seam.config.version}</version>
             <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.conversation</groupId>
+            <artifactId>seam-conversation-spi</artifactId>
+            <version>${seam.conversation.version}</version>
          </dependency>
 
          <dependency>

@@ -303,17 +303,32 @@
          <classifier>sources</classifier>
          <version>${seam.solder.version}</version>
       </dependency>      
+
+      <!-- Seam Validation -->
+
+      <dependency>
+         <groupId>org.jboss.seam.validation</groupId>
+         <artifactId>seam-validation</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.validation</groupId>
+         <artifactId>seam-validation</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.validation.version}</version>
+      </dependency>
+
       
       <!-- Seam Wicket -->
       
       <dependency>
          <groupId>org.jboss.seam.wicket</groupId>
-         <artifactId>seam-wicket-api</artifactId>
+         <artifactId>seam-wicket</artifactId>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.wicket</groupId>
-         <artifactId>seam-wicket-api</artifactId>
+         <artifactId>seam-wicket</artifactId>
          <classifier>sources</classifier>
          <version>${seam.wicket.version}</version>
       </dependency>          

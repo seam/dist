@@ -29,6 +29,15 @@
       <xi:include href="modules/seam-servlet-reference-guide-sources-jar/servlet-exception_handling.xml" />
       <xi:include href="modules/seam-servlet-reference-guide-sources-jar/servlet-beanmanager.xml"/>   
    </part>
+   
+   <part>
+      <title>Seam Security</title>      
+      <xi:include href="modules/seam-security-reference-guide-sources-jar/security-introduction.xml"/>
+      <xi:include href="modules/seam-security-reference-guide-sources-jar/security-authentication.xml"/>
+      <xi:include href="modules/seam-security-reference-guide-sources-jar/security-identitymanagement.xml"/>   
+      <xi:include href="modules/seam-security-reference-guide-sources-jar/security-authentication-external.xml"/>
+      <xi:include href="modules/seam-security-reference-guide-sources-jar/security-authorization.xml"/>      
+   </part>
 
    <part>
       <title>Seam Faces</title>
@@ -75,6 +84,14 @@
       <xi:include href="modules/seam-rest-reference-guide-sources-jar/rest-templating.xml" />
       <xi:include href="modules/seam-rest-reference-guide-sources-jar/rest-client.xml" />
       <xi:include href="modules/seam-rest-reference-guide-sources-jar/rest-dependencies.xml" />
+   </part>
+   
+   <part>
+      <title>Seam Validation</title>
+      <xi:include href="modules/seam-validation-reference-guide-sources-jar/validation-introduction.xml"/>
+      <xi:include href="modules/seam-validation-reference-guide-sources-jar/validation-installation.xml"/>
+      <xi:include href="modules/seam-validation-reference-guide-sources-jar/validation-dependency-injection.xml"/>
+      <xi:include href="modules/seam-validation-reference-guide-sources-jar/validation-method-validation.xml"/>      
    </part>
    
    <part>

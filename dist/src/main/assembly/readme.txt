@@ -1,4 +1,4 @@
-Seam 3.0.0
+Seam ${project.version}
 ==========================
 
 Seam is a powerful open source development platform for building rich Internet 
@@ -18,23 +18,31 @@ the same time eliminating common bugs found in traditional web applications.
 Contents of distribution
 ========================
 
-doc/
+ artifacts/
+ 
+   Seam module jar files
 
-  API Docs and reference guide.
+ doc/
+
+   API Docs and reference guide.
   
-examples/
+ examples/
 
-  Seam Examples
+   Seam Examples
   
-lib/
+ lib/
 
-  Seam's dependencies
+   Seam's dependency libraries
+   
+ source/
+ 
+   Source code for all modules
   
 Licensing
 =========
 
-This distribution, as a whole, is licensed under the terms of the GNU Lesser General Public License
-(LGPL) Version 2.1, the text of which is contained in the file lgpl.txt.
+ This distribution, as a whole, is licensed under the terms of the Apache
+ Software License, Version 2.0 (ASL).
 
 Seam URLs
 ==================

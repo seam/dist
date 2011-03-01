@@ -15,8 +15,11 @@
       <fileSet>
          <directory>src/main/assembly</directory>
          <outputDirectory>.</outputDirectory>
+         <filtered>true</filtered>
          <includes>
             <include>readme.txt</include>
+            <include>license.txt</include>
+            <include>notice.txt</include>            
          </includes>
       </fileSet>
 
@@ -56,7 +59,8 @@
             <include>org.jboss.seam.security:seam-security-external</include>
             <include>org.jboss.seam.servlet:seam-servlet</include>
             <include>org.jboss.seam.solder:seam-solder</include>
-            <include>org.jboss.seam.wicket:seam-wicket-api</include>
+            <include>org.jboss.seam.validation:seam-validation</include>
+            <include>org.jboss.seam.wicket:seam-wicket</include>
          </includes>
          <excludes>
             <exclude>org.jboss.seam.*:*:*:javadoc</exclude>
@@ -87,7 +91,8 @@
             <include>org.jboss.seam.security:seam-security-external:*:*:sources</include>
             <include>org.jboss.seam.servlet:seam-servlet:*:*:sources</include>
             <include>org.jboss.seam.solder:seam-solder:*:*:sources</include>
-            <include>org.jboss.seam.wicket:seam-wicket-api:*:*:sources</include>            
+            <include>org.jboss.seam.validation:seam-validation:*:*:sources</include>            
+            <include>org.jboss.seam.wicket:seam-wicket:*:*:sources</include>                        
          </includes>
       </dependencySet>
       
@@ -109,8 +114,21 @@
          <unpack>true</unpack>
          <useProjectArtifact>false</useProjectArtifact>
          <includes>
+            <include>org.jboss.seam.catch:seam-catch-example-basic-servlet</include>         
+            <include>org.jboss.seam.config:seam-config-example-princess-rescue</include>
+            <include>org.jboss.seam.faces:seam-faces-example-short-ly</include>
+            <include>org.jboss.seam.international:seam-international-example-timeanddate</include>                        
             <include>org.jboss.seam.remoting:seam-remoting-model-example</include>
             <include>org.jboss.seam.remoting:seam-remoting-helloworld-example</include>
+            <include>org.jboss.seam.remoting:seam-remoting-validation-example</include>
+            <include>org.jboss.seam.rest:seam-tasks-example</include>
+            <include>org.jboss.seam.rest:seam-tasks-statistics-example</include>
+            <include>org.jboss.seam.rest:seam-jaxrs-exceptions-example</include>
+            <include>org.jboss.seam.security:seam-security-simple-example</include>
+            <include>org.jboss.seam.security:seam-security-idmconsole-example</include>
+            <include>org.jboss.seam.security:openid-rp</include>
+            <include>org.jboss.seam.validation:seam-validation-example</include>
+            <include>org.jboss.seam.wicket:seam-wicket-example-numberguess</include>
          </includes>
       </dependencySet>
 

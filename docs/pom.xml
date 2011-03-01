@@ -79,6 +79,14 @@
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.security</groupId>
+         <artifactId>seam-security-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>      
 
       <dependency>
          <groupId>org.jboss.seam.solder</groupId>
@@ -95,6 +103,14 @@
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.validation</groupId>
+         <artifactId>seam-validation-reference-guide</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>      
 
       <dependency>
          <groupId>org.jboss.seam.wicket</groupId>

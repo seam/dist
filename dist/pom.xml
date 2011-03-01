@@ -115,6 +115,14 @@
          <version>${seam.catch.version}</version>
          <optional>true</optional>
       </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.catch</groupId>
+         <artifactId>seam-catch-example-basic-servlet</artifactId>
+         <version>${seam.catch.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>      
 
       <!-- Seam Config -->
       
@@ -206,6 +214,15 @@
          <optional>true</optional>
       </dependency>
       
+      <dependency>
+         <groupId>org.jboss.seam.international</groupId>
+         <artifactId>seam-international-example-timeanddate</artifactId>
+         <version>${seam.international.version}</version>
+         <classifier>distsources</classifier>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>       
+      
       <!-- Seam Remoting -->
       
       <dependency>
@@ -236,6 +253,14 @@
          <optional>true</optional>
       </dependency>      
       
+      <dependency>
+         <groupId>org.jboss.seam.remoting</groupId>
+         <artifactId>seam-remoting-validation-example</artifactId>
+         <version>${seam.remoting.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>       
+      
       <!-- Seam Rest -->
       
       <dependency>
@@ -249,6 +274,30 @@
          <classifier>sources</classifier>
          <version>${seam.rest.version}</version>
       </dependency>      
+      
+      <dependency>
+         <groupId>org.jboss.seam.rest</groupId>
+         <artifactId>seam-tasks-example</artifactId>
+         <version>${seam.rest.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>     
+      
+      <dependency>
+         <groupId>org.jboss.seam.rest</groupId>
+         <artifactId>seam-tasks-statistics-example</artifactId>
+         <version>${seam.rest.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>  
+      
+      <dependency>
+         <groupId>org.jboss.seam.rest</groupId>
+         <artifactId>seam-jaxrs-exceptions-example</artifactId>
+         <version>${seam.rest.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>     
       
       <!-- Seam Security -->
       
@@ -276,6 +325,30 @@
          <version>${seam.security.version}</version>
       </dependency>
       
+      <dependency>
+         <groupId>org.jboss.seam.security</groupId>
+         <artifactId>seam-security-simple-example</artifactId>
+         <version>${seam.security.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.security</groupId>
+         <artifactId>seam-security-idmconsole-example</artifactId>
+         <version>${seam.security.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.security</groupId>
+         <artifactId>openid-rp</artifactId>
+         <version>${seam.security.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
+            
       <!-- Seam Servlet -->
       
       <dependency>
@@ -318,6 +391,13 @@
          <version>${seam.validation.version}</version>
       </dependency>
 
+      <dependency>
+         <groupId>org.jboss.seam.validation</groupId>
+         <artifactId>seam-validation-example</artifactId>
+         <version>${seam.validation.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
       
       <!-- Seam Wicket -->
       
@@ -331,14 +411,23 @@
          <artifactId>seam-wicket</artifactId>
          <classifier>sources</classifier>
          <version>${seam.wicket.version}</version>
-      </dependency>          
+      </dependency>      
+      
+      <dependency>
+         <groupId>org.jboss.seam.wicket</groupId>
+         <artifactId>seam-wicket-example-numberguess</artifactId>
+         <version>${seam.wicket.version}</version>
+         <classifier>distsources</classifier>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>    
     
       <!-- Seam Reference Guide -->
     
       <dependency>
          <groupId>org.jboss.seam</groupId>
          <artifactId>seam-reference-guide</artifactId>
-         <version>${project.version}</version>
+         <version>3.0.0-SNAPSHOT</version>
          <optional>true</optional>
          <type>war</type>
       </dependency>
@@ -363,7 +452,7 @@
                      <outputDirectory>${project.build.directory}/sources</outputDirectory>
                      <excludeTransitive>true</excludeTransitive>
                      
-                     <includeArtifactIds>seam-catch,seam-config-xml,seam-faces,seam-international,seam-persistence,seam-remoting,seam-rest,seam-security,seam-servlet,seam-solder,seam-wicket-api</includeArtifactIds>
+                     <includeArtifactIds>seam-catch,seam-config-xml,seam-faces,seam-international,seam-persistence,seam-remoting,seam-rest,seam-security,seam-security-external,seam-servlet,seam-solder,seam-validation,seam-wicket</includeArtifactIds>
                   </configuration>
                </execution>
             </executions>

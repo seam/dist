@@ -1,7 +1,61 @@
 Seam Examples
 =============
 
-The examples contained in these directories require Maven to build.
+The examples contained in these directories require Maven 3.0 to build.
 
+helloworld
+----------
+Seam Remoting - Demonstrates simple remote RPC call via AJAX
 
+idmconsole
+----------
+Seam Security - Identity Management console example demonstrates Picketlink IDM integration features
+
+model
+-----
+Seam Remoting - Demonstrates the Model API
+
+openid-rp
+---------
+Seam Security - External authentication example demonstrating an OpenID Relying Party
+
+princess-rescue
+---------------
+Seam Config - Demonstrates XML configuration file
+
+seam-catch-example-basic-servlet
+--------------------------------
+Seam Catch - Basic example
+
+seam-international-example-timeanddate
+--------------------------------------
+Seam International - Demonstration app showing timeanddate.com-like features
+
+seam-jaxrs-exceptions
+---------------------
+Seam Rest Example
+
+seam-tasks-statistics
+---------------------
+Seam Rest Example
+
+seam-wicket-example-numberguess
+-------------------------------
+Seam Wicket - Wicket implementation of the numberguess example
+
+short.ly
+--------
+Seam Faces - URL shortening example
+
+simple
+------
+Seam Security - Simple authentication example
+
+validation
+----------
+Seam Remoting - Demonstration of the client-side Bean Validation API
+
+validation-helloworld
+---------------------
+Seam Validation - Basic hello world example
 

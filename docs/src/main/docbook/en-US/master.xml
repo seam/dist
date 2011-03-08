@@ -8,6 +8,14 @@
    <title>Seam</title>
 
    <xi:include href="intro.xml"/>
+   
+   <part>
+      <title>Forge</title>
+      <xi:include href="modules/forge-reference-guide-sources-jar/forge-preface.xml" />
+      <xi:include href="modules/forge-reference-guide-sources-jar/forge-installation.xml" />
+      <xi:include href="modules/forge-reference-guide-sources-jar/forge-creating-basic-webapp.xml" />
+      <xi:include href="modules/forge-reference-guide-sources-jar/forge-plugin-dev.xml" />      
+   </part>
 
    <part>
       <title>Seam Configuration</title>

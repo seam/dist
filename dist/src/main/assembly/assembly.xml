@@ -40,6 +40,17 @@
             <exclude>options</exclude>
          </excludes>
       </fileSet>
+      
+      <!-- Forge -->
+      <fileSet>
+         <directory>${project.build.directory}/forge/forge-${seam.forge.version}/bin</directory>
+         <outputDirectory>forge</outputDirectory>     
+      </fileSet>
+      
+      <fileSet>
+         <directory>${project.build.directory}/forge/forge-${seam.forge.version}/lib</directory>
+         <outputDirectory>lib</outputDirectory>     
+      </fileSet>      
    </fileSets>
 
    <dependencySets>
@@ -129,8 +140,26 @@
             <include>org.jboss.seam.security:openid-rp</include>
             <include>org.jboss.seam.validation:seam-validation-example</include>
             <include>org.jboss.seam.wicket:seam-wicket-example-numberguess</include>
+            
+            <include>org.jboss.seam.examples:seam-booking</include>
          </includes>
       </dependencySet>
+            
+      <!-- Forge -->
+      <!--dependencySet>
+         <outputDirectory>forge</outputDirectory>
+         <unpack>true</unpack>
+         <useProjectArtifact>false</useProjectArtifact>
+         <outputFileNameMapping></outputFileNameMapping>
+         <includes>
+            <include>org.jboss.seam.forge:forge-distribution</include>
+         </includes>     
+         <unpackOptions>
+            <includes>
+               <include></include>
+            </includes>
+         </unpackOptions> 
+      </dependencySet-->
 
       <!-- Pull in docbook artifacts -->
       <dependencySet>

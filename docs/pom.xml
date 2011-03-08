@@ -22,6 +22,14 @@
    <url>http://www.seamframework.org</url>
 
    <dependencies>
+
+      <dependency>
+         <groupId>org.jboss.seam.forge</groupId>
+         <artifactId>forge-reference-guide</artifactId>
+         <version>1.0.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>
       
       <dependency>
          <groupId>org.jboss.seam.config</groupId>

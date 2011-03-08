@@ -95,10 +95,10 @@
          <artifactId>drools-core</artifactId>
       </dependency>      
       
-		  <dependency>
+      <dependency>
          <groupId>org.jboss.resteasy</groupId>
          <artifactId>resteasy-jaxrs</artifactId>
-		  </dependency>      
+      </dependency>      
    
       <!-- Seam Modules -->
       
@@ -431,6 +431,24 @@
          <optional>true</optional>
          <type>war</type>
       </dependency>
+      
+      <!-- Forge -->
+      
+      <dependency>
+         <groupId>org.jboss.seam.forge</groupId>
+         <artifactId>forge-distribution</artifactId>
+         <version>${seam.forge.version}</version>
+         <type>zip</type>
+      </dependency>
+      
+      <!-- Examples -->
+      
+      <dependency>
+         <groupId>org.jboss.seam.examples</groupId>
+         <artifactId>seam-booking</artifactId>
+         <version>3.0.0-SNAPSHOT</version>
+         <type>zip</type>
+      </dependency>
 
    </dependencies>
 
@@ -453,6 +471,17 @@
                      <excludeTransitive>true</excludeTransitive>
                      
                      <includeArtifactIds>seam-catch,seam-config-xml,seam-faces,seam-international,seam-persistence,seam-remoting,seam-rest,seam-security,seam-security-external,seam-servlet,seam-solder,seam-validation,seam-wicket</includeArtifactIds>
+                  </configuration>
+               </execution>
+               <execution>
+                  <id>forge-distribution</id>
+                  <goals>
+                     <goal>unpack-dependencies</goal>
+                  </goals>
+                  <configuration>
+                     <outputDirectory>${project.build.directory}/forge</outputDirectory>
+                     <excludeTransitive>true</excludeTransitive>
+                     <includeArtifactIds>forge-distribution</includeArtifactIds>
                   </configuration>
                </execution>
             </executions>

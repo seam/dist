@@ -43,19 +43,19 @@
       <resteasy.version>2.1-beta-1</resteasy.version>      
 
       <!-- Seam modules -->
-      <seam.catch.version>3.0.0.CR1</seam.catch.version>
-      <seam.config.version>3.0.0.CR1</seam.config.version>
-      <seam.conversation.version>3.0.0.Beta1</seam.conversation.version>
-      <seam.faces.version>3.0.0.CR1</seam.faces.version>
-      <seam.international.version>3.0.0.CR1</seam.international.version>
+      <seam.catch.version>3.0.0.CR2</seam.catch.version>
+      <seam.config.version>3.0.0.Final</seam.config.version>
+      <seam.conversation.version>3.0.0.Beta2</seam.conversation.version>
+      <seam.faces.version>3.0.0.CR2</seam.faces.version>
+      <seam.international.version>3.0.0.CR2</seam.international.version>
       <seam.jms.version>3.0.0.Beta1</seam.jms.version>
-      <seam.persistence.version>3.0.0.CR1</seam.persistence.version>
-      <seam.remoting.version>3.0.0.CR1</seam.remoting.version>
-      <seam.servlet.version>3.0.0.CR1</seam.servlet.version>
-      <seam.rest.version>3.0.0.CR1</seam.rest.version>
-      <seam.security.version>3.0.0.CR1</seam.security.version>
-      <seam.solder.version>3.0.0.CR1</seam.solder.version>
-      <seam.validation.version>3.0.0.CR1</seam.validation.version>
+      <seam.persistence.version>3.0.0.CR2</seam.persistence.version>
+      <seam.remoting.version>3.0.0.Final</seam.remoting.version>
+      <seam.servlet.version>3.0.0.CR2</seam.servlet.version>
+      <seam.rest.version>3.0.0.Final</seam.rest.version>
+      <seam.security.version>3.0.0.CR2</seam.security.version>
+      <seam.solder.version>3.0.0.CR2</seam.solder.version>
+      <seam.validation.version>3.0.0.Final</seam.validation.version>
       <seam.wicket.version>3.0.0.CR1</seam.wicket.version>
 
       <!-- Forge -->
@@ -65,21 +65,12 @@
    <dependencyManagement>
       <dependencies>
 
-         <!-- import individual Java EE 6 API spec artifacts -->
+         <!-- import Java EE 6 API specs -->
          <dependency>
             <groupId>org.jboss.spec</groupId>
             <artifactId>jboss-javaee-6.0</artifactId>
             <version>${jboss.javaee.version}</version>
             <scope>import</scope>
-            <type>pom</type>
-         </dependency>
-
-         <!-- make Java EE 6 API available as stack artifact -->
-         <dependency>
-            <groupId>org.jboss.spec</groupId>
-            <artifactId>jboss-javaee-6.0</artifactId>
-            <version>${jboss.javaee.version}</version>
-            <scope>provided</scope>
             <type>pom</type>
          </dependency>
 
@@ -95,6 +86,15 @@
             <version>${drools.version}</version>
          </dependency>
 
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-compiler</artifactId>
+            <version>${drools.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.drools</groupId>
+            <artifactId>drools-core</artifactId>
          <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-compiler</artifactId>
@@ -415,15 +415,6 @@
             <artifactId>seam-solder-impl</artifactId>
             <version>${seam.solder.version}</version>
             <scope>runtime</scope>
-         </dependency>
-
-         <dependency>
-            <groupId>org.jboss.seam.validation</groupId>
-            <artifactId>seam-validation</artifactId>
-            <version>${seam.validation.version}</version>
-         </dependency>
-
-         <dependency>
             <groupId>org.jboss.seam.validation</groupId>
             <artifactId>seam-validation-api</artifactId>
             <version>${seam.validation.version}</version>

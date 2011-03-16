@@ -43,19 +43,19 @@
       <resteasy.version>2.1-beta-1</resteasy.version>      
 
       <!-- Seam modules -->
-      <seam.catch.version>3.0.0.CR1</seam.catch.version>
-      <seam.config.version>3.0.0.CR1</seam.config.version>
-      <seam.conversation.version>3.0.0.Beta1</seam.conversation.version>
-      <seam.faces.version>3.0.0.CR1</seam.faces.version>
-      <seam.international.version>3.0.0.CR1</seam.international.version>
+      <seam.catch.version>3.0.0.CR2</seam.catch.version>
+      <seam.config.version>3.0.0.Final</seam.config.version>
+      <seam.conversation.version>3.0.0.Beta2</seam.conversation.version>
+      <seam.faces.version>3.0.0.CR2</seam.faces.version>
+      <seam.international.version>3.0.0.CR2</seam.international.version>
       <seam.jms.version>3.0.0.Beta1</seam.jms.version>
-      <seam.persistence.version>3.0.0.CR1</seam.persistence.version>
-      <seam.remoting.version>3.0.0.CR1</seam.remoting.version>
-      <seam.servlet.version>3.0.0.CR1</seam.servlet.version>
-      <seam.rest.version>3.0.0.CR1</seam.rest.version>
-      <seam.security.version>3.0.0.CR1</seam.security.version>
-      <seam.solder.version>3.0.0.CR1</seam.solder.version>
-      <seam.validation.version>3.0.0.CR1</seam.validation.version>
+      <seam.persistence.version>3.0.0.CR2</seam.persistence.version>
+      <seam.remoting.version>3.0.0.Final</seam.remoting.version>
+      <seam.servlet.version>3.0.0.CR2</seam.servlet.version>
+      <seam.rest.version>3.0.0.Final</seam.rest.version>
+      <seam.security.version>3.0.0.CR2</seam.security.version>
+      <seam.solder.version>3.0.0.CR2</seam.solder.version>
+      <seam.validation.version>3.0.0.Final</seam.validation.version>
       <seam.wicket.version>3.0.0.CR1</seam.wicket.version>
 
       <!-- Forge -->

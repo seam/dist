@@ -48,7 +48,7 @@
       <seam.conversation.version>3.0.0.Beta2</seam.conversation.version>
       <seam.faces.version>3.0.0.CR2</seam.faces.version>
       <seam.international.version>3.0.0.CR2</seam.international.version>
-      <seam.jms.version>3.0.0.Beta1</seam.jms.version>
+      <seam.jms.version>3.0.0.Alpha1</seam.jms.version>
       <seam.persistence.version>3.0.0.CR2</seam.persistence.version>
       <seam.remoting.version>3.0.0.Final</seam.remoting.version>
       <seam.servlet.version>3.0.0.CR2</seam.servlet.version>

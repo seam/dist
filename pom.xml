@@ -49,6 +49,7 @@
       <seam.faces.version>3.0.0.CR2</seam.faces.version>
       <seam.international.version>3.0.0.CR2</seam.international.version>
       <seam.jms.version>3.0.0.Alpha1</seam.jms.version>
+      <seam.jcr.version>3.0.0.Alpha1</seam.jcr.version>
       <seam.persistence.version>3.0.0.CR2</seam.persistence.version>
       <seam.remoting.version>3.0.0.CR2</seam.remoting.version>
       <seam.servlet.version>3.0.0.CR2</seam.servlet.version>
@@ -291,6 +292,24 @@
             <artifactId>seam-international-impl</artifactId>
             <version>${seam.international.version}</version>
             <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.jcr</groupId>
+            <artifactId>seam-jcr</artifactId>
+            <version>${seam.jcr.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.jcr</groupId>
+            <artifactId>seam-jcr-api</artifactId>
+            <version>${seam.jcr.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.jcr</groupId>
+            <artifactId>seam-jcr-impl</artifactId>
+            <version>${seam.jcr.version}</version>
          </dependency>
 
          <dependency>

@@ -450,6 +450,13 @@
          </dependency>
 
          <dependency>
+            <groupId>org.jboss.seam.solder</groupId>
+            <artifactId>seam-solder-tooling</artifactId>
+            <version>${seam.solder.version}</version>
+            <scope>provided</scope>
+         </dependency>
+
+         <dependency>
             <groupId>org.jboss.seam.validation</groupId>
             <artifactId>seam-validation-api</artifactId>
             <version>${seam.validation.version}</version>

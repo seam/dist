@@ -132,9 +132,9 @@
             <include>org.jboss.seam.remoting:seam-remoting-model-example</include>
             <include>org.jboss.seam.remoting:seam-remoting-helloworld-example</include>
             <include>org.jboss.seam.remoting:seam-remoting-validation-example</include>
-            <include>org.jboss.seam.rest:seam-tasks-example</include>
-            <include>org.jboss.seam.rest:seam-tasks-statistics-example</include>
-            <include>org.jboss.seam.rest:seam-jaxrs-exceptions-example</include>
+            <include>org.jboss.seam.rest:seam-rest-example-tasks</include>
+            <include>org.jboss.seam.rest:seam-rest-example-exceptions</include>
+            <include>org.jboss.seam.rest:seam-rest-example-client</include>
             <include>org.jboss.seam.security:seam-security-simple-example</include>
             <include>org.jboss.seam.security:seam-security-idmconsole-example</include>
             <include>org.jboss.seam.security:openid-rp</include>

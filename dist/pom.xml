@@ -277,7 +277,7 @@
       
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
-         <artifactId>seam-tasks-example</artifactId>
+         <artifactId>seam-rest-example-tasks</artifactId>
          <version>${seam.rest.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -285,7 +285,7 @@
       
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
-         <artifactId>seam-tasks-statistics-example</artifactId>
+         <artifactId>seam-rest-example-exceptions</artifactId>
          <version>${seam.rest.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -293,7 +293,7 @@
       
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
-         <artifactId>seam-jaxrs-exceptions-example</artifactId>
+         <artifactId>seam-rest-example-client</artifactId>
          <version>${seam.rest.version}</version>
          <type>zip</type>
          <optional>true</optional>

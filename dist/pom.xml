@@ -59,13 +59,6 @@
          <version>1.1</version>
       </dependency>      
       
-      <!-- Remove once remoting uses ales' new conversation module -->
-      <dependency>
-         <groupId>org.jboss.weld</groupId>
-         <artifactId>weld-core</artifactId>
-         <version>1.1.0.CR3</version>         
-      </dependency>      
-
       <dependency>
          <!-- JBoss Java EE 6.0 spec bom uses wrong groupId
          <groupId>javax.faces</groupId>
@@ -98,7 +91,12 @@
       <dependency>
          <groupId>org.jboss.resteasy</groupId>
          <artifactId>resteasy-jaxrs</artifactId>
-      </dependency>      
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.logmanager</groupId>
+         <artifactId>jboss-logmanager</artifactId>
+      </dependency>
    
       <!-- Seam Modules -->
       
@@ -122,6 +120,12 @@
          <version>${seam.catch.version}</version>
          <type>zip</type>
          <optional>true</optional>
+         <exclusions>
+            <exclusion>
+               <groupId>jstl</groupId>
+               <artifactId>jstl</artifactId>
+            </exclusion>
+         </exclusions>
       </dependency>      
 
       <!-- Seam Config -->
@@ -145,6 +149,12 @@
          <version>${seam.config.version}</version>
          <type>zip</type>
          <optional>true</optional>
+         <exclusions>
+            <exclusion>
+               <groupId>org.jboss.weld.servlet</groupId>
+               <artifactId>weld-servlet</artifactId>
+            </exclusion>
+         </exclusions>
       </dependency>
       
       <!-- Seam Persistence -->
@@ -239,7 +249,7 @@
 
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
-         <artifactId>seam-remoting-helloworld-example</artifactId>
+         <artifactId>seam-remoting-example-helloworld</artifactId>
          <version>${seam.remoting.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -247,7 +257,7 @@
 
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
-         <artifactId>seam-remoting-model-example</artifactId>
+         <artifactId>seam-remoting-example-model</artifactId>
          <version>${seam.remoting.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -255,7 +265,7 @@
       
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
-         <artifactId>seam-remoting-validation-example</artifactId>
+         <artifactId>seam-remoting-example-validation</artifactId>
          <version>${seam.remoting.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -274,10 +284,18 @@
          <classifier>sources</classifier>
          <version>${seam.rest.version}</version>
       </dependency>      
+
+      <dependency>
+         <groupId>org.jboss.seam.rest</groupId>
+         <artifactId>seam-rest-example-client</artifactId>
+         <version>${seam.rest.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
       
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
-         <artifactId>seam-tasks-example</artifactId>
+         <artifactId>seam-rest-example-tasks</artifactId>
          <version>${seam.rest.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -285,15 +303,7 @@
       
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
-         <artifactId>seam-tasks-statistics-example</artifactId>
-         <version>${seam.rest.version}</version>
-         <type>zip</type>
-         <optional>true</optional>
-      </dependency>  
-      
-      <dependency>
-         <groupId>org.jboss.seam.rest</groupId>
-         <artifactId>seam-jaxrs-exceptions-example</artifactId>
+         <artifactId>seam-rest-example-exceptions</artifactId>
          <version>${seam.rest.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -327,7 +337,7 @@
       
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
-         <artifactId>seam-security-simple-example</artifactId>
+         <artifactId>seam-security-example-simple</artifactId>
          <version>${seam.security.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -335,7 +345,7 @@
       
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
-         <artifactId>seam-security-idmconsole-example</artifactId>
+         <artifactId>seam-security-example-idmconsole</artifactId>
          <version>${seam.security.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -343,7 +353,7 @@
       
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
-         <artifactId>openid-rp</artifactId>
+         <artifactId>seam-security-example-openid-rp</artifactId>
          <version>${seam.security.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -393,7 +403,7 @@
 
       <dependency>
          <groupId>org.jboss.seam.validation</groupId>
-         <artifactId>seam-validation-example</artifactId>
+         <artifactId>seam-validation-example-helloworld</artifactId>
          <version>${seam.validation.version}</version>
          <type>zip</type>
          <optional>true</optional>

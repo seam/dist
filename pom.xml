@@ -55,7 +55,7 @@
       <seam.remoting.version>3.0.0.CR3</seam.remoting.version>
       <seam.servlet.version>3.0.0.CR3</seam.servlet.version>
       <seam.rest.version>3.0.0.CR2</seam.rest.version>
-      <seam.security.version>3.0.0.CR2</seam.security.version>
+      <seam.security.version>3.0.0.CR3</seam.security.version>
       <seam.solder.version>3.0.0.CR4</seam.solder.version>
       <seam.validation.version>3.0.0.CR2</seam.validation.version>
       <seam.wicket.version>3.0.0.CR1</seam.wicket.version>

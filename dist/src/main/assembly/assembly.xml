@@ -49,7 +49,12 @@
       
       <fileSet>
          <directory>${project.build.directory}/forge/forge-${seam.forge.version}/lib</directory>
-         <outputDirectory>lib</outputDirectory>     
+         <outputDirectory>lib</outputDirectory>
+         <excludes>
+            <exclude>forge-reference-guide.war</exclude>
+            <exclude>*.pom</exclude>
+            <exclude>seam-solder.jar</exclude>
+         </excludes>
       </fileSet>      
    </fileSets>
 
@@ -60,7 +65,9 @@
          <useProjectArtifact>false</useProjectArtifact>
          <includes>
             <include>org.jboss.seam.catch:seam-catch</include>
-            <include>org.jboss.seam.config:seam-config-xml</include>            
+            <include>org.jboss.seam.config:seam-config-xml</include>   
+            <include>org.jboss.seam.conversation:seam-conversation-spi</include>
+            <include>org.jboss.seam.conversation:seam-conversation-weld</include>         
             <include>org.jboss.seam.faces:seam-faces</include>
             <include>org.jboss.seam.international:seam-international</include>
             <include>org.jboss.seam.persistence:seam-persistence</include>
@@ -114,7 +121,8 @@
          <useTransitiveDependencies>true</useTransitiveDependencies>
          <excludes>
             <exclude>org.jboss.seam.*</exclude>
-            <exclude>org.jboss.seam:*</exclude>
+            <exclude>org.jboss.seam:*</exclude>       
+            <exclude>org.jboss.spec:*</exclude>
          </excludes>
          <outputFileNameMapping>${artifact.artifactId}${dashClassifier?}.${artifact.extension}</outputFileNameMapping>
       </dependencySet>
@@ -129,16 +137,18 @@
             <include>org.jboss.seam.config:seam-config-example-princess-rescue</include>
             <include>org.jboss.seam.faces:seam-faces-example-short-ly</include>
             <include>org.jboss.seam.international:seam-international-example-timeanddate</include>                        
-            <include>org.jboss.seam.remoting:seam-remoting-model-example</include>
-            <include>org.jboss.seam.remoting:seam-remoting-helloworld-example</include>
-            <include>org.jboss.seam.remoting:seam-remoting-validation-example</include>
-            <include>org.jboss.seam.rest:seam-tasks-example</include>
-            <include>org.jboss.seam.rest:seam-tasks-statistics-example</include>
-            <include>org.jboss.seam.rest:seam-jaxrs-exceptions-example</include>
-            <include>org.jboss.seam.security:seam-security-simple-example</include>
-            <include>org.jboss.seam.security:seam-security-idmconsole-example</include>
-            <include>org.jboss.seam.security:openid-rp</include>
-            <include>org.jboss.seam.validation:seam-validation-example</include>
+            <include>org.jboss.seam.remoting:seam-remoting-example-model</include>
+            <include>org.jboss.seam.remoting:seam-remoting-example-helloworld</include>
+            <include>org.jboss.seam.remoting:seam-remoting-example-validation</include>
+            <include>org.jboss.seam.rest:seam-rest-example-client</include>
+            <include>org.jboss.seam.rest:seam-rest-example-exceptions</include>
+            <include>org.jboss.seam.rest:seam-rest-example-tasks</include>
+            <include>org.jboss.seam.security:seam-security-example-authorization</include>
+            <include>org.jboss.seam.security:seam-security-example-simple</include>
+            <include>org.jboss.seam.security:seam-security-example-idmconsole</include>
+            <include>org.jboss.seam.security:seam-security-example-openid-op</include>            
+            <include>org.jboss.seam.security:seam-security-example-openid-rp</include>
+            <include>org.jboss.seam.validation:seam-validation-example-helloworld</include>
             <include>org.jboss.seam.wicket:seam-wicket-example-numberguess</include>
             
             <include>org.jboss.seam.examples:seam-booking</include>

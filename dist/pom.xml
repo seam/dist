@@ -5,7 +5,7 @@
    <groupId>org.jboss.seam</groupId>
    <artifactId>seam-distribution</artifactId>
    <packaging>jar</packaging>
-   <version>3.0.0.CR2</version>
+   <version>3.0.0.CR3</version>
    <name>Seam Distribution</name>
 
    <parent>
@@ -154,6 +154,14 @@
                <groupId>org.jboss.weld.servlet</groupId>
                <artifactId>weld-servlet</artifactId>
             </exclusion>
+            <exclusion>
+               <groupId>javax.faces</groupId>
+               <artifactId>jsf-api</artifactId>
+            </exclusion>
+            <exclusion>
+               <groupId>com.sun.faces</groupId>
+               <artifactId>jsf-impl</artifactId>
+            </exclusion>
          </exclusions>
       </dependency>
       
@@ -207,6 +215,20 @@
          <version>${seam.faces.version}</version>
          <type>zip</type>
          <optional>true</optional>
+         <exclusions>
+            <exclusion>
+               <groupId>com.ocpsoft</groupId>
+               <artifactId>prettyfaces-jsf2</artifactId>
+            </exclusion>
+            <exclusion>
+               <groupId>com.ocpsoft</groupId>
+               <artifactId>ocpsoft-pretty-time</artifactId>
+            </exclusion>
+            <exclusion>
+               <groupId>commons-beanutils</groupId>
+               <artifactId>commons-beanutils</artifactId>
+            </exclusion>
+         </exclusions>         
       </dependency>
 
       <!-- Seam International -->
@@ -231,7 +253,13 @@
          <classifier>distsources</classifier>
          <type>zip</type>
          <optional>true</optional>
-      </dependency>       
+         <exclusions>
+           <exclusion>
+              <groupId>joda-time</groupId>
+              <artifactId>joda-time</artifactId>
+           </exclusion>
+         </exclusions>
+      </dependency>      
       
       <!-- Seam Remoting -->
       
@@ -291,16 +319,42 @@
          <version>${seam.rest.version}</version>
          <type>zip</type>
          <optional>true</optional>
+         <exclusions>
+           <exclusion>
+             <groupId>org.jboss.weld.se</groupId>
+             <artifactId>weld-se</artifactId>
+           </exclusion>
+           <exclusion>
+              <groupId>org.jboss.resteasy</groupId>
+              <artifactId>resteasy-jaxb-provider</artifactId>
+           </exclusion>
+           <exclusion>
+              <groupId>org.jboss.resteasy</groupId>
+              <artifactId>resteasy-jackson-provider</artifactId>
+           </exclusion>
+         </exclusions>
       </dependency>
-      
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
          <artifactId>seam-rest-example-tasks</artifactId>
          <version>${seam.rest.version}</version>
          <type>zip</type>
          <optional>true</optional>
-      </dependency>     
-      
+         <exclusions>
+            <exclusion>
+               <groupId>org.codehaus.jackson</groupId>
+               <artifactId>jackson-jaxrs</artifactId>
+            </exclusion>
+            <exclusion>
+               <groupId>org.codehaus.jackson</groupId>
+               <artifactId>jackson-xc</artifactId>
+            </exclusion>
+            <exclusion>
+               <groupId>org.freemarker</groupId>
+               <artifactId>freemarker</artifactId>
+            </exclusion>            
+         </exclusions>
+      </dependency>
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
          <artifactId>seam-rest-example-exceptions</artifactId>
@@ -346,6 +400,14 @@
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security-example-idmconsole</artifactId>
+         <version>${seam.security.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.security</groupId>
+         <artifactId>seam-security-example-openid-op</artifactId>
          <version>${seam.security.version}</version>
          <type>zip</type>
          <optional>true</optional>
@@ -458,6 +520,28 @@
          <artifactId>seam-booking</artifactId>
          <version>3.0.0-SNAPSHOT</version>
          <type>zip</type>
+         <exclusions>
+           <exclusion>
+              <groupId>com.ocpsoft</groupId>
+              <artifactId>ocpsoft-pretty-time</artifactId>
+           </exclusion>
+           <exclusion>
+              <groupId>com.ocpsoft</groupId>
+              <artifactId>prettyfaces-jsf2</artifactId>
+           </exclusion>
+           <exclusion>
+              <groupId>commons-beanutils</groupId>
+              <artifactId>commons-beanutils</artifactId>
+           </exclusion>
+           <exclusion>
+              <groupId>commons-digester</groupId>
+              <artifactId>commons-digester</artifactId>
+           </exclusion>      
+           <exclusion>
+              <groupId>joda-time</groupId>
+              <artifactId>joda-time</artifactId>
+           </exclusion>  
+         </exclusions>
       </dependency>
 
    </dependencies>

@@ -38,9 +38,10 @@ remoting-validation - Demonstrates client-side Bean Validation
 
 Seam Security examples
 ----------------------
-security-simple     - Simple authentication example
-security-idmconsole - Identity Management console, demonstrates PicketLink IDM integration features
-security-openid-rp  - OpenID Relying Party example
+security-simple        - Simple authentication example
+security-idmconsole    - Identity Management console, demonstrates PicketLink IDM integration features
+security-openid-rp     - OpenID Relying Party example
+security-openid-op     - OpenID Provider example
 security-authorization - Typesafe authorization example
 
 Seam Validation examples

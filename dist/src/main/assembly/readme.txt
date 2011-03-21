@@ -3,9 +3,9 @@ Seam ${project.version}
 
 Seam is a powerful open source development platform for building rich Internet 
 applications in Java. Seam integrates technologies such as Asynchronous 
-JavaScript and XML (AJAX), JavaServer Faces (JSF), Java Persistence (JPA), 
-Enterprise Java Beans (EJB 3.0) and Business Process Management (BPM) into a 
-unified full-stack solution, complete with sophisticated tooling.
+JavaScript and XML (AJAX), JavaServer Faces (JSF), Java Persistence (JPA) and
+Enterprise Java Beans (EJB 3.0) into a unified full-stack solution, complete 
+with sophisticated tooling.
 
 Seam has been designed from the ground up to eliminate complexity at both 
 architecture and API levels. It enables developers to assemble complex web 
@@ -29,6 +29,10 @@ Contents of distribution
  examples/
 
    Seam Examples
+   
+ forge/
+ 
+   Seam Forge   
   
  lib/
 

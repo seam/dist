@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
+
+<chapter id="seam.credits">
+   <title>Credits</title>
+
+   <section>
+      <title>List of contributors</title>
+
+      <para>
+         Seam is a collaborative project created by the open source community.  We would like to thank all of the 
+         following people for their contributions, without which Seam would not have been possible.
+      </para>
+      
+      <itemizedlist>
+         <listitem>Gavin King (Project Founder)</listitem>
+         <listitem>Shane Bryzak (Project Lead)</listitem>
+         <listitem>Pete Muir (former Project Lead)</listitem>
+         <listitem>Dan Allen (Community Liaison)</listitem>
+      </itemizedlist>
+      
+      <itemizedlist>
+         <listitem>John Ament</listitem>
+         <listitem>Max Rydahl Andersen</listitem>
+         <listitem>Jay Balunas</listitem>
+         <listitem>Christian Bauer</listitem>
+         <listitem>Lincoln Baxter III</listitem>
+         <listitem>Emmanuel Bernard</listitem>
+         <listitem>Mike Brock</listitem>
+         <listitem>Stuart Douglas</listitem>
+         <listitem>Matt Drees</listitem>
+         <listitem>Ken Finnigan</listitem>
+         <listitem>Denis Forveille</listitem>
+         <listitem>José Freitas</listitem>
+         <listitem>Jordan Ganoff</listitem>
+         <listitem>George Gastaldi</listitem>
+         <listitem>Martin Gencur</listitem>
+         <listitem>Jozef Hartinger</listitem>
+         <listitem>Peter Hilton</listitem>
+         <listitem>Ales Justin</listitem>
+         <listitem>Nicklas Karlsson</listitem>
+         <listitem>Marcel Kolsteren</listitem>
+         <listitem>Brian Leathem</listitem>
+         <listitem>Cody Lerum</listitem>
+         <listitem>Gunnar Morling</listitem>
+         <listitem>Marek Novotny</listitem>
+         <listitem>Jacob Orshalick</listitem>
+         <listitem>James Perkins</listitem>
+         <listitem>Clint Popetz</listitem>
+         <listitem>Jason Porter</listitem>
+         <listitem>Karel Piwko</listitem>
+         <listitem>Ove Ranheim</listitem>
+         <listitem>Norman Richards</listitem>
+         <listitem>Daniel Roth</listitem>
+         <listitem>Antoine Sabot-Durand</listitem>
+         <listitem>Sebastian Sachtleben</listitem>
+         <listitem>Amir Sadrinia</listitem>
+         <listitem>Ondřej Skutka</listitem>
+         <listitem>Mark Struberg</listitem>
+         <listitem>Tihomir Surdilovic</listitem>
+         <listitem>Mike Youngstrom</listitem>
+         <listitem>Michael Yuan</listitem>
+      </itemizedlist>               
+            
+   </section>
+   
+   <section>
+      <title>Want to join the team?</title>
+      
+      <para>
+         We are looking for good people to join us in making Seam the best application framework in the world.  If you
+         are interested in contributing, please visit us at http://www.seamframework.org to find out how.
+      </para>
+   
+   </section>
+
+
+</chapter>

@@ -55,7 +55,7 @@ Seam Framework Home Page:      http://www.seamframework.org
 Downloads:                     http://www.seamframework.org/Seam3/Downloads
 Forums:                        http://www.seamframework.org/Community/Seam3Users
 Source Code:                   http://github.com/seam
-Issue Tracking:                http://jira.jboss.org/jira/browse/SEAM
+Issue Tracking:                http://issues.jboss.org/browse/SEAM
 
 Release Notes
 =============

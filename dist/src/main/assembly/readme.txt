@@ -1,19 +1,13 @@
 Seam ${project.version}
 ==========================
 
-Seam is a powerful open source development platform for building rich Internet 
-applications in Java. Seam integrates technologies such as Asynchronous 
-JavaScript and XML (AJAX), JavaServer Faces (JSF), Java Persistence (JPA) and
-Enterprise Java Beans (EJB 3.0) into a unified full-stack solution, complete 
-with sophisticated tooling.
-
-Seam has been designed from the ground up to eliminate complexity at both 
-architecture and API levels. It enables developers to assemble complex web 
-applications using simple annotated Java classes, a rich set of UI components, 
-and very little XML. Seam's unique support for conversations and declarative 
-state management can introduce a more sophisticated user experience while at 
-the same time eliminating common bugs found in traditional web applications.
-
+Seam is a set of portable extensions for Java EE based on CDI (JSR-299 Contexts and Dependency Injection).
+It integrates a number of technologies in a unified stack, and provides numerous features useful for 
+building modern, enterprise-grade applications.  It has been designed from the ground up to eliminate
+complexity at both the architecture and API levels, and allows developers to assemble complex web
+applications using simple annotated Java classes and minimal XML.  It provides support for numerous view 
+technologies such as JSF, GWT and Wicket, and comes with powerful tooling (Seam Forge), with rapid 
+application development features to allow you to get up and running in a minimal amount of time.
 
 Contents of distribution
 ========================

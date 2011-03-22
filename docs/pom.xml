@@ -135,6 +135,9 @@
          <plugin>
             <groupId>org.jboss.maven.plugins</groupId>
             <artifactId>maven-jdocbook-plugin</artifactId>
+            <configuration>
+              <sourceDocumentName>bundled_master.xml</sourceDocumentName>
+            </configuration>
          </plugin>
          <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -150,9 +153,9 @@
                      <goal>unpack-dependencies</goal>
                   </goals>
                   <configuration>                  
-                     <outputDirectory>${basedir}/src/main/docbook/en-US/modules</outputDirectory>
+                     <outputDirectory>${basedir}/src/main/docbook/en-US</outputDirectory>
                      <excludeTransitive>true</excludeTransitive>
-                     <useSubDirectoryPerArtifact>true</useSubDirectoryPerArtifact>
+                     <useSubDirectoryPerArtifact>false</useSubDirectoryPerArtifact>
                      <stripVersion>true</stripVersion>
                   </configuration>
                </execution>

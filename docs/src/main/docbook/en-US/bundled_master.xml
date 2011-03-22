@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding="utf-8"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
+   "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd"  [ ]>
+<book lang="en" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+   <toc />
+
+   <title>Seam</title>
+
+   <xi:include href="bundled_credits.xml"/>
+   <xi:include href="bundled_intro.xml"/>
+   
+   <part>
+      <title>Forge</title>
+      <xi:include href="forge-preface.xml" />
+      <xi:include href="forge-installation.xml" />
+      <xi:include href="forge-creating-basic-webapp.xml" />
+      <xi:include href="forge-plugin-dev.xml" />      
+   </part>
+
+   <part>
+      <title>Seam Configuration</title>
+      <xi:include href="config-introduction.xml"/>
+      <xi:include href="config-xml-provider.xml"/>
+   </part>
+   
+   <part>
+      <title>Seam Persistence</title>
+      <xi:include href="persistence-general.xml"/>
+   </part>   
+   
+   <part>
+      <title>Seam Servlet</title>
+      <xi:include href="servlet-introduction.xml"/>
+      <xi:include href="servlet-installation.xml"/>
+      <xi:include href="servlet-events.xml"/>
+      <xi:include href="servlet-injectable_refs.xml"/>
+      <xi:include href="servlet-exception_handling.xml" />
+      <xi:include href="servlet-beanmanager.xml"/>   
+   </part>
+   
+   <part>
+      <title>Seam Security</title>      
+      <xi:include href="security-introduction.xml"/>
+      <xi:include href="security-authentication.xml"/>
+      <xi:include href="security-identitymanagement.xml"/>   
+      <xi:include href="security-authentication-external.xml"/>
+      <xi:include href="security-authorization.xml"/>      
+   </part>
+
+   <part>
+      <title>Seam Faces</title>
+      <xi:include href="faces-preface.xml" />
+      <xi:include href="faces-installation.xml" />
+      <xi:include href="faces-events.xml" />
+      <xi:include href="faces-scopes.xml" />
+      <xi:include href="faces-messages.xml" />
+      <xi:include href="faces-artifacts.xml" />
+      <xi:include href="faces-components.xml" />
+   </part>
+
+   <part>
+      <title>Seam International</title>
+      <xi:include href="international-preface.xml" />
+      <xi:include href="international-installation.xml" />
+      <xi:include href="international-locales.xml" />
+      <xi:include href="international-timezones.xml" />
+      <xi:include href="international-messages.xml" />
+   </part>
+   
+   <part>
+     <title>Seam Catch</title>
+     <xi:include href="catch-introduction.xml"/>
+     <xi:include href="catch-installation.xml"/>
+     <xi:include href="catch-client_usage.xml"/>
+     <xi:include href="catch-integration.xml"/>
+     <xi:include href="catch-glossary.xml"/>   
+   </part>
+
+   <part>
+      <title>Seam Remoting</title>
+      <xi:include href="remoting-general.xml"/>
+      <xi:include href="remoting-model.xml"/>
+      <xi:include href="remoting-validation.xml"/>
+   </part>
+   
+   <part>
+      <title>Seam Rest</title>
+      <xi:include href="rest-preface.xml" />
+      <xi:include href="rest-installation.xml" />
+      <xi:include href="rest-exception-mapping.xml" />
+      <xi:include href="rest-validation.xml" />
+      <xi:include href="rest-templating.xml" />
+      <xi:include href="rest-client.xml" />
+      <xi:include href="rest-dependencies.xml" />
+   </part>
+   
+   <part>
+      <title>Seam Validation</title>
+      <xi:include href="validation-introduction.xml"/>
+      <xi:include href="validation-installation.xml"/>
+      <xi:include href="validation-dependency-injection.xml"/>
+      <xi:include href="validation-method-validation.xml"/>      
+   </part>
+   
+   <part>
+      <title>Seam Wicket</title>
+      <xi:include href="wicket-preface.xml" />
+      <xi:include href="wicket-installation.xml" />
+      <xi:include href="wicket-features.xml" />      
+   </part>
+   
+   <part>
+      <title>Seam Solder</title>
+      <xi:include href="solder-gettingstarted.xml"/>
+      <xi:include href="solder-programmingmodel.xml"/>
+      <xi:include href="solder-annotationliterals.xml"/>
+      <xi:include href="solder-elextensions.xml"/>
+      <xi:include href="solder-resourceloading.xml"/>
+      <xi:include href="solder-logging.xml"/>
+      <xi:include href="solder-typeutilities.xml"/>
+      <xi:include href="solder-beanmanagerprovider.xml"/>
+      <xi:include href="solder-beanutilities.xml"/>
+      <xi:include href="solder-properties.xml"/>
+      <xi:include href="solder-unwraps.xml"/>
+      <xi:include href="solder-defaultbeans.xml"/>
+      <xi:include href="solder-genericbeans.xml"/>
+      <xi:include href="solder-servicehandler.xml"/>
+   </part>      
+
+</book>

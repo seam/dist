@@ -466,7 +466,6 @@
             <groupId>org.jboss.seam.solder</groupId>
             <artifactId>seam-solder-tooling</artifactId>
             <version>${seam.solder.version}</version>
-            <scope>provided</scope>
          </dependency>
 
          <dependency>

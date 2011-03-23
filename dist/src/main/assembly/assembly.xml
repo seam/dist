@@ -77,6 +77,7 @@
             <include>org.jboss.seam.security:seam-security-external</include>
             <include>org.jboss.seam.servlet:seam-servlet</include>
             <include>org.jboss.seam.solder:seam-solder</include>
+            <include>org.jboss.seam.solder:seam-solder-tooling</include>
             <include>org.jboss.seam.validation:seam-validation</include>
             <include>org.jboss.seam.wicket:seam-wicket</include>
          </includes>
@@ -109,6 +110,7 @@
             <include>org.jboss.seam.security:seam-security-external:*:*:sources</include>
             <include>org.jboss.seam.servlet:seam-servlet:*:*:sources</include>
             <include>org.jboss.seam.solder:seam-solder:*:*:sources</include>
+            <include>org.jboss.seam.solder:seam-solder-tooling:*:*:sources</include>
             <include>org.jboss.seam.validation:seam-validation:*:*:sources</include>            
             <include>org.jboss.seam.wicket:seam-wicket:*:*:sources</include>                        
          </includes>

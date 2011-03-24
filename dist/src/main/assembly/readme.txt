@@ -42,6 +42,24 @@ Licensing
  This distribution, as a whole, is licensed under the terms of the Apache
  Software License, Version 2.0 (ASL).
 
+Modules
+=======
+
+Solder                         http://seamframework.org/Seam3/SolderHome
+Forge                          http://seamframework.org/Documentation/SeamForge
+Catch                          http://seamframework.org/Seam3/CatchModule
+Config                         http://seamframework.org/Seam3/ConfigModule
+Faces                          http://seamframework.org/Seam3/FacesModule
+International                  http://seamframework.org/Seam3/InternationalModule
+JMS                            http://seamframework.org/Seam3/JMSModule
+Persistence                    http://seamframework.org/Seam3/PersistenceModule
+Remoting                       http://seamframework.org/Seam3/RemotingModule
+REST                           http://seamframework.org/Seam3/RESTModule
+Security                       http://seamframework.org/Seam3/SecurityModule
+Servlet                        http://seamframework.org/Seam3/ServletModule
+Validation                     http://seamframework.org/Seam3/ValidationModule
+Wicket                         http://seamframework.org/Seam3/WicketModule
+
 Seam URLs
 ==================
 

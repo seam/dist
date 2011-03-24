@@ -51,7 +51,6 @@ Catch                          http://seamframework.org/Seam3/CatchModule
 Config                         http://seamframework.org/Seam3/ConfigModule
 Faces                          http://seamframework.org/Seam3/FacesModule
 International                  http://seamframework.org/Seam3/InternationalModule
-JMS                            http://seamframework.org/Seam3/JMSModule
 Persistence                    http://seamframework.org/Seam3/PersistenceModule
 Remoting                       http://seamframework.org/Seam3/RemotingModule
 REST                           http://seamframework.org/Seam3/RESTModule

@@ -37,8 +37,9 @@
       <jboss.logmanager.version>1.2.0.CR4</jboss.logmanager.version>
       <jbpm.version>4.2</jbpm.version>
       <picketlink.idm.version>1.5.0.Alpha02</picketlink.idm.version>
-      <joda.time.version>1.6</joda.time.version>
-      <prettytime.version>1.0.6</prettytime.version>
+      <joda.time.version>1.6</joda.time.version>      
+      <prettytime.version>1.0.6</prettytime.version>      
+      <prettyfaces.version>3.2.0</prettyfaces.version>      
       <velocity.version>1.6.4</velocity.version>
       <wicket.version>1.4.15</wicket.version>
       <resteasy.version>2.1-beta-1</resteasy.version>      
@@ -215,6 +216,24 @@
             <artifactId>ocpsoft-pretty-time</artifactId>
             <version>${prettytime.version}</version>
          </dependency>
+
+         <dependency>
+            <groupId>com.ocpsoft</groupId>
+            <artifactId>prettyfaces-jsf11</artifactId>
+            <version>${prettyfaces.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>com.ocpsoft</groupId>
+            <artifactId>prettyfaces-jsf12</artifactId>
+            <version>${prettyfaces.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>com.ocpsoft</groupId>
+            <artifactId>prettyfaces-jsf2</artifactId>
+            <version>${prettyfaces.version}</version>
+         </dependency>         
          
          <dependency>
             <groupId>org.jboss.resteasy</groupId>

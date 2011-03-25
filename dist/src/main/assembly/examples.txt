@@ -7,11 +7,11 @@ Consolidated examples
 ---------------------
 These are examples which demonstrate a number of Seam features.
 
-booking - Seam Booking example, demonstrates conversations, validation, security
+seam-booking - Seam Booking example, demonstrates conversations, validation, security
 
 Seam Catch examples
 -------------------
-catch-basic            - Basic exception handling example
+catch-basic-servlet    - Basic exception handling example
 
 Seam Config examples
 --------------------
@@ -27,8 +27,9 @@ international-timeanddate - Demonstration app showing timeanddate.com-like featu
 
 Seam REST examples
 ------------------
-rest-exceptions       - Seam REST module example
-rest-tasks-statistics - Seam REST module example
+rest-tasks            - Demonstrates Seam REST module
+rest-exceptions       - Demonstrates declarative exception handling and Seam Catch integration
+rest-client           - Demonstrates Seam REST Client
 
 Seam Remoting examples
 ----------------------

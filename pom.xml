@@ -62,7 +62,7 @@
       <seam.wicket.version>3.0.0.CR1</seam.wicket.version>
 
       <!-- Forge -->
-      <seam.forge.version>1.0.0.Alpha2</seam.forge.version>
+      <seam.forge.version>1.0.0-SNAPSHOT</seam.forge.version>
    </properties>
 
    <dependencyManagement>
@@ -440,7 +440,6 @@
             <groupId>org.jboss.seam.security</groupId>
             <artifactId>seam-security-external</artifactId>
             <version>${seam.security.version}</version>
-            <scope>runtime</scope>
          </dependency>
 
          <dependency>

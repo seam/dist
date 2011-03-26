@@ -43,4 +43,103 @@
       </para>
    </section>
 
+   <section>
+      <title>Seam Bill of Materials</title>   
+
+      <para>
+         The Seam 3 build is based on Maven 3. Each Seam module is a separate
+         project, with its own release cycle. Each Seam module is a
+         multi-module project contains the api, implementation, examples and
+         documentation. Select modules are assembled together to create a
+         Seam distribution, or stack release.
+      </para>
+
+      <para>
+         To keep the modules in sync, the Seam project publishes a special
+         Maven POM known as a "Bill of Materials" (BOM), which we'll refer to
+         as the Seam BOM. The Seam BOM defines the versions of all the Seam
+         modules and third-party libraries that are used in the Seam stack
+         using Maven's dependency management facility.
+      </para>
+      
+      <para>
+         You can import these version definitions into your project by adding
+         the Seam BOM as a dependency with scope <literal>import</literal>.
+         The benefit of doing so is that it relieves you from having to specify
+         the version of any Seam module explicitly. It also means you can
+         upgrade all your Seam modules at once by just updating the version of
+         the BOM.
+      </para>
+
+      <para>
+         Generally, the easiest way to accomplish this import is by first
+         defining a property for the Seam BOM version:
+      </para>
+
+      <programlisting role="XML"><![CDATA[<properties>
+        <seam.version>3.0.0.Final</seam.version>
+</properties>]]></programlisting>
+       
+      <para>
+         Then you add the following dependency declaration to the
+         <literal>dependencyManagement</literal> section of your project's POM
+         file (or parent POM, if you use one).
+      </para>
+
+      <programlisting role="XML"><![CDATA[<dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.jboss.seam</groupId>
+                <artifactId>seam-bom</artifactId>
+                <version>${seam.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>]]></programlisting>
+
+      <para>
+         Then, it's a simple matter to declare which Seam module dependencies
+         your project requires by adding them inside the
+         <literal>dependencies</literal> section. There's no need to specify a
+         version of the module as it gets inherited from the Seam BOM.
+      </para>
+
+      <programlisting role="XML"><![CDATA[<dependency>
+    <groupId>org.jboss.seam.solder</groupId>
+    <artifactId>seam-solder</artifactId>
+</dependency>]]></programlisting>
+
+      <para>
+         To see which version is going to get selected, use the dependency
+         analysis tools in Maven:
+      </para>
+
+      <programlisting>mvn dependency:tree</programlisting>
+
+      <para>
+         You may upgrade an individual module by specifying the version
+         explicitly. There's no crime in doing so. The Seam BOM is there as a
+         convenience and a reference point for the recommended module version
+         matrix. It's up to you how closely to follow it.
+      </para>
+
+      <para>
+         Each of the Seam modules also use the Seam BOM to keep the versions of
+         related modules in sync. Once in a while, a module may specify a
+         version of another module that's different from the Seam BOM. We
+         usually try to get this worked out by the time we make a Seam stack
+         release to fix the version matrix.
+      </para>
+
+      <para>
+         Refer to the <ulink
+         href="http://seamframework.org/Seam3/BuildSystemArchitecture">Build
+         System Architecture</ulink> page on the Seam website for more detail
+         about how the Seam 3 project is structured. Though, for the purpose of
+         using Seam, how to import the module artifacts is likely all you need
+         to know about the project's build.
+      </para>
+   </section>
+
 </chapter>

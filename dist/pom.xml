@@ -396,6 +396,14 @@
          <type>zip</type>
          <optional>true</optional>
       </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.security</groupId>
+         <artifactId>seam-security-example-authorization</artifactId>
+         <version>${seam.security.version}</version>
+         <type>zip</type>
+         <optional>true</optional>
+      </dependency>
       
       <dependency>
          <groupId>org.jboss.seam.security</groupId>

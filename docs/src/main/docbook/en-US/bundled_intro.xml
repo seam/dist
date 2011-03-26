@@ -8,9 +8,39 @@
       <title>Overview</title>
 
       <para>
-         TODO
+         Seam's mission is to provide a fully-integrated development platform
+         for building rich, standards-based Internet applications tailored for
+         traditional and cloud deployments.
+      </para>
+
+      <para>
+         The Seam 3 project is organized as a collection of modules and
+         developer tooling tailored for Java EE 6 application development, with
+         <emphasis>Context and Dependency Injection</emphasis> (CDI) as the
+         central link.
+      </para>
+
+      <para>
+         Seam's modules leverage portable CDI extensions to build on the core
+         Java EE functionality and integrate with JBoss and third-party
+         projects. Together, these modules provide many of the popular features
+         and integrations from Seam 2 (security, internationalization, JSF,
+         rules, BPM) while also exploring new integrations and designs.
+      </para>
+
+      <para>
+         The developer tooling for Seam is provided by JBoss Tools and Seam
+         Forge. JBoss Tools enhances Eclipse with features designed to help
+         developers write, test and deploy enterprise Java applications. Seam
+         Forge is an incremental project enhancement API and shell. 
+      </para>
+
+      <para>
+         This guide steps you through the modules and select tooling, covering
+         the purpose, APIs and usage scenarios for each. Collectively, this
+         software should give you everything you need to develop comprehensive,
+         robust and compelling enterprise applications.
       </para>
    </section>
-
 
 </chapter>

@@ -134,7 +134,7 @@
 
       <para>
          Refer to the <ulink
-         href="http://seamframework.org/Seam3/BuildSystemArchitecture">Build
+         url="http://seamframework.org/Seam3/BuildSystemArchitecture">Build
          System Architecture</ulink> page on the Seam website for more detail
          about how the Seam 3 project is structured. Though, for the purpose of
          using Seam, how to import the module artifacts is likely all you need

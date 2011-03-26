@@ -5,7 +5,8 @@
 
    <toc />
 
-   <title>Seam</title>
+   <title>Seam 3</title>
+   <subtitle>Bundled Reference Guide</subtitle>
 
    <xi:include href="bundled_credits.xml"/>
    <xi:include href="bundled_intro.xml"/>
@@ -16,6 +17,25 @@
       <xi:include href="forge-installation.xml" />
       <xi:include href="forge-creating-basic-webapp.xml" />
       <xi:include href="forge-plugin-dev.xml" />      
+   </part>
+   
+   <part>
+      <title>Seam Solder</title>
+      <xi:include href="solder-preface.xml"/>
+      <xi:include href="solder-gettingstarted.xml"/>
+      <xi:include href="solder-programmingmodel.xml"/>
+      <xi:include href="solder-annotationliterals.xml"/>
+      <xi:include href="solder-elextensions.xml"/>
+      <xi:include href="solder-resourceloading.xml"/>
+      <xi:include href="solder-logging.xml"/>
+      <xi:include href="solder-typeutilities.xml"/>
+      <xi:include href="solder-beanmanagerprovider.xml"/>
+      <xi:include href="solder-beanutilities.xml"/>
+      <xi:include href="solder-properties.xml"/>
+      <xi:include href="solder-unwraps.xml"/>
+      <xi:include href="solder-defaultbeans.xml"/>
+      <xi:include href="solder-genericbeans.xml"/>
+      <xi:include href="solder-servicehandler.xml"/>
    </part>
 
    <part>
@@ -49,6 +69,15 @@
    </part>
 
    <part>
+      <title>Seam International</title>
+      <xi:include href="international-preface.xml" />
+      <xi:include href="international-installation.xml" />
+      <xi:include href="international-locales.xml" />
+      <xi:include href="international-timezones.xml" />
+      <xi:include href="international-messages.xml" />
+   </part>
+
+   <part>
       <title>Seam Faces</title>
       <xi:include href="faces-preface.xml" />
       <xi:include href="faces-installation.xml" />
@@ -57,15 +86,6 @@
       <xi:include href="faces-messages.xml" />
       <xi:include href="faces-artifacts.xml" />
       <xi:include href="faces-components.xml" />
-   </part>
-
-   <part>
-      <title>Seam International</title>
-      <xi:include href="international-preface.xml" />
-      <xi:include href="international-installation.xml" />
-      <xi:include href="international-locales.xml" />
-      <xi:include href="international-timezones.xml" />
-      <xi:include href="international-messages.xml" />
    </part>
    
    <part>
@@ -85,7 +105,7 @@
    </part>
    
    <part>
-      <title>Seam Rest</title>
+      <title>Seam REST</title>
       <xi:include href="rest-preface.xml" />
       <xi:include href="rest-installation.xml" />
       <xi:include href="rest-exception-mapping.xml" />
@@ -109,23 +129,5 @@
       <xi:include href="wicket-installation.xml" />
       <xi:include href="wicket-features.xml" />      
    </part>
-   
-   <part>
-      <title>Seam Solder</title>
-      <xi:include href="solder-gettingstarted.xml"/>
-      <xi:include href="solder-programmingmodel.xml"/>
-      <xi:include href="solder-annotationliterals.xml"/>
-      <xi:include href="solder-elextensions.xml"/>
-      <xi:include href="solder-resourceloading.xml"/>
-      <xi:include href="solder-logging.xml"/>
-      <xi:include href="solder-typeutilities.xml"/>
-      <xi:include href="solder-beanmanagerprovider.xml"/>
-      <xi:include href="solder-beanutilities.xml"/>
-      <xi:include href="solder-properties.xml"/>
-      <xi:include href="solder-unwraps.xml"/>
-      <xi:include href="solder-defaultbeans.xml"/>
-      <xi:include href="solder-genericbeans.xml"/>
-      <xi:include href="solder-servicehandler.xml"/>
-   </part>      
 
 </book>

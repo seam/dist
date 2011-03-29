@@ -34,7 +34,7 @@
       <dependency>
          <groupId>org.jboss.seam.config</groupId>
          <artifactId>seam-config-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.config.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>
@@ -43,7 +43,7 @@
       <dependency>
          <groupId>org.jboss.seam.persistence</groupId>
          <artifactId>seam-persistence-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.persistence.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>      
@@ -51,7 +51,7 @@
       <dependency>
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.faces.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency> 
@@ -59,7 +59,7 @@
       <dependency>
          <groupId>org.jboss.seam.catch</groupId>
          <artifactId>seam-catch-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.catch.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>       
@@ -67,7 +67,7 @@
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
          <artifactId>seam-remoting-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.remoting.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>
@@ -75,7 +75,7 @@
       <dependency>
          <groupId>org.jboss.seam.international</groupId>
          <artifactId>seam-international-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.international.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>
@@ -83,7 +83,7 @@
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
          <artifactId>seam-rest-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.rest.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>
@@ -91,7 +91,7 @@
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.security.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>      
@@ -99,7 +99,7 @@
       <dependency>
          <groupId>org.jboss.seam.solder</groupId>
          <artifactId>seam-solder-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.solder.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>
@@ -107,7 +107,7 @@
       <dependency>
          <groupId>org.jboss.seam.servlet</groupId>
          <artifactId>seam-servlet-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.servlet.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>
@@ -115,7 +115,7 @@
       <dependency>
          <groupId>org.jboss.seam.validation</groupId>
          <artifactId>seam-validation-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.validation.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>      
@@ -123,7 +123,7 @@
       <dependency>
          <groupId>org.jboss.seam.wicket</groupId>
          <artifactId>seam-wicket-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${seam.wicket.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>

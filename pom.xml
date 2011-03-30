@@ -60,6 +60,7 @@
       <seam.solder.version>3.0.0.Final</seam.solder.version>
       <seam.validation.version>3.0.0.Final</seam.validation.version>
       <seam.wicket.version>3.0.0.Final</seam.wicket.version>
+      <seam.examples.version>3.0.0.Final</seam.examples.version>
 
       <!-- Forge -->
       <seam.forge.version>1.0.0-SNAPSHOT</seam.forge.version>

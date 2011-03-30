@@ -538,7 +538,7 @@
       <dependency>
          <groupId>org.jboss.seam.examples</groupId>
          <artifactId>seam-booking</artifactId>
-         <version>3.0.0.CR1</version>
+         <version>${seam.examples.version}</version>
          <type>zip</type>
          <exclusions>
            <exclusion>

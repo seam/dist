@@ -11,7 +11,7 @@
    <parent>
       <groupId>org.jboss.seam</groupId>
       <artifactId>seam-bom</artifactId>
-      <version>3.0.0-SNAPSHOT</version>
+      <version>3.0.1-SNAPSHOT</version>
       <relativePath>../pom.xml</relativePath>
    </parent>
 
@@ -52,13 +52,6 @@
          <artifactId>jboss-servlet-api_3.0_spec</artifactId>
       </dependency>      
 
-      <!-- Remove for Seam Remoting beta 3-->
-      <dependency>
-         <groupId>javax.jms</groupId>
-         <artifactId>jms</artifactId>
-         <version>1.1</version>
-      </dependency>      
-      
       <dependency>
          <!-- JBoss Java EE 6.0 spec bom uses wrong groupId
          <groupId>javax.faces</groupId>
@@ -71,16 +64,19 @@
       <dependency>
          <groupId>org.jboss.spec.javax.el</groupId>
          <artifactId>jboss-el-api_2.2_spec</artifactId>
+         <scope>provided</scope>
       </dependency>
       
       <dependency>
          <groupId>org.jboss.spec.javax.ejb</groupId>
          <artifactId>jboss-ejb-api_3.1_spec</artifactId>
+         <scope>provided</scope>
       </dependency>   
       
       <dependency>
          <groupId>org.jboss.spec.javax.servlet</groupId>
          <artifactId>jboss-servlet-api_3.0_spec</artifactId>
+         <scope>provided</scope>
       </dependency>      
       
       <dependency>
@@ -91,6 +87,12 @@
       <dependency>
          <groupId>org.jboss.resteasy</groupId>
          <artifactId>resteasy-jaxrs</artifactId>
+         <exclusions>
+            <exclusion>
+               <groupId>javax.activation</groupId>
+               <artifactId>activation</artifactId>
+            </exclusion>
+         </exclusions>
       </dependency>
 
       <dependency>
@@ -512,6 +514,12 @@
          <classifier>distsources</classifier>
          <type>zip</type>
          <optional>true</optional>
+         <exclusions>
+            <exclusion>
+               <groupId>org.jboss.arquillian</groupId>
+               <artifactId>arquillian-testng</artifactId>
+            </exclusion>
+         </exclusions>
       </dependency>    
     
       <!-- Seam Reference Guide -->
@@ -530,6 +538,7 @@
          <groupId>org.jboss.seam.forge</groupId>
          <artifactId>forge-distribution</artifactId>
          <version>${seam.forge.version}</version>
+         <scope>provided</scope>
          <type>zip</type>
       </dependency>
       

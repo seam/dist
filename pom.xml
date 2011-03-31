@@ -63,7 +63,7 @@
       <seam.examples.version>3.0.0.Final</seam.examples.version>
 
       <!-- Forge -->
-      <seam.forge.version>1.0.0-SNAPSHOT</seam.forge.version>
+      <seam.forge.version>1.0.0.Alpha3</seam.forge.version>
    </properties>
 
    <dependencyManagement>

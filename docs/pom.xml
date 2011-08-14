@@ -5,13 +5,13 @@
    <groupId>org.jboss.seam</groupId>
    <artifactId>seam-reference-guide</artifactId>
    <packaging>jdocbook</packaging>
-   <version>3.0.0-SNAPSHOT</version>
+   <version>3.1.0-SNAPSHOT</version>
    <name>Seam Reference Guide</name>
 
    <parent>
       <groupId>org.jboss.seam</groupId>
       <artifactId>seam-bom</artifactId>
-      <version>3.0.0-SNAPSHOT</version>
+      <version>3.1.0-SNAPSHOT</version>
       <relativePath>../pom.xml</relativePath>
    </parent>
 

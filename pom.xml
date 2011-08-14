@@ -56,6 +56,7 @@
       <seam.mail.version>3.1.0.Beta1</seam.mail.version>
       <seam.persistence.version>3.1.0.Beta1</seam.persistence.version>
       <seam.remoting.version>3.1.0.Beta1</seam.remoting.version>
+      <seam.reports.version>3.1.0.Beta1</seam.reports.version>
       <seam.servlet.version>3.1.0.Beta1</seam.servlet.version>
       <seam.rest.version>3.1.0.Beta1</seam.rest.version>
       <seam.security.version>3.1.0.Beta1</seam.security.version>
@@ -398,6 +399,40 @@
             <groupId>org.jboss.seam.remoting</groupId>
             <artifactId>seam-remoting</artifactId>
             <version>${seam.remoting.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.reports</groupId>
+            <artifactId>seam-reports-api</artifactId>
+            <version>${seam.reports.version}</version>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.reports</groupId>
+            <artifactId>seam-reports-jasper</artifactId>
+            <version>${seam.reports.version}</version>
+            <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.reports</groupId>
+            <artifactId>seam-reports-mvel</artifactId>
+            <version>${seam.reports.version}</version>
+            <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.reports</groupId>
+            <artifactId>seam-reports-pentaho</artifactId>
+            <version>${seam.reports.version}</version>
+            <scope>runtime</scope>
+         </dependency>
+
+         <dependency>
+            <groupId>org.jboss.seam.reports</groupId>
+            <artifactId>seam-reports-xdocreport</artifactId>
+            <version>${seam.reports.version}</version>
+            <scope>runtime</scope>
          </dependency>
 
          <dependency>

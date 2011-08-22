@@ -328,6 +328,7 @@
             <groupId>org.jboss.seam.international</groupId>
             <artifactId>seam-international-api</artifactId>
             <version>${seam.international.version}</version>
+            <scope>compile</scope>
          </dependency>
 
          <dependency>
@@ -491,6 +492,7 @@
             <groupId>org.jboss.seam.solder</groupId>
             <artifactId>seam-solder-api</artifactId>
             <version>${seam.solder.version}</version>
+            <scope>compile</scope>
          </dependency>
 
          <dependency>

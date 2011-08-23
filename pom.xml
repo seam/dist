@@ -46,26 +46,26 @@
       <resteasy.version>2.1-beta-1</resteasy.version>      
 
       <!-- Seam modules -->
-      <seam.catch.version>3.1.0.Beta1</seam.catch.version>
-      <seam.config.version>3.1.0.Beta1</seam.config.version>
+      <seam.catch.version>3.1.0.Beta2</seam.catch.version>
+      <seam.config.version>3.1.0.Beta2</seam.config.version>
       <seam.conversation.version>3.0.0.CR1</seam.conversation.version>
-      <seam.faces.version>3.1.0.Beta1</seam.faces.version>
-      <seam.international.version>3.1.0.Beta1</seam.international.version>
-      <seam.jms.version>3.1.0.Beta1</seam.jms.version>
-      <seam.jcr.version>3.1.0.Beta1</seam.jcr.version>
-      <seam.mail.version>3.1.0.Beta1</seam.mail.version>
-      <seam.persistence.version>3.1.0.Beta1</seam.persistence.version>
-      <seam.remoting.version>3.1.0.Beta1</seam.remoting.version>
-      <seam.reports.version>3.1.0.Beta1</seam.reports.version>
-      <seam.servlet.version>3.1.0.Beta1</seam.servlet.version>
-      <seam.rest.version>3.1.0.Beta1</seam.rest.version>
-      <seam.security.version>3.1.0.Beta1</seam.security.version>
-      <seam.social.version>3.1.0.Beta1</seam.social.version>
-      <seam.solder.version>3.1.0.Beta1</seam.solder.version>
-      <seam.transaction.version>3.1.0.Beta1</seam.transaction.version>
-      <seam.validation.version>3.1.0.Beta1</seam.validation.version>
-      <seam.wicket.version>3.1.0.Beta1</seam.wicket.version>
-      <seam.examples.version>3.1.0.Beta1</seam.examples.version>
+      <seam.faces.version>3.1.0.Beta2</seam.faces.version>
+      <seam.international.version>3.1.0.Beta2</seam.international.version>
+      <seam.jms.version>3.1.0.Beta2</seam.jms.version>
+      <seam.jcr.version>3.1.0.Beta2</seam.jcr.version>
+      <seam.mail.version>3.1.0.Beta2</seam.mail.version>
+      <seam.persistence.version>3.1.0.Beta2</seam.persistence.version>
+      <seam.remoting.version>3.1.0.Beta2</seam.remoting.version>
+      <seam.reports.version>3.1.0.Beta2</seam.reports.version>
+      <seam.servlet.version>3.1.0.Beta2</seam.servlet.version>
+      <seam.rest.version>3.1.0.Beta2</seam.rest.version>
+      <seam.security.version>3.1.0.Beta2</seam.security.version>
+      <seam.social.version>3.1.0.Beta2</seam.social.version>
+      <seam.solder.version>3.1.0.Beta2</seam.solder.version>
+      <seam.transaction.version>3.1.0.Beta2</seam.transaction.version>
+      <seam.validation.version>3.1.0.Beta2</seam.validation.version>
+      <seam.wicket.version>3.1.0.Beta2</seam.wicket.version>
+      <seam.examples.version>3.1.0.Beta2</seam.examples.version>
 
       <!-- Forge -->
       <seam.forge.version>1.0.0.Beta1</seam.forge.version>

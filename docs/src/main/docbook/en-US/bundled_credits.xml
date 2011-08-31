@@ -17,9 +17,6 @@
          <listitem>Shane Bryzak (Project Lead)</listitem>
          <listitem>Pete Muir (former Project Lead)</listitem>
          <listitem>Dan Allen (Community Liaison)</listitem>
-      </itemizedlist>
-      
-      <itemizedlist>
          <listitem>John Ament</listitem>
          <listitem>Max Rydahl Andersen</listitem>
          <listitem>Jay Balunas</listitem>
@@ -67,11 +64,29 @@
    </section>
    
    <section>
-      <title>Want to join the team?</title>
+      <title>Would you like to contribute?</title>
       
       <para>
-         We are looking for good people to join us in making Seam the best application framework in the world.  If you
-         are interested in contributing, please visit us at http://www.seamframework.org to find out how.
+         We are looking for talented people to help us in making Seam the best application framework in 
+         the world.  Seam is an Open Source project with an extensive developer and user community, consisting
+         of both full time and volunteer team members from all over the world.
+      </para>
+      
+      <para>
+         There are many ways to contribute, such as:
+      </para>
+      
+      <itemizedlist>
+         <listitem>Providing code, such as bug fixes and enhancements, or entirely new features</listitem>
+         <listitem>
+           Improving this documentation - even minor things like typos and grammar correction fixes are appreciated.</listitem>
+         <listitem>Participate on the user forums to share your Seam knowledge with other users</listitem>
+         <listitem>Writing a blog or article about a particular feature of Seam</listitem>
+      </itemizedlist>
+      
+      <para>
+         If you would like to be involved in the ongoing development of Seam please visit us at 
+         <ulink url="http://www.seamframework.org/Seam3/Contribute"/> to find out more.
       </para>
    
    </section>

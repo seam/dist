@@ -32,13 +32,54 @@
       </dependency>
       
       <dependency>
+         <groupId>org.jboss.seam.catch</groupId>
+         <artifactId>seam-catch-reference-guide</artifactId>
+         <version>${seam.catch.version}</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>        
+      
+      <dependency>
          <groupId>org.jboss.seam.config</groupId>
          <artifactId>seam-config-reference-guide</artifactId>
          <version>${seam.config.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
-      </dependency>
+      </dependency>      
       
+      <dependency>
+         <groupId>org.jboss.seam.faces</groupId>
+         <artifactId>seam-faces-reference-guide</artifactId>
+         <version>${seam.faces.version}</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency> 
+      
+      <dependency>
+         <groupId>org.jboss.seam.jcr</groupId>
+         <artifactId>seam-jcr-reference-guide</artifactId>
+         <!--version>${seam.jcr.version}</version-->
+         <version>3.1.0-SNAPSHOT</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency> 
+      
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms-reference-guide</artifactId>
+         <version>3.1.0-SNAPSHOT</version>
+         <!--version>${seam.jms.version}</version-->
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency> 
+      
+      <dependency>
+         <groupId>org.jboss.seam.international</groupId>
+         <artifactId>seam-international-reference-guide</artifactId>
+         <version>${seam.international.version}</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>
       
       <dependency>
          <groupId>org.jboss.seam.persistence</groupId>
@@ -49,36 +90,21 @@
       </dependency>      
 
       <dependency>
-         <groupId>org.jboss.seam.faces</groupId>
-         <artifactId>seam-faces-reference-guide</artifactId>
-         <version>${seam.faces.version}</version>
-         <classifier>sources</classifier>
-         <type>jar</type>
-      </dependency> 
-      
-      <dependency>
-         <groupId>org.jboss.seam.catch</groupId>
-         <artifactId>seam-catch-reference-guide</artifactId>
-         <version>${seam.catch.version}</version>
-         <classifier>sources</classifier>
-         <type>jar</type>
-      </dependency>       
-      
-      <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
          <artifactId>seam-remoting-reference-guide</artifactId>
          <version>${seam.remoting.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
-      </dependency>
+      </dependency>    
       
       <dependency>
-         <groupId>org.jboss.seam.international</groupId>
-         <artifactId>seam-international-reference-guide</artifactId>
-         <version>${seam.international.version}</version>
+         <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-reference-guide</artifactId>
+         <!--version>${seam.reports.version}</version-->
+         <version>3.1.0-SNAPSHOT</version>
          <classifier>sources</classifier>
          <type>jar</type>
-      </dependency>
+      </dependency>  
 
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
@@ -91,7 +117,8 @@
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security-reference-guide</artifactId>
-         <version>${seam.security.version}</version>
+         <!--version>${seam.security.version}</version-->
+         <version>3.1.0-SNAPSHOT</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>      
@@ -108,6 +135,14 @@
          <groupId>org.jboss.seam.servlet</groupId>
          <artifactId>seam-servlet-reference-guide</artifactId>
          <version>${seam.servlet.version}</version>
+         <classifier>sources</classifier>
+         <type>jar</type>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.transaction</groupId>
+         <artifactId>seam-transaction-reference-guide</artifactId>
+         <version>${seam.transaction.version}</version>
          <classifier>sources</classifier>
          <type>jar</type>
       </dependency>

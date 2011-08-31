@@ -50,6 +50,11 @@
    </part>   
    
    <part>
+      <title>Seam Transaction</title>
+      <xi:include href="transaction-general.xml"/>
+   </part>     
+   
+   <part>
       <title>Seam Servlet</title>
       <xi:include href="servlet-introduction.xml"/>
       <xi:include href="servlet-installation.xml"/>
@@ -93,9 +98,16 @@
      <xi:include href="catch-introduction.xml"/>
      <xi:include href="catch-installation.xml"/>
      <xi:include href="catch-client_usage.xml"/>
-     <xi:include href="catch-advanced_usaged.xml"/>
+     <xi:include href="catch-advanced_usage.xml"/>
      <xi:include href="catch-integration.xml"/>
      <xi:include href="catch-glossary.xml"/>   
+   </part>
+   
+   <part>
+     <title>Seam Reports</title>
+     <xi:include href="reports-preface.xml" />
+     <xi:include href="reports-installation.xml" />
+     <xi:include href="reports-usage.xml" />
    </part>
 
    <part>
@@ -115,6 +127,25 @@
       <xi:include href="rest-client.xml" />
       <xi:include href="rest-dependencies.xml" />
    </part>
+   
+   <part>
+      <title>Seam JCR</title>
+      <xi:include href="jcr-introduction.xml" />
+      <xi:include href="jcr-modeshape.xml"/>
+      <xi:include href="jcr-jackrabbit.xml"/>
+      <xi:include href="jcr-event-mapping.xml"/>
+      <xi:include href="jcr-ocm.xml"/>
+   </part>  
+   
+   <part>
+      <title>Seam JMS</title>
+      <xi:include href="jms-intro.xml" />
+      <xi:include href="jms-installation.xml" />
+      <xi:include href="jms-resource-injection.xml" />
+      <xi:include href="jms-messaging.xml" />
+      <xi:include href="jms-routing.xml" />
+      <xi:include href="jms-mapping-interfaces.xml" />
+   </part>    
    
    <part>
       <title>Seam Validation</title>

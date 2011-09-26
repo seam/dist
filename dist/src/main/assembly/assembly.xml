@@ -41,21 +41,6 @@
          </excludes>
       </fileSet>
       
-      <!-- Forge -->
-      <fileSet>
-         <directory>${project.build.directory}/forge/forge-${seam.forge.version}/bin</directory>
-         <outputDirectory>forge/bin</outputDirectory>     
-         <fileMode>0775</fileMode>
-      </fileSet>
-      
-      <fileSet>
-         <directory>${project.build.directory}/forge/forge-${seam.forge.version}/lib</directory>
-         <outputDirectory>forge/lib</outputDirectory>
-         <excludes>
-            <exclude>forge-reference-guide.war</exclude>
-            <exclude>*.pom</exclude>
-         </excludes>
-      </fileSet>      
    </fileSets>
 
    <dependencySets>

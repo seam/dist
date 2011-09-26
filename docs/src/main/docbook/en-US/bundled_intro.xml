@@ -15,9 +15,11 @@
 
       <para>
          The Seam 3 project is organized as a collection of modules and
-         developer tooling tailored for Java EE 6 application development, with
-         <emphasis>Context and Dependency Injection</emphasis> (CDI) as the
-         central link.
+         developer tooling tailored for Java EE 6 application development, built
+         on top of the component model defined by 
+         <emphasis>JSR-299 Context and Dependency Injection</emphasis> (CDI).  CDI
+         is a JCP standard, you can find out more about it at
+         <ulink url="http://jcp.org/en/jsr/summary?id=299"/>.
       </para>
 
       <para>

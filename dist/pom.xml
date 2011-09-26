@@ -5,13 +5,13 @@
    <groupId>org.jboss.seam</groupId>
    <artifactId>seam-distribution</artifactId>
    <packaging>jar</packaging>
-   <version>3.1.0.Final</version>
+   <version>3.1.0.Beta2</version>
    <name>Seam Distribution</name>
 
    <parent>
       <groupId>org.jboss.seam</groupId>
       <artifactId>seam-bom</artifactId>
-      <version>3.1.0-SNAPSHOT</version>
+      <version>3.1.0.Beta2</version>
       <relativePath>../pom.xml</relativePath>
    </parent>
 
@@ -167,21 +167,36 @@
          </exclusions>
       </dependency>
       
-      <!-- Seam Persistence -->
+      <!-- Seam JCR -->
       
       <dependency>
-         <groupId>org.jboss.seam.persistence</groupId>
-         <artifactId>seam-persistence</artifactId>
+         <groupId>org.jboss.seam.jcr</groupId>
+         <artifactId>seam-jcr</artifactId>
       </dependency>
 
       <dependency>
-         <groupId>org.jboss.seam.persistence</groupId>
-         <artifactId>seam-persistence</artifactId>
+         <groupId>org.jboss.seam.jcr</groupId>
+         <artifactId>seam-jcr</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.persistence.version}</version>
+         <version>${seam.jcr.version}</version>
          <optional>true</optional>
+      </dependency>      
+      
+      <!-- Seam JMS -->
+      
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms</artifactId>
       </dependency>
 
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.jms.version}</version>
+         <optional>true</optional>
+      </dependency>          
+      
       <!-- Seam Faces -->
       
       <dependency>
@@ -263,6 +278,21 @@
          </exclusions>
       </dependency>      
       
+      <!-- Seam Persistence -->
+      
+      <dependency>
+         <groupId>org.jboss.seam.persistence</groupId>
+         <artifactId>seam-persistence</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.persistence</groupId>
+         <artifactId>seam-persistence</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.persistence.version}</version>
+         <optional>true</optional>
+      </dependency>      
+      
       <!-- Seam Remoting -->
       
       <dependency>
@@ -299,7 +329,33 @@
          <version>${seam.remoting.version}</version>
          <type>zip</type>
          <optional>true</optional>
-      </dependency>       
+      </dependency>
+
+      <!-- Seam Reports -->
+      
+      <dependency>
+         <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-pentaho</artifactId>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-jasper</artifactId>
+      </dependency>      
+
+      <dependency>
+         <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-jasper</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.reports.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-pentaho</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.reports.version}</version>
+      </dependency>  
       
       <!-- Seam Rest -->
       
@@ -470,6 +526,21 @@
          <classifier>sources</classifier>
          <version>${seam.solder.version}</version>
       </dependency>            
+      
+      <!-- Seam Transaction -->
+      
+      <dependency>
+         <groupId>org.jboss.seam.transaction</groupId>
+         <artifactId>seam-transaction</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.transaction</groupId>
+         <artifactId>seam-transaction</artifactId>
+         <classifier>sources</classifier>
+         <version>${seam.transaction.version}</version>
+         <optional>true</optional>
+      </dependency>     
 
       <!-- Seam Validation -->
 
@@ -532,16 +603,6 @@
          <type>war</type>
       </dependency>
       
-      <!-- Forge -->
-      
-      <dependency>
-         <groupId>org.jboss.seam.forge</groupId>
-         <artifactId>forge-distribution</artifactId>
-         <version>${seam.forge.version}</version>
-         <scope>provided</scope>
-         <type>zip</type>
-      </dependency>
-      
       <!-- Examples -->
       
       <dependency>
@@ -594,17 +655,6 @@
                      <excludeTransitive>true</excludeTransitive>
                      
                      <includeArtifactIds>seam-catch,seam-config-xml,seam-faces,seam-international,seam-persistence,seam-remoting,seam-rest,seam-security,seam-security-external,seam-servlet,seam-solder,seam-validation,seam-wicket</includeArtifactIds>
-                  </configuration>
-               </execution>
-               <execution>
-                  <id>forge-distribution</id>
-                  <goals>
-                     <goal>unpack-dependencies</goal>
-                  </goals>
-                  <configuration>
-                     <outputDirectory>${project.build.directory}/forge</outputDirectory>
-                     <excludeTransitive>true</excludeTransitive>
-                     <includeArtifactIds>forge-distribution</includeArtifactIds>
                   </configuration>
                </execution>
             </executions>

@@ -45,6 +45,9 @@
       <wicket.version>1.4.15</wicket.version>
       <resteasy.version>2.1-beta-1</resteasy.version>      
 
+      <!-- Solder -->
+      <solder.version>3.1.0.Beta3</solder.version>
+
       <!-- Seam modules -->
       <seam.conversation.version>3.0.0.CR1</seam.conversation.version>
       <seam.faces.version>3.1.0.Beta3</seam.faces.version>
@@ -58,7 +61,6 @@
       <seam.rest.version>3.1.0.Beta3</seam.rest.version>
       <seam.security.version>3.1.0.Beta3</seam.security.version>
       <seam.social.version>3.1.0.Beta3</seam.social.version>
-      <seam.solder.version>3.1.0.Beta3</seam.solder.version>
       <seam.transaction.version>3.1.0.Beta3</seam.transaction.version>
       <seam.validation.version>3.1.0.Beta3</seam.validation.version>
       <seam.wicket.version>3.1.0.Beta3</seam.wicket.version>
@@ -445,23 +447,23 @@
          </dependency>
 
          <dependency>
-            <groupId>org.jboss.seam.solder</groupId>
-            <artifactId>seam-solder</artifactId>
-            <version>${seam.solder.version}</version>
+            <groupId>org.jboss.solder</groupId>
+            <artifactId>solder-impl</artifactId>
+            <version>${solder.version}</version>
             <scope>runtime</scope>
          </dependency>
 
          <dependency>
-            <groupId>org.jboss.seam.solder</groupId>
-            <artifactId>seam-solder-api</artifactId>
-            <version>${seam.solder.version}</version>
+            <groupId>org.jboss.solder</groupId>
+            <artifactId>solder-api</artifactId>
+            <version>${solder.version}</version>
             <scope>compile</scope>
          </dependency>
 
          <dependency>
-            <groupId>org.jboss.seam.solder</groupId>
-            <artifactId>seam-solder-tooling</artifactId>
-            <version>${seam.solder.version}</version>
+            <groupId>org.jboss.solder</groupId>
+            <artifactId>solder-tooling</artifactId>
+            <version>${solder.version}</version>
          </dependency>
 
          <dependency>

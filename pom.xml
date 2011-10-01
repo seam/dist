@@ -8,12 +8,6 @@
    <version>3.1.0-SNAPSHOT</version>
    <name>Seam BOM</name>
 
-   <parent>
-      <groupId>org.jboss.seam</groupId>
-      <artifactId>seam-parent</artifactId>
-      <version>15</version>
-   </parent>
-
    <description>
       The Seam "Bill of Materials", specifying the Seam stack for runtime use
    </description>
@@ -26,7 +20,7 @@
 
    <properties>
       <!-- Java EE 6 API (JBoss revision) -->
-      <jboss.javaee.version>1.0.0.Final</jboss.javaee.version>
+      <jboss.javaee.version>2.0.0.Final</jboss.javaee.version>
 
       <!-- External libraries -->
       <javassist.version>3.13.0-GA</javassist.version>
@@ -65,9 +59,6 @@
       <seam.validation.version>3.1.0.Beta3</seam.validation.version>
       <seam.wicket.version>3.1.0.Beta3</seam.wicket.version>
       <seam.examples.version>3.1.0.Beta3</seam.examples.version>
-
-      <!-- Forge -->
-      <seam.forge.version>1.0.0.Beta1</seam.forge.version>
    </properties>
 
    <dependencyManagement>

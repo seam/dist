@@ -9,9 +9,9 @@
    <name>Seam BOM</name>
 
    <parent>
-      <groupId>org.jboss.weld</groupId>
-      <artifactId>weld-parent</artifactId>
-      <version>17</version>
+      <groupId>org.jboss.seam</groupId>
+      <artifactId>seam-parent</artifactId>
+      <version>15</version>
    </parent>
 
    <description>

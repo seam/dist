@@ -59,6 +59,10 @@
       <seam.validation.version>3.1.0.Beta3</seam.validation.version>
       <seam.wicket.version>3.1.0.Beta3</seam.wicket.version>
       <seam.examples.version>3.1.0.Beta3</seam.examples.version>
+
+      <!-- Release repositories -->
+      <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
+      <jboss.snapshots.repo.url>https://repository.jboss.org/nexus/content/repositories/snapshots/</jboss.snapshots.repo.url>
    </properties>
 
    <dependencyManagement>
@@ -513,5 +517,18 @@
       <developerConnection>scm:git:git@github.com:seam/dist.git</developerConnection>
       <url>http://github.com/seam/dist</url>
    </scm>
+
+   <distributionManagement>
+      <repository>
+         <id>jboss-releases-repository</id>
+         <name>JBoss Releases Repository</name>
+         <url>${jboss.releases.repo.url}</url>
+      </repository>
+      <snapshotRepository>
+         <id>jboss-snapshots-repository</id>
+         <name>JBoss Snapshots Repository</name>
+         <url>${jboss.snapshots.repo.url}</url>
+      </snapshotRepository>
+   </distributionManagement>
 
 </project>

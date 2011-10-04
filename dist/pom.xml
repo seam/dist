@@ -10,9 +10,8 @@
 
    <parent>
       <groupId>org.jboss.seam</groupId>
-      <artifactId>seam-bom</artifactId>
-      <version>3.1.0.Beta3</version>
-      <relativePath>../pom.xml</relativePath>
+      <artifactId>seam-parent</artifactId>
+      <version>15</version>
    </parent>
 
    <description>
@@ -20,6 +19,24 @@
    </description>
 
    <url>http://www.seamframework.org</url>
+
+   <properties>
+      <seam.version>3.1.0.Beta3</seam.version>
+   </properties>
+
+   <dependencyManagement>
+      <dependencies>
+      
+         <dependency>
+            <groupId>org.jboss.seam</groupId>
+            <artifactId>seam-bom</artifactId>
+            <version>${seam.version}</version>
+            <scope>import</scope>
+            <type>pom</type>
+         </dependency>
+
+      </dependencies>
+   </dependencyManagement>
 
    <dependencies>
       <!-- Dependencies required to build aggregated JavaDoc (because maven-javadoc-plugin only adds compile-scoped 
@@ -106,14 +123,27 @@
       
       <dependency>
          <groupId>org.jboss.seam.jcr</groupId>
+         <artifactId>seam-jcr-api</artifactId>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.jcr</groupId>
          <artifactId>seam-jcr</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.jcr</groupId>
+         <artifactId>seam-jcr-api</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+         <optional>true</optional>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.jcr</groupId>
          <artifactId>seam-jcr</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.jcr.version}</version>
+         <version>${project.version}</version>
          <optional>true</optional>
       </dependency>      
       
@@ -121,14 +151,27 @@
       
       <dependency>
          <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms-api</artifactId>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
          <artifactId>seam-jms</artifactId>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.jms</groupId>
+         <artifactId>seam-jms-api</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+         <optional>true</optional>
+      </dependency> 
+
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
          <artifactId>seam-jms</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.jms.version}</version>
+         <version>${project.version}</version>
          <optional>true</optional>
       </dependency>          
       
@@ -138,33 +181,30 @@
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces</artifactId>
       </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.faces</groupId>
+         <artifactId>seam-faces-api</artifactId>
+      </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.faces.version}</version>
-         <optional>true</optional>
-      </dependency>
-
-      <dependency>
-         <groupId>org.jboss.seam.faces</groupId>
-         <artifactId>seam-faces-api</artifactId>
-         <optional>true</optional>
+         <version>${project.version}</version>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces-api</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.faces.version}</version>
-         <optional>true</optional>
+         <version>${project.version}</version>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.faces</groupId>
          <artifactId>seam-faces-example-short-ly</artifactId>
-         <version>${seam.faces.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
          <exclusions>
@@ -194,14 +234,14 @@
          <groupId>org.jboss.seam.international</groupId>
          <artifactId>seam-international</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.international.version}</version>
+         <version>${project.version}</version>
          <optional>true</optional>
       </dependency>
       
       <dependency>
          <groupId>org.jboss.seam.international</groupId>
          <artifactId>seam-international-example-timeanddate</artifactId>
-         <version>${seam.international.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
          <exclusions>
@@ -212,6 +252,35 @@
          </exclusions>
       </dependency>      
       
+      <!-- Seam Mail -->
+      
+      <dependency>
+         <groupId>org.jboss.seam.mail</groupId>
+         <artifactId>seam-mail-api</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.mail</groupId>
+         <artifactId>seam-mail-impl</artifactId>
+         <version>${project.version}</version>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.mail</groupId>
+         <artifactId>seam-mail-api</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+         <optional>true</optional>
+      </dependency> 
+      
+      <dependency>
+         <groupId>org.jboss.seam.mail</groupId>
+         <artifactId>seam-mail-impl</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+         <optional>true</optional>
+      </dependency> 
+            
       <!-- Seam Persistence -->
       
       <dependency>
@@ -223,7 +292,7 @@
          <groupId>org.jboss.seam.persistence</groupId>
          <artifactId>seam-persistence</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.persistence.version}</version>
+         <version>${project.version}</version>
          <optional>true</optional>
       </dependency>      
 
@@ -238,13 +307,13 @@
          <groupId>org.jboss.seam.remoting</groupId>
          <artifactId>seam-remoting</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.remoting.version}</version>
+         <version>${project.version}</version>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
          <artifactId>seam-remoting-example-helloworld</artifactId>
-         <version>${seam.remoting.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
       </dependency>
@@ -252,7 +321,7 @@
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
          <artifactId>seam-remoting-example-model</artifactId>
-         <version>${seam.remoting.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
       </dependency>      
@@ -260,7 +329,7 @@
       <dependency>
          <groupId>org.jboss.seam.remoting</groupId>
          <artifactId>seam-remoting-example-validation</artifactId>
-         <version>${seam.remoting.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
       </dependency>
@@ -269,6 +338,11 @@
       
       <dependency>
          <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-api</artifactId>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.reports</groupId>
          <artifactId>seam-reports-pentaho</artifactId>
       </dependency>
       
@@ -276,20 +350,51 @@
          <groupId>org.jboss.seam.reports</groupId>
          <artifactId>seam-reports-jasper</artifactId>
       </dependency>      
+      
+      <dependency>
+         <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-mvel</artifactId>
+      </dependency> 
+      
+      <dependency>
+         <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-xdocreport</artifactId>
+      </dependency> 
+      
+      <dependency>
+         <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-api</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+      </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.reports</groupId>
          <artifactId>seam-reports-jasper</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.reports.version}</version>
+         <version>${project.version}</version>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.reports</groupId>
          <artifactId>seam-reports-pentaho</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.reports.version}</version>
+         <version>${project.version}</version>
       </dependency>  
+      
+      <dependency>
+         <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-mvel</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+      </dependency> 
+      
+      <dependency>
+         <groupId>org.jboss.seam.reports</groupId>
+         <artifactId>seam-reports-xdocreport</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+      </dependency> 
       
       <!-- Seam Rest -->
       
@@ -302,13 +407,13 @@
          <groupId>org.jboss.seam.rest</groupId>
          <artifactId>seam-rest</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.rest.version}</version>
+         <version>${project.version}</version>
       </dependency>      
 
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
          <artifactId>seam-rest-example-client</artifactId>
-         <version>${seam.rest.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
          <exclusions>
@@ -329,7 +434,7 @@
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
          <artifactId>seam-rest-example-tasks</artifactId>
-         <version>${seam.rest.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
          <exclusions>
@@ -350,10 +455,75 @@
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
          <artifactId>seam-rest-example-exceptions</artifactId>
-         <version>${seam.rest.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
       </dependency>     
+
+      <!-- Seam Social -->
+      
+      <dependency>
+         <groupId>org.jboss.seam.social</groupId>
+         <artifactId>seam-social-api</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.social</groupId>
+         <artifactId>seam-social</artifactId>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.social</groupId>
+         <artifactId>seam-social-facebook</artifactId>
+         <version>${project.version}</version>
+      </dependency>      
+      
+      <dependency>
+         <groupId>org.jboss.seam.social</groupId>
+         <artifactId>seam-social-linkedin</artifactId>
+         <version>${project.version}</version>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.social</groupId>
+         <artifactId>seam-social-twitter</artifactId>
+         <version>${project.version}</version>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.social</groupId>
+         <artifactId>seam-social-api</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+      </dependency>      
+      
+      <dependency>
+         <groupId>org.jboss.seam.social</groupId>
+         <artifactId>seam-social</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.social</groupId>
+         <artifactId>seam-social-facebook</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.social</groupId>
+         <artifactId>seam-social-linkedin</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.social</groupId>
+         <artifactId>seam-social-twitter</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+      </dependency>
       
       <!-- Seam Security -->
       
@@ -371,20 +541,20 @@
          <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.security.version}</version>
+         <version>${project.version}</version>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security-external</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.security.version}</version>
+         <version>${project.version}</version>
       </dependency>
       
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security-example-simple</artifactId>
-         <version>${seam.security.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
       </dependency>
@@ -392,7 +562,7 @@
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security-example-authorization</artifactId>
-         <version>${seam.security.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
       </dependency>
@@ -400,7 +570,7 @@
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security-example-idmconsole</artifactId>
-         <version>${seam.security.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
       </dependency>
@@ -416,12 +586,17 @@
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security-example-openid-rp</artifactId>
-         <version>${seam.security.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
       </dependency>
             
       <!-- Solder -->
+      
+      <dependency>
+         <groupId>org.jboss.solder</groupId>
+         <artifactId>solder-api</artifactId>
+      </dependency>
       
       <dependency>
          <groupId>org.jboss.solder</groupId>
@@ -435,16 +610,29 @@
 
       <dependency>
          <groupId>org.jboss.solder</groupId>
+         <artifactId>solder-logging</artifactId>
+         <version>${project.version}</version>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.solder</groupId>
+         <artifactId>solder-api</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
+      </dependency> 
+
+      <dependency>
+         <groupId>org.jboss.solder</groupId>
          <artifactId>solder-impl</artifactId>
          <classifier>sources</classifier>
-         <version>${solder.version}</version>
+         <version>${project.version}</version>
       </dependency>      
       
       <dependency>
          <groupId>org.jboss.solder</groupId>
          <artifactId>solder-tooling</artifactId>
          <classifier>sources</classifier>
-         <version>${solder.version}</version>
+         <version>${project.version}</version>
       </dependency>            
       
       <!-- Seam Transaction -->
@@ -458,7 +646,7 @@
          <groupId>org.jboss.seam.transaction</groupId>
          <artifactId>seam-transaction</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.transaction.version}</version>
+         <version>${project.version}</version>
          <optional>true</optional>
       </dependency>     
 
@@ -466,20 +654,32 @@
 
       <dependency>
          <groupId>org.jboss.seam.validation</groupId>
+         <artifactId>seam-validation-api</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.validation</groupId>
          <artifactId>seam-validation</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.validation</groupId>
+         <artifactId>seam-validation-api</artifactId>
+         <classifier>sources</classifier>
+         <version>${project.version}</version>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.validation</groupId>
          <artifactId>seam-validation</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.validation.version}</version>
+         <version>${project.version}</version>
       </dependency>
 
       <dependency>
          <groupId>org.jboss.seam.validation</groupId>
          <artifactId>seam-validation-example-helloworld</artifactId>
-         <version>${seam.validation.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
       </dependency>
@@ -495,13 +695,13 @@
          <groupId>org.jboss.seam.wicket</groupId>
          <artifactId>seam-wicket</artifactId>
          <classifier>sources</classifier>
-         <version>${seam.wicket.version}</version>
+         <version>${project.version}</version>
       </dependency>      
       
       <dependency>
          <groupId>org.jboss.seam.wicket</groupId>
          <artifactId>seam-wicket-example-numberguess</artifactId>
-         <version>${seam.wicket.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <optional>true</optional>
          <exclusions>
@@ -517,7 +717,7 @@
       <dependency>
          <groupId>org.jboss.seam</groupId>
          <artifactId>seam-reference-guide</artifactId>
-         <version>3.0.0-SNAPSHOT</version>
+         <version>${project.version}</version>
          <optional>true</optional>
          <type>war</type>
       </dependency>
@@ -527,7 +727,7 @@
       <dependency>
          <groupId>org.jboss.seam.examples</groupId>
          <artifactId>seam-booking</artifactId>
-         <version>${seam.examples.version}</version>
+         <version>${project.version}</version>
          <type>zip</type>
          <exclusions>
            <exclusion>
@@ -573,7 +773,7 @@
                      <outputDirectory>${project.build.directory}/sources</outputDirectory>
                      <excludeTransitive>true</excludeTransitive>
                      
-                     <includeArtifactIds>seam-catch,seam-config-xml,seam-faces,seam-international,seam-persistence,seam-remoting,seam-rest,seam-security,seam-security-external,seam-servlet,seam-solder,seam-validation,seam-wicket</includeArtifactIds>
+                     <includeArtifactIds>seam-faces-api,seam-international-api,seam-jcr-api,seam-jms-api,seam-mail-api,seam-persistence-api,seam-remoting,seam-reports-api,seam-rest-api,seam-security-api,seam-social-api,seam-social,seam-transaction-api,seam-validation-api,solder-api</includeArtifactIds>
                   </configuration>
                </execution>
             </executions>

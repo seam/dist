@@ -341,7 +341,7 @@
 
          <dependency>
             <groupId>org.jboss.seam.mail</groupId>
-            <artifactId>seam-mail</artifactId>
+            <artifactId>seam-mail-impl</artifactId>
             <version>${seam.mail.version}</version>
             <scope>runtime</scope>
          </dependency>

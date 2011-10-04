@@ -4,3 +4,4 @@ target
 .settings
 *.sw?
 docs/src/main/docbook/en-US/modules/**
+docs/src/main/docbook/en-US/images/**

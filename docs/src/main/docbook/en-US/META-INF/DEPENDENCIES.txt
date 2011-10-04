@@ -3,8 +3,12 @@
 // maven pom organized by organization.
 // ------------------------------------------------------------------
 
-Seam Reports Module Reference Guide
+Seam Mail Module Reference Guide
 
+
+From: 'Google' (http://www.google.com/)
+  - Guava (Google Common Libraries) (http://code.google.com/p/guava-libraries) com.google.guava:guava:jar:r07
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
 
 
 

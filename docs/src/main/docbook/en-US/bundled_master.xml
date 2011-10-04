@@ -12,15 +12,7 @@
    <xi:include href="bundled_intro.xml"/>
    
    <part>
-      <title>Forge</title>
-      <xi:include href="forge-preface.xml" />
-      <xi:include href="forge-installation.xml" />
-      <xi:include href="forge-creating-basic-webapp.xml" />
-      <xi:include href="forge-plugin-dev.xml" />      
-   </part>
-   
-   <part>
-      <title>Seam Solder</title>
+      <title>Solder</title>
       <xi:include href="solder-preface.xml"/>
       <xi:include href="solder-gettingstarted.xml"/>
       <xi:include href="solder-programmingmodel.xml"/>
@@ -36,12 +28,19 @@
       <xi:include href="solder-defaultbeans.xml"/>
       <xi:include href="solder-genericbeans.xml"/>
       <xi:include href="solder-servicehandler.xml"/>
-   </part>
-
-   <part>
-      <title>Seam Configuration</title>
       <xi:include href="config-introduction.xml"/>
       <xi:include href="config-xml-provider.xml"/>
+      <xi:include href="servlet-introduction.xml"/>
+      <xi:include href="servlet-installation.xml"/>
+      <xi:include href="servlet-events.xml"/>
+      <xi:include href="servlet-injectable_refs.xml"/>
+      <xi:include href="servlet-exception_handling.xml" />
+      <xi:include href="servlet-beanmanager.xml"/>
+      <xi:include href="catch-introduction.xml"/>
+      <xi:include href="catch-client_usage.xml"/>
+      <xi:include href="catch-advanced_usage.xml"/>
+      <xi:include href="catch-integration.xml"/>
+      <xi:include href="catch-glossary.xml"/>           
    </part>
    
    <part>
@@ -53,16 +52,6 @@
       <title>Seam Transaction</title>
       <xi:include href="transaction-general.xml"/>
    </part>     
-   
-   <part>
-      <title>Seam Servlet</title>
-      <xi:include href="servlet-introduction.xml"/>
-      <xi:include href="servlet-installation.xml"/>
-      <xi:include href="servlet-events.xml"/>
-      <xi:include href="servlet-injectable_refs.xml"/>
-      <xi:include href="servlet-exception_handling.xml" />
-      <xi:include href="servlet-beanmanager.xml"/>   
-   </part>
    
    <part>
       <title>Seam Security</title>      
@@ -94,21 +83,16 @@
    </part>
    
    <part>
-     <title>Seam Catch</title>
-     <xi:include href="catch-introduction.xml"/>
-     <xi:include href="catch-installation.xml"/>
-     <xi:include href="catch-client_usage.xml"/>
-     <xi:include href="catch-advanced_usage.xml"/>
-     <xi:include href="catch-integration.xml"/>
-     <xi:include href="catch-glossary.xml"/>   
-   </part>
-   
-   <part>
      <title>Seam Reports</title>
      <xi:include href="reports-preface.xml" />
      <xi:include href="reports-installation.xml" />
      <xi:include href="reports-usage.xml" />
    </part>
+   
+   <part>
+     <title>Seam Mail</title>
+     <xi:include href="mail-introduction.xml" />
+   </part>   
 
    <part>
       <title>Seam Remoting</title>
@@ -153,6 +137,12 @@
       <xi:include href="validation-installation.xml"/>
       <xi:include href="validation-dependency-injection.xml"/>
       <xi:include href="validation-method-validation.xml"/>      
+   </part>
+
+   <part>
+      <title>Seam Social</title>
+      <xi:include href="social-introduction.xml" />
+      <xi:include href="social-gettingstarted.xml" />
    </part>
    
    <part>

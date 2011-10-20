@@ -93,6 +93,10 @@
    <part>
      <title>Seam Mail</title>
      <xi:include href="mail-introduction.xml" />
+     <xi:include href="mail-configuration.xml" />
+     <xi:include href="mail-core.xml" />
+     <xi:include href="mail-templating.xml" />
+     <xi:include href="mail-advanced.xml" />
    </part>   
 
    <part>

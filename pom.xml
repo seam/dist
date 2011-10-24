@@ -529,6 +529,16 @@
             <artifactId>maven-install-plugin</artifactId>
             <version>2.3.1</version>
          </plugin>
+
+	 <plugin>
+	    <groupId>org.sonatype.plugins</groupId>
+	    <artifactId>nexus-maven-plugin</artifactId>
+	    <version>1.7</version>
+            <configuration>
+	       <nexusUrl>https://repository.jboss.org/nexus</nexusUrl>
+	       <serverAuthId>jboss-releases-repository</serverAuthId>
+	    </configuration>
+	 </plugin>
       </plugins>
    </build>
 

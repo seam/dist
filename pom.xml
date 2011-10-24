@@ -535,6 +535,7 @@
 	    <artifactId>nexus-maven-plugin</artifactId>
 	    <version>1.7</version>
             <configuration>
+	       <auto>true</auto>
 	       <nexusUrl>https://repository.jboss.org/nexus</nexusUrl>
 	       <serverAuthId>jboss-releases-repository</serverAuthId>
 	    </configuration>

@@ -49,25 +49,25 @@
       <resteasy.version>2.1-beta-1</resteasy.version>      
 
       <!-- Solder -->
-      <solder.version>3.1.0.Beta4</solder.version>
+      <solder.version>3.1.0.Beta5</solder.version>
 
       <!-- Seam modules -->
       <seam.conversation.version>3.0.0.CR1</seam.conversation.version>
-      <seam.faces.version>3.1.0.Beta4</seam.faces.version>
-      <seam.international.version>3.1.0.Beta4</seam.international.version>
-      <seam.jms.version>3.1.0.Beta4</seam.jms.version>
-      <seam.jcr.version>3.1.0.Beta4</seam.jcr.version>
-      <seam.mail.version>3.1.0.Beta4</seam.mail.version>
-      <seam.persistence.version>3.1.0.Beta4</seam.persistence.version>
-      <seam.remoting.version>3.1.0.Beta4</seam.remoting.version>
-      <seam.reports.version>3.1.0.Beta4</seam.reports.version>
-      <seam.rest.version>3.1.0.Beta4</seam.rest.version>
-      <seam.security.version>3.1.0.Beta4</seam.security.version>
-      <seam.social.version>3.1.0.Beta4</seam.social.version>
-      <seam.transaction.version>3.1.0.Beta4</seam.transaction.version>
-      <seam.validation.version>3.1.0.Beta4</seam.validation.version>
-      <seam.wicket.version>3.1.0.Beta4</seam.wicket.version>
-      <seam.examples.version>3.1.0.Beta4</seam.examples.version>
+      <seam.faces.version>3.1.0.Beta5</seam.faces.version>
+      <seam.international.version>3.1.0.Beta5</seam.international.version>
+      <seam.jms.version>3.1.0.Beta5</seam.jms.version>
+      <seam.jcr.version>3.1.0.Beta5</seam.jcr.version>
+      <seam.mail.version>3.1.0.Beta5</seam.mail.version>
+      <seam.persistence.version>3.1.0.Beta5</seam.persistence.version>
+      <seam.remoting.version>3.1.0.Beta5</seam.remoting.version>
+      <seam.reports.version>3.1.0.Beta5</seam.reports.version>
+      <seam.rest.version>3.1.0.Beta5</seam.rest.version>
+      <seam.security.version>3.1.0.Beta5</seam.security.version>
+      <seam.social.version>3.1.0.Beta5</seam.social.version>
+      <seam.transaction.version>3.1.0.Beta5</seam.transaction.version>
+      <seam.validation.version>3.1.0.Beta5</seam.validation.version>
+      <seam.wicket.version>3.1.0.Beta5</seam.wicket.version>
+      <seam.examples.version>3.1.0.Beta5</seam.examples.version>
 
       <!-- Release repositories -->
       <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>

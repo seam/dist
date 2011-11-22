@@ -149,6 +149,13 @@
       <xi:include href="social-introduction.xml" />
       <xi:include href="social-gettingstarted.xml" />
    </part>
+
+   <part>
+      <title>Seam Spring</title>
+      <xi:include href="spring-introduction.xml" />
+      <xi:include href="spring-installation.xml" />
+      <xi:include href="spring-usage.xml" />
+   </part>
    
    <part>
       <title>Seam Wicket</title>

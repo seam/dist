@@ -64,6 +64,7 @@
       <seam.rest.version>3.1.0.Beta5</seam.rest.version>
       <seam.security.version>3.1.0.Beta5</seam.security.version>
       <seam.social.version>3.1.0.Beta5</seam.social.version>
+      <seam.spring.version>3.1.0.Beta5</seam.spring.version>
       <seam.transaction.version>3.1.0.Beta5</seam.transaction.version>
       <seam.validation.version>3.1.0.Beta5</seam.validation.version>
       <seam.wicket.version>3.1.0.Beta5</seam.wicket.version>
@@ -449,6 +450,13 @@
             <version>${seam.social.version}</version>
             <scope>runtime</scope>
          </dependency>
+
+	 <dependency>
+	    <groupId>org.jboss.seam.spring</groupId>
+	    <artifactId>seam-spring-core</artifactId>
+	    <version>${seam.spring.version}</version>
+	    <scope>runtime</scope>
+	 </dependency>
 
          <dependency>
             <groupId>org.jboss.solder</groupId>

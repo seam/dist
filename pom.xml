@@ -34,8 +34,8 @@
       <!-- External libraries -->
       <javassist.version>3.13.0-GA</javassist.version>
       <dom4j.version>1.6.1</dom4j.version>
-      <hibernate.core.version>3.6.6.Final</hibernate.core.version>
-      <hibernate.search.version>3.4.0.Final</hibernate.search.version>
+      <hibernate.core.version>4.0.0.CR5</hibernate.core.version>
+      <hibernate.search.version>4.0.0.CR1</hibernate.search.version>
       <hibernate.validator.version>4.2.0.Final</hibernate.validator.version>
       <drools.version>5.1.1</drools.version>
       <jboss.logmanager.version>1.2.0.CR4</jboss.logmanager.version>
@@ -49,25 +49,26 @@
       <resteasy.version>2.1-beta-1</resteasy.version>      
 
       <!-- Solder -->
-      <solder.version>3.1.0.Beta4</solder.version>
+      <solder.version>3.1.0.Beta5</solder.version>
 
       <!-- Seam modules -->
       <seam.conversation.version>3.0.0.CR1</seam.conversation.version>
-      <seam.faces.version>3.1.0.Beta4</seam.faces.version>
-      <seam.international.version>3.1.0.Beta4</seam.international.version>
-      <seam.jms.version>3.1.0.Beta4</seam.jms.version>
-      <seam.jcr.version>3.1.0.Beta4</seam.jcr.version>
-      <seam.mail.version>3.1.0.Beta4</seam.mail.version>
-      <seam.persistence.version>3.1.0.Beta4</seam.persistence.version>
-      <seam.remoting.version>3.1.0.Beta4</seam.remoting.version>
-      <seam.reports.version>3.1.0.Beta4</seam.reports.version>
-      <seam.rest.version>3.1.0.Beta4</seam.rest.version>
-      <seam.security.version>3.1.0.Beta4</seam.security.version>
-      <seam.social.version>3.1.0.Beta4</seam.social.version>
-      <seam.transaction.version>3.1.0.Beta4</seam.transaction.version>
-      <seam.validation.version>3.1.0.Beta4</seam.validation.version>
-      <seam.wicket.version>3.1.0.Beta4</seam.wicket.version>
-      <seam.examples.version>3.1.0.Beta4</seam.examples.version>
+      <seam.faces.version>3.1.0.Beta5</seam.faces.version>
+      <seam.international.version>3.1.0.Beta5</seam.international.version>
+      <seam.jms.version>3.1.0.Beta5</seam.jms.version>
+      <seam.jcr.version>3.1.0.Beta5</seam.jcr.version>
+      <seam.mail.version>3.1.0.Beta5</seam.mail.version>
+      <seam.persistence.version>3.1.0.Beta5</seam.persistence.version>
+      <seam.remoting.version>3.1.0.Beta5</seam.remoting.version>
+      <seam.reports.version>3.1.0.Beta5</seam.reports.version>
+      <seam.rest.version>3.1.0.Beta5</seam.rest.version>
+      <seam.security.version>3.1.0.Beta5</seam.security.version>
+      <seam.social.version>3.1.0.Beta5</seam.social.version>
+      <seam.spring.version>3.1.0.Beta5</seam.spring.version>
+      <seam.transaction.version>3.1.0.Beta5</seam.transaction.version>
+      <seam.validation.version>3.1.0.Beta5</seam.validation.version>
+      <seam.wicket.version>3.1.0.Beta5</seam.wicket.version>
+      <seam.examples.version>3.1.0.Beta5</seam.examples.version>
 
       <!-- Release repositories -->
       <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>
@@ -449,6 +450,13 @@
             <version>${seam.social.version}</version>
             <scope>runtime</scope>
          </dependency>
+
+	 <dependency>
+	    <groupId>org.jboss.seam.spring</groupId>
+	    <artifactId>seam-spring-core</artifactId>
+	    <version>${seam.spring.version}</version>
+	    <scope>runtime</scope>
+	 </dependency>
 
          <dependency>
             <groupId>org.jboss.solder</groupId>

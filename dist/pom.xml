@@ -22,6 +22,7 @@
 
    <properties>
       <seam.version>3.1.0.Beta5</seam.version>
+      <seam.conversation.version>3.0.0.CR1</seam.conversation.version>
    </properties>
 
    <dependencyManagement>
@@ -118,6 +119,38 @@
       </dependency>
    
       <!-- Seam Modules -->
+
+      <dependency>
+         <groupId>org.jboss.seam.conversation</groupId>
+	 <artifactId>seam-conversation-spi</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${seam.conversation.version}</version>
+	 <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.conversation</groupId>
+	 <artifactId>seam-conversation-candi</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${seam.conversation.version}</version>
+	 <optional>true</optional>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.conversation</groupId>
+	 <artifactId>seam-conversation-weld</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${seam.conversation.version}</version>
+	 <optional>true</optional>
+      </dependency>
+      
+      <dependency>
+         <groupId>org.jboss.seam.conversation</groupId>
+	 <artifactId>seam-conversation-owb</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${seam.conversation.version}</version>
+	 <optional>true</optional>
+      </dependency>
       
       <!-- Seam JCR -->
       
@@ -174,7 +207,24 @@
          <version>${project.version}</version>
          <optional>true</optional>
       </dependency>          
-      
+
+      <!-- These two don't seem to be part of the JMS module's distribution yet -->
+      <!--dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+	 <artifactId>seam-jms-activemq</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+	 <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.jms</groupId>
+	 <artifactId>seam-jms-openmq</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+	 <optional>true</optional>
+      </dependency-->
+
       <!-- Seam Faces -->
       
       <dependency>
@@ -228,6 +278,14 @@
       <dependency>
          <groupId>org.jboss.seam.international</groupId>
          <artifactId>seam-international</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.international</groupId>
+	 <artifactId>seam-international-api</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+	 <optional>true</optional>
       </dependency>
 
       <dependency>
@@ -286,6 +344,38 @@
       <dependency>
          <groupId>org.jboss.seam.persistence</groupId>
          <artifactId>seam-persistence</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.persistence</groupId>
+	 <artifactId>seam-persistence-api</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+	 <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.persistence</groupId>
+	 <artifactId>seam-persistence-api</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+	 <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.persistence</groupId>
+	 <artifactId>seam-persistence-api</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+	 <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.persistence</groupId>
+	 <artifactId>seam-persistence-api</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+	 <optional>true</optional>
       </dependency>
 
       <dependency>
@@ -401,6 +491,13 @@
       <dependency>
          <groupId>org.jboss.seam.rest</groupId>
          <artifactId>seam-rest</artifactId>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.rest</groupId>
+	 <artifactId>seam-rest-api</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
       </dependency>
 
       <dependency>
@@ -557,6 +654,13 @@
 
       <dependency>
          <groupId>org.jboss.seam.security</groupId>
+	 <artifactId>seam-security-api</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.security</groupId>
          <artifactId>seam-security</artifactId>
          <classifier>sources</classifier>
          <version>${project.version}</version>
@@ -662,6 +766,14 @@
 
       <dependency>
          <groupId>org.jboss.seam.transaction</groupId>
+	 <artifactId>seam-transaction-api</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+	 <optional>true</optional>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.transaction</groupId>
          <artifactId>seam-transaction</artifactId>
          <classifier>sources</classifier>
          <version>${project.version}</version>
@@ -715,6 +827,13 @@
          <classifier>sources</classifier>
          <version>${project.version}</version>
       </dependency>      
+
+      <dependency>
+         <groupId>org.jboss.seam.wicket</groupId>
+	 <artifactId>seam-wicket-mock</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+      </dependency>
       
       <dependency>
          <groupId>org.jboss.seam.wicket</groupId>

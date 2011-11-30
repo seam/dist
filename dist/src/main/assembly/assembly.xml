@@ -134,6 +134,11 @@
             </excludes>
          </unpackOptions>
          <includes>
+            <include>org.jboss.seam.conversation:seam-conversation-spi:jar:sources</include>
+	    <include>org.jboss.seam.conversation:seam-conversation-weld:jar:sources</include>
+	    <include>org.jboss.seam.conversation:seam-conversation-candi:jar:sources</include>
+	    <include>org.jboss.seam.conversation:seam-conversation-owb:jar:sources</include>
+
             <include>org.jboss.seam.faces:seam-faces-api:jar:sources</include>         
             <include>org.jboss.seam.faces:seam-faces:jar:sources</include>
 
@@ -142,12 +147,14 @@
             
             <include>org.jboss.seam.jms:seam-jms-api:jar:sources</include>
             <include>org.jboss.seam.jms:seam-jms:jar:sources</include>
+	    <!--include>org.jboss.seam.jms:seam-jms-activemq:jar:sources</include>
+	    <include>org.jboss.seam.jms:seam-jms-openmq:jar:sources</include-->
             
             <include>org.jboss.seam.jcr:seam-jcr-api:jar:sources</include>
             <include>org.jboss.seam.jcr:seam-jcr:jar:sources</include>
             
             <include>org.jboss.seam.mail:seam-mail-api:jar:sources</include>
-            <include>org.jboss.seam.mail:seam-mail-impl:jar:sources</include>
+            <include>org.jboss.seam.mail:seam-mail:jar:sources</include>
             
             <include>org.jboss.seam.persistence:seam-persistence-api:jar:sources</include>
             <include>org.jboss.seam.persistence:seam-persistence:jar:sources</include>
@@ -179,12 +186,13 @@
 
             <include>org.jboss.solder:solder-api:jar:sources</include>
             <include>org.jboss.solder:solder-impl:jar:sources</include>
-            <include>org.jboss.seam.solder:seam-solder-tooling:jar:sources</include>
+            <include>org.jboss.solder:solder-tooling:jar:sources</include>
 
             <include>org.jboss.seam.validation:seam-validation-api:jar:sources</include>
             <include>org.jboss.seam.validation:seam-validation:jar:sources</include>
             
             <include>org.jboss.seam.wicket:seam-wicket:jar:sources</include>                        
+	    <include>org.jboss.seam.wicket:seam-wicket-mock:jar:sources</include>
          </includes>
       </dependencySet>
       

@@ -5,13 +5,13 @@
    <groupId>org.jboss.seam</groupId>
    <artifactId>seam-distribution</artifactId>
    <packaging>jar</packaging>
-   <version>3.1.0.Beta4</version>
+   <version>3.1.0.Beta5</version>
    <name>Seam Distribution</name>
 
    <parent>
       <groupId>org.jboss.seam</groupId>
       <artifactId>seam-parent</artifactId>
-      <version>16</version>
+      <version>17</version>
    </parent>
 
    <description>
@@ -21,7 +21,7 @@
    <url>http://www.seamframework.org</url>
 
    <properties>
-      <seam.version>3.1.0.Beta4</seam.version>
+      <seam.version>3.1.0.Beta5</seam.version>
    </properties>
 
    <dependencyManagement>
@@ -239,7 +239,7 @@
       </dependency>
       
       <dependency>
-         <groupId>org.jboss.seam.international</groupId>
+         <groupId>org.jboss.seam.examples</groupId>
          <artifactId>seam-international-example-timeanddate</artifactId>
          <version>${project.version}</version>
          <type>zip</type>
@@ -524,6 +524,24 @@
          <classifier>sources</classifier>
          <version>${project.version}</version>
       </dependency>
+
+      <!-- Seam Spring -->
+
+      <dependency>
+         <groupId>org.jboss.seam.spring</groupId>
+	 <artifactId>seam-spring-core</artifactId>
+	 <!-- TODO fix this for CR1 release -->
+	 <version>3.1.0.Beta5</version>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.spring</groupId>
+	 <artifactId>seam-spring-core</artifactId>
+	 <classifier>sources</classifier>
+	 <version>${project.version}</version>
+      </dependency>
+
+
       
       <!-- Seam Security -->
       
@@ -723,6 +741,13 @@
       </dependency>
       
       <!-- Examples -->
+
+      <dependency>
+         <groupId>org.jboss.seam.examples</groupId>
+	 <artifactId>seam-examples-parent</artifactId>
+	 <version>${project.version}</version>
+	 <type>pom</type>
+      </dependency>
       
       <dependency>
          <groupId>org.jboss.seam.examples</groupId>
@@ -774,6 +799,31 @@
                      <excludeTransitive>true</excludeTransitive>
                      
                      <includeArtifactIds>seam-faces-api,seam-international-api,seam-jcr-api,seam-jms-api,seam-mail-api,seam-persistence-api,seam-remoting,seam-reports-api,seam-rest-api,seam-security-api,seam-social-api,seam-social,seam-transaction-api,seam-validation-api,solder-api</includeArtifactIds>
+                  </configuration>
+               </execution>
+               
+               <execution>
+                  <id>copy-example-parent</id>
+                  <goals>
+                     <goal>copy</goal>
+                  </goals>
+                  <configuration>                  
+                     <artifactItems>
+                        <artifactItem>
+                           <groupId>org.jboss.seam.examples</groupId>
+                           <artifactId>seam-examples-parent</artifactId>
+                           <version>${project.version}</version>
+                           <type>pom</type>
+                           <outputDirectory>${project.build.directory}/example-parent</outputDirectory>
+                           <destFileName>pom.xml</destFileName>
+                        </artifactItem>
+                     </artifactItems>
+                     
+                     <!--outputDirectory>${project.build.directory}/example-parent</outputDirectory>
+                     <excludeTransitive>true</excludeTransitive>
+                     <useSubDirectoryPerArtifact>false</useSubDirectoryPerArtifact>
+                     <stripVersion>true</stripVersion>
+                     <includeArtifactIds>seam-examples-parent</includeArtifactIds-->
                   </configuration>
                </execution>
             </executions>

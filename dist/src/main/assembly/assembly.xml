@@ -32,6 +32,15 @@
          </includes>
       </fileSet>
       
+      <!-- Include the examples parent pom -->
+      <fileSet>
+         <directory>${project.build.directory}/example-parent</directory>
+         <outputDirectory>examples</outputDirectory>
+         <includes>
+            <include>pom.xml</include>
+         </includes>
+      </fileSet>
+      
       <!-- Javadoc -->
       <fileSet>
          <directory>${project.build.directory}/apidocs</directory>
@@ -94,6 +103,8 @@
             <include>org.jboss.seam.social:seam-social-facebook</include>
             <include>org.jboss.seam.social:seam-social-linkedin</include>
             <include>org.jboss.seam.social:seam-social-twitter</include>
+
+            <include>org.jboss.seam.spring:seam-spring-core</include>
 
             <include>org.jboss.solder:solder-api</include>
             <include>org.jboss.solder:solder-impl</include>
@@ -164,6 +175,8 @@
             <include>org.jboss.seam.social:seam-social-linkedin:jar:sources</include>
             <include>org.jboss.seam.social:seam-social-twitter:jar:sources</include>            
 
+            <include>org.jboss.seam.spring:seam-spring-core:jar:sources</include>
+
             <include>org.jboss.solder:solder-api:jar:sources</include>
             <include>org.jboss.solder:solder-impl:jar:sources</include>
             <include>org.jboss.seam.solder:seam-solder-tooling:jar:sources</include>
@@ -195,7 +208,7 @@
          <useProjectArtifact>false</useProjectArtifact>
          <includes>
             <include>org.jboss.seam.faces:seam-faces-example-short-ly</include>
-            <include>org.jboss.seam.international:seam-international-example-timeanddate</include>                        
+            <include>org.jboss.seam.examples:seam-international-example-timeanddate</include>                        
             <include>org.jboss.seam.remoting:seam-remoting-example-model</include>
             <include>org.jboss.seam.remoting:seam-remoting-example-helloworld</include>
             <include>org.jboss.seam.remoting:seam-remoting-example-validation</include>
@@ -207,8 +220,7 @@
             <include>org.jboss.seam.security:seam-security-example-idmconsole</include>
             <include>org.jboss.seam.security:seam-security-example-openid-rp</include>
             <include>org.jboss.seam.validation:seam-validation-example-helloworld</include>
-            <include>org.jboss.seam.wicket:seam-wicket-example-numberguess</include>
-            
+            <include>org.jboss.seam.wicket:seam-wicket-example-numberguess</include>           
             <include>org.jboss.seam.examples:seam-booking</include>
          </includes>
       </dependencySet>

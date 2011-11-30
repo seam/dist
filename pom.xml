@@ -53,22 +53,22 @@
 
       <!-- Seam modules -->
       <seam.conversation.version>3.0.0.CR1</seam.conversation.version>
-      <seam.faces.version>3.1.0.Beta5</seam.faces.version>
-      <seam.international.version>3.1.0.Beta5</seam.international.version>
-      <seam.jms.version>3.1.0.Beta5</seam.jms.version>
-      <seam.jcr.version>3.1.0.Beta5</seam.jcr.version>
-      <seam.mail.version>3.1.0.Beta5</seam.mail.version>
-      <seam.persistence.version>3.1.0.Beta5</seam.persistence.version>
-      <seam.remoting.version>3.1.0.Beta5</seam.remoting.version>
-      <seam.reports.version>3.1.0.Beta5</seam.reports.version>
-      <seam.rest.version>3.1.0.Beta5</seam.rest.version>
-      <seam.security.version>3.1.0.Beta5</seam.security.version>
-      <seam.social.version>3.1.0.Beta5</seam.social.version>
-      <seam.spring.version>3.1.0.Beta5</seam.spring.version>
-      <seam.transaction.version>3.1.0.Beta5</seam.transaction.version>
-      <seam.validation.version>3.1.0.Beta5</seam.validation.version>
-      <seam.wicket.version>3.1.0.Beta5</seam.wicket.version>
-      <seam.examples.version>3.1.0.Beta5</seam.examples.version>
+      <seam.faces.version>3.1.0.CR1</seam.faces.version>
+      <seam.international.version>3.1.0.CR1</seam.international.version>
+      <seam.jms.version>3.1.0.CR1</seam.jms.version>
+      <seam.jcr.version>3.1.0.CR1</seam.jcr.version>
+      <seam.mail.version>3.1.0.CR1</seam.mail.version>
+      <seam.persistence.version>3.1.0.CR1</seam.persistence.version>
+      <seam.remoting.version>3.1.0.CR1</seam.remoting.version>
+      <seam.reports.version>3.1.0.CR1</seam.reports.version>
+      <seam.rest.version>3.1.0.CR1</seam.rest.version>
+      <seam.security.version>3.1.0.CR1</seam.security.version>
+      <seam.social.version>3.1.0.CR1</seam.social.version>
+      <seam.spring.version>3.1.0.CR1</seam.spring.version>
+      <seam.transaction.version>3.1.0.CR1</seam.transaction.version>
+      <seam.validation.version>3.1.0.CR1</seam.validation.version>
+      <seam.wicket.version>3.1.0.CR1</seam.wicket.version>
+      <seam.examples.version>3.1.0.CR1</seam.examples.version>
 
       <!-- Release repositories -->
       <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>

@@ -48,10 +48,8 @@
       <wicket.version>1.4.15</wicket.version>
       <resteasy.version>2.1-beta-1</resteasy.version>      
 
-      <!-- Solder -->
-      <solder.version>3.1.0.Beta5</solder.version>
-
-      <!-- Seam modules -->
+      <!-- Solder and Seam modules -->
+      <solder.version>3.1.0.CR1</solder.version>
       <seam.conversation.version>3.0.0.CR1</seam.conversation.version>
       <seam.faces.version>3.1.0.CR1</seam.faces.version>
       <seam.international.version>3.1.0.CR1</seam.international.version>

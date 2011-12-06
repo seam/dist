@@ -78,9 +78,12 @@
       <xi:include href="faces-installation.xml" />
       <xi:include href="faces-events.xml" />
       <xi:include href="faces-scopes.xml" />
+      <xi:include href="faces-projectstage.xml" />
       <xi:include href="faces-messages.xml" />
       <xi:include href="faces-artifacts.xml" />
       <xi:include href="faces-components.xml" />
+      <xi:include href="faces-viewconfig.xml" />
+      <xi:include href="faces-exceptionhandling.xml" />
    </part>
    
    <part>

@@ -897,6 +897,20 @@
          </exclusions>
       </dependency>
 
+      <dependency>
+         <groupId>org.jboss.seam.examples</groupId>
+	 <artifactId>seam-quiz</artifactId>
+	 <version>${project.version}</version>
+         <type>zip</type>
+      </dependency>
+
+      <dependency>
+         <groupId>org.jboss.seam.examples</groupId>
+	 <artifactId>seam-princess-rescue</artifactId>
+	 <version>${project.version}</version>
+	 <type>zip</type>
+      </dependency>
+
    </dependencies>
 
    <build>

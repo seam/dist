@@ -231,6 +231,8 @@
             <include>org.jboss.seam.validation:seam-validation-example-helloworld</include>
             <include>org.jboss.seam.wicket:seam-wicket-example-numberguess</include>           
             <include>org.jboss.seam.examples:seam-booking</include>
+	    <include>org.jboss.seam.examples:seam-quiz</include>
+	    <include>org.jboss.seam.examples:seam-princess-rescue</include>
          </includes>
       </dependencySet>
 

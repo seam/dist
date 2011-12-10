@@ -79,7 +79,7 @@
       </para>
 
       <programlisting role="XML"><![CDATA[<properties>
-        <seam.version>3.0.0.Final</seam.version>
+        <seam.version>3.1.0.Final</seam.version>
 </properties>]]></programlisting>
        
       <para>

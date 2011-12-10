@@ -3,6 +3,8 @@
    "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd"  [ ]>
 <book lang="en" xmlns:xi="http://www.w3.org/2001/XInclude">
 
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="bundled-book_info.xml" />
+
    <toc />
 
    <title>Seam 3</title>
@@ -76,14 +78,13 @@
       <title>Seam Faces</title>
       <xi:include href="faces-preface.xml" />
       <xi:include href="faces-installation.xml" />
-      <xi:include href="faces-events.xml" />
       <xi:include href="faces-scopes.xml" />
-      <xi:include href="faces-projectstage.xml" />
       <xi:include href="faces-messages.xml" />
-      <xi:include href="faces-artifacts.xml" />
       <xi:include href="faces-components.xml" />
+      <xi:include href="faces-artifacts.xml" />
+      <xi:include href="faces-events.xml" />            
+      <xi:include href="faces-projectstage.xml" />
       <xi:include href="faces-viewconfig.xml" />
-      <xi:include href="faces-exceptionhandling.xml" />
    </part>
    
    <part>

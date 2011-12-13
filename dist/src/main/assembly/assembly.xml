@@ -171,6 +171,7 @@
             <include>org.jboss.seam.reports:seam-reports-xdocreport:jar:sources</include>            
             
             <include>org.jboss.seam.rest:seam-rest:jar:sources</include>
+	    <include>org.jboss.seam.rest:seam-rest-api:jar:sources</include>
 
             <include>org.jboss.seam.security:seam-security-api:jar:sources</include>            
             <include>org.jboss.seam.security:seam-security:jar:sources</include>
@@ -223,13 +224,15 @@
             <include>org.jboss.seam.rest:seam-rest-example-client</include>
             <include>org.jboss.seam.rest:seam-rest-example-exceptions</include>
             <include>org.jboss.seam.rest:seam-rest-example-tasks</include>
-            <include>org.jboss.seam.security:seam-security-example-authorization</include>
+            <include>org.jboss.seam.examples:seam-security-example-authorization</include>
             <include>org.jboss.seam.security:seam-security-example-simple</include>
             <include>org.jboss.seam.security:seam-security-example-idmconsole</include>
             <include>org.jboss.seam.security:seam-security-example-openid-rp</include>
             <include>org.jboss.seam.validation:seam-validation-example-helloworld</include>
             <include>org.jboss.seam.wicket:seam-wicket-example-numberguess</include>           
             <include>org.jboss.seam.examples:seam-booking</include>
+	    <include>org.jboss.seam.examples:seam-quiz</include>
+	    <include>org.jboss.seam.examples:seam-princess-rescue</include>
          </includes>
       </dependencySet>
 

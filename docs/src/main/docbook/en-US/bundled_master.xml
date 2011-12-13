@@ -36,6 +36,7 @@
       <xi:include href="servlet-injectable_refs.xml"/>
       <xi:include href="servlet-exception_handling.xml" />
       <xi:include href="servlet-beanmanager.xml"/>
+      <xi:include href="servlet-resource.xml"/>
       <xi:include href="catch-introduction.xml"/>
       <xi:include href="catch-client_usage.xml"/>
       <xi:include href="catch-advanced_usage.xml"/>
@@ -80,6 +81,7 @@
       <xi:include href="faces-scopes.xml" />
       <xi:include href="faces-projectstage.xml" />
       <xi:include href="faces-messages.xml" />
+      <xi:include href="faces-locale.xml" />
       <xi:include href="faces-artifacts.xml" />
       <xi:include href="faces-components.xml" />
       <xi:include href="faces-viewconfig.xml" />

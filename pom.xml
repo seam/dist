@@ -49,26 +49,26 @@
       <resteasy.version>2.1-beta-1</resteasy.version>      
 
       <!-- Solder -->
-      <solder.version>3.1.0.CR1</solder.version>
+      <solder.version>3.1.0.Final</solder.version>
 
       <!-- Seam modules -->
-      <seam.conversation.version>3.0.0.CR1</seam.conversation.version>
-      <seam.faces.version>3.1.0.CR1</seam.faces.version>
-      <seam.international.version>3.1.0.CR1</seam.international.version>
-      <seam.jms.version>3.1.0.CR1</seam.jms.version>
-      <seam.jcr.version>3.1.0.CR1</seam.jcr.version>
-      <seam.mail.version>3.1.0.CR1</seam.mail.version>
-      <seam.persistence.version>3.1.0.CR1</seam.persistence.version>
-      <seam.remoting.version>3.1.0.CR1</seam.remoting.version>
-      <seam.reports.version>3.1.0.CR1</seam.reports.version>
-      <seam.rest.version>3.1.0.CR1</seam.rest.version>
-      <seam.security.version>3.1.0.CR1</seam.security.version>
-      <seam.social.version>3.1.0.CR1</seam.social.version>
-      <seam.spring.version>3.1.0.CR1</seam.spring.version>
-      <seam.transaction.version>3.1.0.CR1</seam.transaction.version>
-      <seam.validation.version>3.1.0.CR1</seam.validation.version>
-      <seam.wicket.version>3.1.0.CR1</seam.wicket.version>
-      <seam.examples.version>3.1.0.CR1</seam.examples.version>
+      <seam.conversation.version>3.0.0.Final</seam.conversation.version>
+      <seam.faces.version>3.1.0.Final</seam.faces.version>
+      <seam.international.version>3.1.0.Final</seam.international.version>
+      <seam.jms.version>3.1.0.Final</seam.jms.version>
+      <seam.jcr.version>3.1.0.Final</seam.jcr.version>
+      <seam.mail.version>3.1.0.Final</seam.mail.version>
+      <seam.persistence.version>3.1.0.Final</seam.persistence.version>
+      <seam.remoting.version>3.1.0.Final</seam.remoting.version>
+      <seam.reports.version>3.1.0.Final</seam.reports.version>
+      <seam.rest.version>3.1.0.Final</seam.rest.version>
+      <seam.security.version>3.1.0.Final</seam.security.version>
+      <seam.social.version>3.1.0.Final</seam.social.version>
+      <seam.spring.version>3.1.0.Final</seam.spring.version>
+      <seam.transaction.version>3.1.0.Final</seam.transaction.version>
+      <seam.validation.version>3.1.0.Final</seam.validation.version>
+      <seam.wicket.version>3.1.0.Final</seam.wicket.version>
+      <seam.examples.version>3.1.0.Final</seam.examples.version>
 
       <!-- Release repositories -->
       <jboss.releases.repo.url>https://repository.jboss.org/nexus/service/local/staging/deploy/maven2/</jboss.releases.repo.url>

@@ -5,13 +5,13 @@
    <groupId>org.jboss.seam</groupId>
    <artifactId>seam-distribution</artifactId>
    <packaging>jar</packaging>
-   <version>3.1.0.CR1</version>
+   <version>3.1.0.Final</version>
    <name>Seam Distribution</name>
 
    <parent>
       <groupId>org.jboss.seam</groupId>
       <artifactId>seam-parent</artifactId>
-      <version>18</version>
+      <version>19</version>
    </parent>
 
    <description>
@@ -21,8 +21,8 @@
    <url>http://www.seamframework.org</url>
 
    <properties>
-      <seam.version>3.1.0.CR1</seam.version>
-      <seam.conversation.version>3.0.0.CR1</seam.conversation.version>
+      <seam.version>3.1.0.Final</seam.version>
+      <seam.conversation.version>3.0.0.Final</seam.conversation.version>
    </properties>
 
    <dependencyManagement>

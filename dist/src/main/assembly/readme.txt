@@ -23,10 +23,6 @@ Contents of distribution
  examples/
 
    Seam Examples
-   
- forge/
- 
-   Seam Forge   
   
  lib/
 
